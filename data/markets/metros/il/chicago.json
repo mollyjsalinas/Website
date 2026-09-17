@@ -1,0 +1,217 @@
+{
+  "metro": "Chicago-Naperville-Elgin, IL-IN-WI",
+  "city": "Chicago",
+  "city_slug": "chicago",
+  "cbsa": "16980",
+  "state_abbr": "IL",
+  "state": "Illinois",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Illinois side of the Chicago metro area",
+    "active_individual_providers": {
+      "pt": 9296,
+      "pta": 1712,
+      "ot": 4561,
+      "ota": 869,
+      "slp": 7410,
+      "aud": 612
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 421,
+        "by_month": {
+          "2025-09": 83,
+          "2025-10": 22,
+          "2025-11": 23,
+          "2025-12": 22,
+          "2026-01": 18,
+          "2026-02": 21,
+          "2026-03": 28,
+          "2026-04": 17,
+          "2026-05": 46,
+          "2026-06": 48,
+          "2026-07": 25,
+          "2026-08": 68
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 86,
+        "by_month": {
+          "2025-09": 14,
+          "2025-10": 9,
+          "2025-11": 11,
+          "2025-12": 7,
+          "2026-01": 6,
+          "2026-02": 7,
+          "2026-03": 7,
+          "2026-04": 8,
+          "2026-05": 4,
+          "2026-06": 6,
+          "2026-07": 1,
+          "2026-08": 6
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 216,
+        "by_month": {
+          "2025-09": 20,
+          "2025-10": 24,
+          "2025-11": 15,
+          "2025-12": 13,
+          "2026-01": 25,
+          "2026-02": 17,
+          "2026-03": 19,
+          "2026-04": 13,
+          "2026-05": 19,
+          "2026-06": 14,
+          "2026-07": 19,
+          "2026-08": 18
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 22,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 2,
+          "2026-01": 2,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 3,
+          "2026-05": 0,
+          "2026-06": 3,
+          "2026-07": 3,
+          "2026-08": 2
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 335,
+        "by_month": {
+          "2025-09": 40,
+          "2025-10": 21,
+          "2025-11": 19,
+          "2025-12": 12,
+          "2026-01": 16,
+          "2026-02": 11,
+          "2026-03": 19,
+          "2026-04": 16,
+          "2026-05": 25,
+          "2026-06": 50,
+          "2026-07": 43,
+          "2026-08": 63
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 21,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 5,
+          "2026-07": 2,
+          "2026-08": 3
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Chicago-Naperville-Elgin, IL-IN metropolitan area",
+    "pt": {
+      "employment": 7880,
+      "annual_mean_wage": 110460,
+      "annual_median_wage": 105720
+    },
+    "pta": {
+      "employment": 3520,
+      "annual_mean_wage": 67180,
+      "annual_median_wage": 72230
+    },
+    "ot": {
+      "employment": 5960,
+      "annual_mean_wage": 101400,
+      "annual_median_wage": 99860
+    },
+    "ota": {
+      "employment": 1710,
+      "annual_mean_wage": 68150,
+      "annual_median_wage": 67840
+    },
+    "slp": {
+      "employment": 7150,
+      "annual_mean_wage": 95200,
+      "annual_median_wage": 98490
+    },
+    "aud": {
+      "employment": 230,
+      "annual_mean_wage": 101120,
+      "annual_median_wage": 100930
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Illinois-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 17969,
+      "establishments": 1237,
+      "avg_weekly_wage": 1063,
+      "counties_disclosed": 8,
+      "counties_total": 9
+    },
+    "home_health_naics_6216": {
+      "employment": 62119,
+      "establishments": 1163,
+      "avg_weekly_wage": 684,
+      "counties_disclosed": 7,
+      "counties_total": 9
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 42236,
+      "establishments": 391,
+      "avg_weekly_wage": 1052,
+      "counties_disclosed": 6,
+      "counties_total": 9
+    },
+    "hospitals_naics_6221": {
+      "employment": 165888,
+      "establishments": 152,
+      "avg_weekly_wage": 1888,
+      "counties_disclosed": 5,
+      "counties_total": 9
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Illinois side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 325,
+      "certified_beds": 50523,
+      "avg_overall_rating": 2.84,
+      "for_profit_pct": 85.5
+    },
+    "home_health_agencies": {
+      "count": 460,
+      "avg_quality_star": 3.07,
+      "for_profit_pct": 97.2,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 98.8,
+      "offers_slp_pct": 96.5
+    }
+  },
+  "narrative_extra": null
+}

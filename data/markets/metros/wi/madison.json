@@ -1,0 +1,217 @@
+{
+  "metro": "Madison, WI",
+  "city": "Madison",
+  "city_slug": "madison",
+  "cbsa": "31540",
+  "state_abbr": "WI",
+  "state": "Wisconsin",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Wisconsin side of the Madison metro area",
+    "active_individual_providers": {
+      "pt": 845,
+      "pta": 188,
+      "ot": 602,
+      "ota": 195,
+      "slp": 724,
+      "aud": 64
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 38,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 3,
+          "2026-03": 3,
+          "2026-04": 2,
+          "2026-05": 5,
+          "2026-06": 14,
+          "2026-07": 4,
+          "2026-08": 3
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 8,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 54,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 7,
+          "2026-04": 5,
+          "2026-05": 15,
+          "2026-06": 17,
+          "2026-07": 2,
+          "2026-08": 3
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 12,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 2,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 161,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 1,
+          "2025-11": 2,
+          "2025-12": 1,
+          "2026-01": 2,
+          "2026-02": 17,
+          "2026-03": 18,
+          "2026-04": 12,
+          "2026-05": 38,
+          "2026-06": 43,
+          "2026-07": 10,
+          "2026-08": 14
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Madison, WI metropolitan area",
+    "pt": {
+      "employment": 900,
+      "annual_mean_wage": 103220,
+      "annual_median_wage": 102810
+    },
+    "pta": {
+      "employment": 180,
+      "annual_mean_wage": 64810,
+      "annual_median_wage": 63380
+    },
+    "ot": {
+      "employment": 610,
+      "annual_mean_wage": 94180,
+      "annual_median_wage": 95670
+    },
+    "ota": {
+      "employment": 180,
+      "annual_mean_wage": 56840,
+      "annual_median_wage": 54870
+    },
+    "slp": {
+      "employment": 410,
+      "annual_mean_wage": 90030,
+      "annual_median_wage": 86890
+    },
+    "aud": {
+      "employment": 40,
+      "annual_mean_wage": 99050,
+      "annual_median_wage": 105160
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Wisconsin-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 633,
+      "establishments": 84,
+      "avg_weekly_wage": 1081,
+      "counties_disclosed": 2,
+      "counties_total": 4
+    },
+    "home_health_naics_6216": {
+      "employment": 2033,
+      "establishments": 57,
+      "avg_weekly_wage": 1198,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1823,
+      "establishments": 27,
+      "avg_weekly_wage": 929,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    },
+    "hospitals_naics_6221": {
+      "employment": 5706,
+      "establishments": 6,
+      "avg_weekly_wage": 1227,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Wisconsin side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 25,
+      "certified_beds": 1849,
+      "avg_overall_rating": 2.92,
+      "for_profit_pct": 60.0
+    },
+    "home_health_agencies": {
+      "count": 9,
+      "avg_quality_star": 3.21,
+      "for_profit_pct": 37.5,
+      "offers_pt_pct": 87.5,
+      "offers_ot_pct": 87.5,
+      "offers_slp_pct": 87.5
+    }
+  },
+  "narrative_extra": null
+}

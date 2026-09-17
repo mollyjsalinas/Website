@@ -1,0 +1,206 @@
+{
+  "metro": "Johnson City, TN",
+  "city": "Johnson City",
+  "city_slug": "johnson-city",
+  "cbsa": "27740",
+  "state_abbr": "TN",
+  "state": "Tennessee",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Tennessee side of the Johnson City metro area",
+    "active_individual_providers": {
+      "pt": 187,
+      "pta": 43,
+      "ot": 133,
+      "ota": 34,
+      "slp": 116,
+      "aud": 38
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 12,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 3,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Johnson City, TN metropolitan area",
+    "pt": {
+      "employment": 180,
+      "annual_mean_wage": 94050,
+      "annual_median_wage": 96660
+    },
+    "pta": {
+      "employment": 100,
+      "annual_mean_wage": 63480,
+      "annual_median_wage": 64270
+    },
+    "ot": {
+      "employment": 90,
+      "annual_mean_wage": 90430,
+      "annual_median_wage": 94940
+    },
+    "ota": {
+      "employment": 40,
+      "annual_mean_wage": 66750,
+      "annual_median_wage": 64810
+    },
+    "slp": {
+      "employment": 140,
+      "annual_mean_wage": 86540,
+      "annual_median_wage": 82050
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Tennessee-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 183,
+      "establishments": 17,
+      "avg_weekly_wage": 1059,
+      "counties_disclosed": 1,
+      "counties_total": 3
+    },
+    "home_health_naics_6216": {
+      "employment": 567,
+      "establishments": 11,
+      "avg_weekly_wage": 903,
+      "counties_disclosed": 1,
+      "counties_total": 3
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1396,
+      "establishments": 16,
+      "avg_weekly_wage": 950,
+      "counties_disclosed": 2,
+      "counties_total": 3
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Tennessee side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 17,
+      "certified_beds": 1685,
+      "avg_overall_rating": 3.82,
+      "for_profit_pct": 88.2
+    },
+    "home_health_agencies": {
+      "count": 6,
+      "avg_quality_star": 3.8,
+      "for_profit_pct": 83.3,
+      "offers_pt_pct": 83.3,
+      "offers_ot_pct": 83.3,
+      "offers_slp_pct": 83.3
+    }
+  },
+  "narrative_extra": null
+}

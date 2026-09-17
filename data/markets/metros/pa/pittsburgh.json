@@ -1,0 +1,217 @@
+{
+  "metro": "Pittsburgh, PA",
+  "city": "Pittsburgh",
+  "city_slug": "pittsburgh",
+  "cbsa": "38300",
+  "state_abbr": "PA",
+  "state": "Pennsylvania",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Pennsylvania side of the Pittsburgh metro area",
+    "active_individual_providers": {
+      "pt": 2952,
+      "pta": 554,
+      "ot": 1633,
+      "ota": 408,
+      "slp": 1502,
+      "aud": 244
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 147,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 3,
+          "2025-11": 7,
+          "2025-12": 5,
+          "2026-01": 4,
+          "2026-02": 30,
+          "2026-03": 23,
+          "2026-04": 27,
+          "2026-05": 9,
+          "2026-06": 11,
+          "2026-07": 7,
+          "2026-08": 16
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 19,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 3,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 3,
+          "2026-07": 3,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 91,
+        "by_month": {
+          "2025-09": 7,
+          "2025-10": 2,
+          "2025-11": 6,
+          "2025-12": 5,
+          "2026-01": 4,
+          "2026-02": 4,
+          "2026-03": 21,
+          "2026-04": 16,
+          "2026-05": 6,
+          "2026-06": 6,
+          "2026-07": 8,
+          "2026-08": 6
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 76,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 6,
+          "2025-11": 6,
+          "2025-12": 5,
+          "2026-01": 4,
+          "2026-02": 5,
+          "2026-03": 8,
+          "2026-04": 8,
+          "2026-05": 7,
+          "2026-06": 6,
+          "2026-07": 10,
+          "2026-08": 6
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 3,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Pittsburgh, PA metropolitan area",
+    "pt": {
+      "employment": 2120,
+      "annual_mean_wage": 93960,
+      "annual_median_wage": 97750
+    },
+    "pta": {
+      "employment": 670,
+      "annual_mean_wage": 58730,
+      "annual_median_wage": 56020
+    },
+    "ot": {
+      "employment": 1170,
+      "annual_mean_wage": 88700,
+      "annual_median_wage": 90860
+    },
+    "ota": {
+      "employment": 370,
+      "annual_mean_wage": 63530,
+      "annual_median_wage": 61900
+    },
+    "slp": {
+      "employment": 1300,
+      "annual_mean_wage": 83740,
+      "annual_median_wage": 81810
+    },
+    "aud": {
+      "employment": 120,
+      "annual_mean_wage": 81890,
+      "annual_median_wage": 67650
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Pennsylvania-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 4837,
+      "establishments": 504,
+      "avg_weekly_wage": 1044,
+      "counties_disclosed": 7,
+      "counties_total": 7
+    },
+    "home_health_naics_6216": {
+      "employment": 13482,
+      "establishments": 305,
+      "avg_weekly_wage": 1047,
+      "counties_disclosed": 6,
+      "counties_total": 7
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 13213,
+      "establishments": 147,
+      "avg_weekly_wage": 977,
+      "counties_disclosed": 7,
+      "counties_total": 7
+    },
+    "hospitals_naics_6221": {
+      "employment": 39742,
+      "establishments": 131,
+      "avg_weekly_wage": 1268,
+      "counties_disclosed": 1,
+      "counties_total": 7
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Pennsylvania side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 111,
+      "certified_beds": 14132,
+      "avg_overall_rating": 2.06,
+      "for_profit_pct": 67.6
+    },
+    "home_health_agencies": {
+      "count": 52,
+      "avg_quality_star": 3.5,
+      "for_profit_pct": 84.3,
+      "offers_pt_pct": 76.5,
+      "offers_ot_pct": 72.5,
+      "offers_slp_pct": 68.6
+    }
+  },
+  "narrative_extra": null
+}

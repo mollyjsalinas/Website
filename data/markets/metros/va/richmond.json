@@ -1,0 +1,217 @@
+{
+  "metro": "Richmond, VA",
+  "city": "Richmond",
+  "city_slug": "richmond",
+  "cbsa": "40060",
+  "state_abbr": "VA",
+  "state": "Virginia",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Virginia side of the Richmond metro area",
+    "active_individual_providers": {
+      "pt": 1226,
+      "pta": 260,
+      "ot": 690,
+      "ota": 156,
+      "slp": 762,
+      "aud": 81
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 53,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 4,
+          "2026-01": 3,
+          "2026-02": 3,
+          "2026-03": 4,
+          "2026-04": 3,
+          "2026-05": 11,
+          "2026-06": 9,
+          "2026-07": 6,
+          "2026-08": 7
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 17,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 2,
+          "2025-12": 1,
+          "2026-01": 4,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 30,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 4,
+          "2025-12": 2,
+          "2026-01": 3,
+          "2026-02": 4,
+          "2026-03": 4,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 4,
+          "2026-08": 5
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 33,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 4,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 6,
+          "2026-06": 4,
+          "2026-07": 3,
+          "2026-08": 11
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Richmond, VA metropolitan area",
+    "pt": {
+      "employment": 1300,
+      "annual_mean_wage": 103840,
+      "annual_median_wage": 102700
+    },
+    "pta": {
+      "employment": 560,
+      "annual_mean_wage": 71380,
+      "annual_median_wage": 73640
+    },
+    "ot": {
+      "employment": 740,
+      "annual_mean_wage": 103370,
+      "annual_median_wage": 105550
+    },
+    "ota": {
+      "employment": 210,
+      "annual_mean_wage": 73900,
+      "annual_median_wage": 76760
+    },
+    "slp": {
+      "employment": 770,
+      "annual_mean_wage": 97870,
+      "annual_median_wage": 96080
+    },
+    "aud": {
+      "employment": null,
+      "annual_mean_wage": 83050,
+      "annual_median_wage": 80010
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Virginia-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1776,
+      "establishments": 226,
+      "avg_weekly_wage": 1230,
+      "counties_disclosed": 7,
+      "counties_total": 17
+    },
+    "home_health_naics_6216": {
+      "employment": 5406,
+      "establishments": 268,
+      "avg_weekly_wage": 909,
+      "counties_disclosed": 8,
+      "counties_total": 17
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 3401,
+      "establishments": 43,
+      "avg_weekly_wage": 1076,
+      "counties_disclosed": 4,
+      "counties_total": 17
+    },
+    "hospitals_naics_6221": {
+      "employment": 13895,
+      "establishments": 35,
+      "avg_weekly_wage": 1487,
+      "counties_disclosed": 2,
+      "counties_total": 17
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Virginia side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 41,
+      "certified_beds": 5182,
+      "avg_overall_rating": 2.36,
+      "for_profit_pct": 73.2
+    },
+    "home_health_agencies": {
+      "count": 22,
+      "avg_quality_star": 3.22,
+      "for_profit_pct": 85.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

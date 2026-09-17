@@ -1,0 +1,217 @@
+{
+  "metro": "Urban Honolulu, HI",
+  "city": "Urban Honolulu",
+  "city_slug": "urban-honolulu",
+  "cbsa": "46520",
+  "state_abbr": "HI",
+  "state": "Hawaii",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Hawaii side of the Urban Honolulu metro area",
+    "active_individual_providers": {
+      "pt": 819,
+      "pta": 122,
+      "ot": 233,
+      "ota": 80,
+      "slp": 445,
+      "aud": 68
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 41,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 1,
+          "2025-11": 6,
+          "2025-12": 4,
+          "2026-01": 2,
+          "2026-02": 9,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 5,
+          "2026-08": 4
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 18,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 8,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 2,
+          "2026-08": 2
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 18,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 3,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 4,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 4,
+          "2026-08": 2
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 2,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 4,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Urban Honolulu, HI metropolitan area",
+    "pt": {
+      "employment": 680,
+      "annual_mean_wage": 100050,
+      "annual_median_wage": 101700
+    },
+    "pta": {
+      "employment": 200,
+      "annual_mean_wage": 65570,
+      "annual_median_wage": 66500
+    },
+    "ot": {
+      "employment": 320,
+      "annual_mean_wage": 99680,
+      "annual_median_wage": 102870
+    },
+    "ota": {
+      "employment": 50,
+      "annual_mean_wage": 71020,
+      "annual_median_wage": 71960
+    },
+    "slp": {
+      "employment": 230,
+      "annual_mean_wage": 91960,
+      "annual_median_wage": 97900
+    },
+    "aud": {
+      "employment": null,
+      "annual_mean_wage": 109670,
+      "annual_median_wage": 113850
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Hawaii-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1555,
+      "establishments": 170,
+      "avg_weekly_wage": 1138,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 2929,
+      "establishments": 77,
+      "avg_weekly_wage": 1061,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 3008,
+      "establishments": 40,
+      "avg_weekly_wage": 1182,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": {
+      "employment": 12013,
+      "establishments": 9,
+      "avg_weekly_wage": 1947,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Hawaii side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 27,
+      "certified_beds": 2679,
+      "avg_overall_rating": 3.52,
+      "for_profit_pct": 66.7
+    },
+    "home_health_agencies": {
+      "count": 9,
+      "avg_quality_star": 2.71,
+      "for_profit_pct": 50.0,
+      "offers_pt_pct": 83.3,
+      "offers_ot_pct": 83.3,
+      "offers_slp_pct": 83.3
+    }
+  },
+  "narrative_extra": null
+}

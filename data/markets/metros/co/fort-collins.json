@@ -1,0 +1,211 @@
+{
+  "metro": "Fort Collins, CO",
+  "city": "Fort Collins",
+  "city_slug": "fort-collins",
+  "cbsa": "22660",
+  "state_abbr": "CO",
+  "state": "Colorado",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Colorado side of the Fort Collins metro area",
+    "active_individual_providers": {
+      "pt": 421,
+      "pta": 37,
+      "ot": 283,
+      "ota": 29,
+      "slp": 234,
+      "aud": 40
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 1,
+          "2025-11": 2,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 3
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 3,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 2
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 11,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 4
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Fort Collins-Loveland, CO metropolitan area",
+    "pt": {
+      "employment": null,
+      "annual_mean_wage": 93010,
+      "annual_median_wage": 86840
+    },
+    "pta": {
+      "employment": 100,
+      "annual_mean_wage": 65100,
+      "annual_median_wage": 60970
+    },
+    "ot": {
+      "employment": null,
+      "annual_mean_wage": 102700,
+      "annual_median_wage": 102550
+    },
+    "ota": {
+      "employment": null,
+      "annual_mean_wage": 74660,
+      "annual_median_wage": 71570
+    },
+    "slp": {
+      "employment": null,
+      "annual_mean_wage": 104020,
+      "annual_median_wage": 102760
+    },
+    "aud": {
+      "employment": 40,
+      "annual_mean_wage": 77050,
+      "annual_median_wage": 74340
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Colorado-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 531,
+      "establishments": 86,
+      "avg_weekly_wage": 973,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 1494,
+      "establishments": 36,
+      "avg_weekly_wage": 1002,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1573,
+      "establishments": 19,
+      "avg_weekly_wage": 944,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Colorado side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 13,
+      "certified_beds": 1243,
+      "avg_overall_rating": 3.08,
+      "for_profit_pct": 84.6
+    },
+    "home_health_agencies": {
+      "count": 12,
+      "avg_quality_star": 3.81,
+      "for_profit_pct": 91.7,
+      "offers_pt_pct": 75.0,
+      "offers_ot_pct": 75.0,
+      "offers_slp_pct": 66.7
+    }
+  },
+  "narrative_extra": null
+}

@@ -1,0 +1,217 @@
+{
+  "metro": "San Francisco-Oakland-Berkeley, CA",
+  "city": "San Francisco",
+  "city_slug": "san-francisco",
+  "cbsa": "41860",
+  "state_abbr": "CA",
+  "state": "California",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "California side of the San Francisco metro area",
+    "active_individual_providers": {
+      "pt": 3237,
+      "pta": 370,
+      "ot": 1353,
+      "ota": 95,
+      "slp": 1784,
+      "aud": 278
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 141,
+        "by_month": {
+          "2025-09": 20,
+          "2025-10": 10,
+          "2025-11": 14,
+          "2025-12": 10,
+          "2026-01": 7,
+          "2026-02": 7,
+          "2026-03": 7,
+          "2026-04": 3,
+          "2026-05": 12,
+          "2026-06": 11,
+          "2026-07": 15,
+          "2026-08": 25
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 19,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 3,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 3,
+          "2026-05": 2,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 134,
+        "by_month": {
+          "2025-09": 14,
+          "2025-10": 8,
+          "2025-11": 3,
+          "2025-12": 10,
+          "2026-01": 4,
+          "2026-02": 12,
+          "2026-03": 13,
+          "2026-04": 19,
+          "2026-05": 10,
+          "2026-06": 14,
+          "2026-07": 15,
+          "2026-08": 12
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 3,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 339,
+        "by_month": {
+          "2025-09": 12,
+          "2025-10": 9,
+          "2025-11": 7,
+          "2025-12": 2,
+          "2026-01": 9,
+          "2026-02": 62,
+          "2026-03": 25,
+          "2026-04": 16,
+          "2026-05": 51,
+          "2026-06": 68,
+          "2026-07": 16,
+          "2026-08": 62
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 3,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 5,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole San Francisco-Oakland-Fremont, CA metropolitan area",
+    "pt": {
+      "employment": 3140,
+      "annual_mean_wage": 145040,
+      "annual_median_wage": 141980
+    },
+    "pta": {
+      "employment": 1040,
+      "annual_mean_wage": 93600,
+      "annual_median_wage": 95920
+    },
+    "ot": {
+      "employment": 1560,
+      "annual_mean_wage": 136250,
+      "annual_median_wage": 136770
+    },
+    "ota": {
+      "employment": 290,
+      "annual_mean_wage": 99250,
+      "annual_median_wage": 97860
+    },
+    "slp": {
+      "employment": 1760,
+      "annual_mean_wage": 130240,
+      "annual_median_wage": 130850
+    },
+    "aud": {
+      "employment": 220,
+      "annual_mean_wage": 128740,
+      "annual_median_wage": 132390
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "California-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 5183,
+      "establishments": 628,
+      "avg_weekly_wage": 1247,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "home_health_naics_6216": {
+      "employment": 16517,
+      "establishments": 516,
+      "avg_weekly_wage": 1336,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 15396,
+      "establishments": 234,
+      "avg_weekly_wage": 1242,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "hospitals_naics_6221": {
+      "employment": 18689,
+      "establishments": 54,
+      "avg_weekly_wage": 2369,
+      "counties_disclosed": 4,
+      "counties_total": 5
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "California side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 142,
+      "certified_beds": 13365,
+      "avg_overall_rating": 3.79,
+      "for_profit_pct": 83.1
+    },
+    "home_health_agencies": {
+      "count": 138,
+      "avg_quality_star": 3.7,
+      "for_profit_pct": 86.5,
+      "offers_pt_pct": 96.4,
+      "offers_ot_pct": 95.5,
+      "offers_slp_pct": 91.9
+    }
+  },
+  "narrative_extra": null
+}

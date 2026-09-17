@@ -1,0 +1,217 @@
+{
+  "metro": "Oklahoma City, OK",
+  "city": "Oklahoma City",
+  "city_slug": "oklahoma-city",
+  "cbsa": "36420",
+  "state_abbr": "OK",
+  "state": "Oklahoma",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Oklahoma side of the Oklahoma City metro area",
+    "active_individual_providers": {
+      "pt": 1051,
+      "pta": 326,
+      "ot": 406,
+      "ota": 365,
+      "slp": 1022,
+      "aud": 131
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 53,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 5,
+          "2026-01": 2,
+          "2026-02": 3,
+          "2026-03": 9,
+          "2026-04": 3,
+          "2026-05": 8,
+          "2026-06": 4,
+          "2026-07": 5,
+          "2026-08": 6
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 25,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 4,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 11,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 39,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 5,
+          "2025-11": 4,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 5,
+          "2026-03": 4,
+          "2026-04": 3,
+          "2026-05": 4,
+          "2026-06": 4,
+          "2026-07": 2,
+          "2026-08": 3
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 49,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 4,
+          "2025-11": 1,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 8,
+          "2026-06": 8,
+          "2026-07": 10,
+          "2026-08": 8
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 5,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 3,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Oklahoma City, OK metropolitan area",
+    "pt": {
+      "employment": 1120,
+      "annual_mean_wage": 96590,
+      "annual_median_wage": 99730
+    },
+    "pta": {
+      "employment": 1060,
+      "annual_mean_wage": 53140,
+      "annual_median_wage": 58850
+    },
+    "ot": {
+      "employment": 530,
+      "annual_mean_wage": 102380,
+      "annual_median_wage": 103080
+    },
+    "ota": {
+      "employment": 420,
+      "annual_mean_wage": 65980,
+      "annual_median_wage": 65840
+    },
+    "slp": {
+      "employment": 810,
+      "annual_mean_wage": 89650,
+      "annual_median_wage": 88250
+    },
+    "aud": {
+      "employment": 110,
+      "annual_mean_wage": 77440,
+      "annual_median_wage": 80060
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Oklahoma-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 3029,
+      "establishments": 275,
+      "avg_weekly_wage": 899,
+      "counties_disclosed": 4,
+      "counties_total": 7
+    },
+    "home_health_naics_6216": {
+      "employment": 4420,
+      "establishments": 189,
+      "avg_weekly_wage": 894,
+      "counties_disclosed": 5,
+      "counties_total": 7
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 6174,
+      "establishments": 88,
+      "avg_weekly_wage": 925,
+      "counties_disclosed": 5,
+      "counties_total": 7
+    },
+    "hospitals_naics_6221": {
+      "employment": 30752,
+      "establishments": 19,
+      "avg_weekly_wage": 1818,
+      "counties_disclosed": 1,
+      "counties_total": 7
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Oklahoma side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 69,
+      "certified_beds": 7084,
+      "avg_overall_rating": 2.59,
+      "for_profit_pct": 87.0
+    },
+    "home_health_agencies": {
+      "count": 69,
+      "avg_quality_star": 3.21,
+      "for_profit_pct": 94.2,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 98.6
+    }
+  },
+  "narrative_extra": null
+}

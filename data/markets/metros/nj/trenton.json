@@ -1,0 +1,201 @@
+{
+  "metro": "Trenton-Princeton, NJ",
+  "city": "Trenton",
+  "city_slug": "trenton",
+  "cbsa": "45940",
+  "state_abbr": "NJ",
+  "state": "New Jersey",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "New Jersey side of the Trenton metro area",
+    "active_individual_providers": {
+      "pt": 348,
+      "pta": 52,
+      "ot": 142,
+      "ota": 11,
+      "slp": 183,
+      "aud": 20
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 20,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 5,
+          "2025-11": 4,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 3,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 4
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 2,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 18,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 5,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 4,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Trenton-Princeton, NJ metropolitan area",
+    "pt": {
+      "employment": 360,
+      "annual_mean_wage": 109910,
+      "annual_median_wage": 108280
+    },
+    "pta": {
+      "employment": 80,
+      "annual_mean_wage": 65740,
+      "annual_median_wage": 75410
+    },
+    "ot": {
+      "employment": 210,
+      "annual_mean_wage": 103660,
+      "annual_median_wage": 101370
+    },
+    "slp": {
+      "employment": 270,
+      "annual_mean_wage": 95570,
+      "annual_median_wage": 94810
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "New Jersey-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 402,
+      "establishments": 52,
+      "avg_weekly_wage": 1224,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 1941,
+      "establishments": 41,
+      "avg_weekly_wage": 865,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 2243,
+      "establishments": 21,
+      "avg_weekly_wage": 1147,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "New Jersey side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 16,
+      "certified_beds": 2117,
+      "avg_overall_rating": 2.93,
+      "for_profit_pct": 87.5
+    },
+    "home_health_agencies": {
+      "count": 1,
+      "avg_quality_star": 3.5,
+      "for_profit_pct": 0.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

@@ -1,0 +1,217 @@
+{
+  "metro": "Tampa-St. Petersburg-Clearwater, FL",
+  "city": "Tampa",
+  "city_slug": "tampa",
+  "cbsa": "45300",
+  "state_abbr": "FL",
+  "state": "Florida",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Florida side of the Tampa metro area",
+    "active_individual_providers": {
+      "pt": 2303,
+      "pta": 941,
+      "ot": 1152,
+      "ota": 495,
+      "slp": 1968,
+      "aud": 293
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 137,
+        "by_month": {
+          "2025-09": 12,
+          "2025-10": 9,
+          "2025-11": 6,
+          "2025-12": 4,
+          "2026-01": 4,
+          "2026-02": 14,
+          "2026-03": 5,
+          "2026-04": 10,
+          "2026-05": 15,
+          "2026-06": 8,
+          "2026-07": 10,
+          "2026-08": 40
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 53,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 5,
+          "2025-11": 5,
+          "2025-12": 3,
+          "2026-01": 5,
+          "2026-02": 6,
+          "2026-03": 6,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 5,
+          "2026-07": 3,
+          "2026-08": 9
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 46,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 2,
+          "2025-11": 4,
+          "2025-12": 6,
+          "2026-01": 5,
+          "2026-02": 4,
+          "2026-03": 3,
+          "2026-04": 4,
+          "2026-05": 2,
+          "2026-06": 3,
+          "2026-07": 5,
+          "2026-08": 3
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 24,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 4,
+          "2025-11": 0,
+          "2025-12": 2,
+          "2026-01": 3,
+          "2026-02": 3,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 90,
+        "by_month": {
+          "2025-09": 17,
+          "2025-10": 7,
+          "2025-11": 2,
+          "2025-12": 3,
+          "2026-01": 5,
+          "2026-02": 5,
+          "2026-03": 4,
+          "2026-04": 5,
+          "2026-05": 9,
+          "2026-06": 12,
+          "2026-07": 9,
+          "2026-08": 12
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 11,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 3,
+          "2026-07": 2,
+          "2026-08": 3
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Tampa-St. Petersburg-Clearwater, FL metropolitan area",
+    "pt": {
+      "employment": 2350,
+      "annual_mean_wage": 100440,
+      "annual_median_wage": 102430
+    },
+    "pta": {
+      "employment": 1340,
+      "annual_mean_wage": 70410,
+      "annual_median_wage": 70170
+    },
+    "ot": {
+      "employment": 1660,
+      "annual_mean_wage": 96110,
+      "annual_median_wage": 97720
+    },
+    "ota": {
+      "employment": 550,
+      "annual_mean_wage": 70860,
+      "annual_median_wage": 72820
+    },
+    "slp": {
+      "employment": 1710,
+      "annual_mean_wage": 95020,
+      "annual_median_wage": 96580
+    },
+    "aud": {
+      "employment": 50,
+      "annual_mean_wage": 89270,
+      "annual_median_wage": 84200
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Florida-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 4192,
+      "establishments": 564,
+      "avg_weekly_wage": 1070,
+      "counties_disclosed": 4,
+      "counties_total": 4
+    },
+    "home_health_naics_6216": {
+      "employment": 11846,
+      "establishments": 665,
+      "avg_weekly_wage": 1009,
+      "counties_disclosed": 4,
+      "counties_total": 4
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 15600,
+      "establishments": 216,
+      "avg_weekly_wage": 919,
+      "counties_disclosed": 4,
+      "counties_total": 4
+    },
+    "hospitals_naics_6221": {
+      "employment": 56831,
+      "establishments": 238,
+      "avg_weekly_wage": 1569,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Florida side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 118,
+      "certified_beds": 14271,
+      "avg_overall_rating": 2.56,
+      "for_profit_pct": 78.8
+    },
+    "home_health_agencies": {
+      "count": 171,
+      "avg_quality_star": 3.44,
+      "for_profit_pct": 86.0,
+      "offers_pt_pct": 97.7,
+      "offers_ot_pct": 97.7,
+      "offers_slp_pct": 93.0
+    }
+  },
+  "narrative_extra": null
+}

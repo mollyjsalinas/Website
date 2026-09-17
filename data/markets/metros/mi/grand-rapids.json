@@ -1,0 +1,217 @@
+{
+  "metro": "Grand Rapids-Kentwood, MI",
+  "city": "Grand Rapids",
+  "city_slug": "grand-rapids",
+  "cbsa": "24340",
+  "state_abbr": "MI",
+  "state": "Michigan",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Michigan side of the Grand Rapids metro area",
+    "active_individual_providers": {
+      "pt": 1226,
+      "pta": 166,
+      "ot": 631,
+      "ota": 126,
+      "slp": 512,
+      "aud": 93
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 51,
+        "by_month": {
+          "2025-09": 12,
+          "2025-10": 3,
+          "2025-11": 5,
+          "2025-12": 5,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 5,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 4,
+          "2026-07": 1,
+          "2026-08": 13
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 3,
+          "2026-08": 4
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 30,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 3,
+          "2025-11": 9,
+          "2025-12": 9,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 3
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 4,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 33,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 2,
+          "2026-01": 3,
+          "2026-02": 3,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 0,
+          "2026-06": 4,
+          "2026-07": 4,
+          "2026-08": 6
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Grand Rapids-Wyoming-Kentwood, MI metropolitan area",
+    "pt": {
+      "employment": 1460,
+      "annual_mean_wage": 96220,
+      "annual_median_wage": 99100
+    },
+    "pta": {
+      "employment": 700,
+      "annual_mean_wage": 65320,
+      "annual_median_wage": 68700
+    },
+    "ot": {
+      "employment": 990,
+      "annual_mean_wage": 90510,
+      "annual_median_wage": 94450
+    },
+    "ota": {
+      "employment": 370,
+      "annual_mean_wage": 65520,
+      "annual_median_wage": 67290
+    },
+    "slp": {
+      "employment": 810,
+      "annual_mean_wage": 89600,
+      "annual_median_wage": 94490
+    },
+    "aud": {
+      "employment": 40,
+      "annual_mean_wage": 92680,
+      "annual_median_wage": 99820
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Michigan-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 2739,
+      "establishments": 118,
+      "avg_weekly_wage": 1008,
+      "counties_disclosed": 2,
+      "counties_total": 4
+    },
+    "home_health_naics_6216": {
+      "employment": 2796,
+      "establishments": 89,
+      "avg_weekly_wage": 855,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 3577,
+      "establishments": 28,
+      "avg_weekly_wage": 739,
+      "counties_disclosed": 2,
+      "counties_total": 4
+    },
+    "hospitals_naics_6221": {
+      "employment": 29023,
+      "establishments": 38,
+      "avg_weekly_wage": 1466,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Michigan side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 44,
+      "certified_beds": 3753,
+      "avg_overall_rating": 3.39,
+      "for_profit_pct": 63.6
+    },
+    "home_health_agencies": {
+      "count": 16,
+      "avg_quality_star": 3.75,
+      "for_profit_pct": 62.5,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

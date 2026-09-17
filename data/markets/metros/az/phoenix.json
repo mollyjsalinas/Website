@@ -1,0 +1,217 @@
+{
+  "metro": "Phoenix-Mesa-Chandler, AZ",
+  "city": "Phoenix",
+  "city_slug": "phoenix",
+  "cbsa": "38060",
+  "state_abbr": "AZ",
+  "state": "Arizona",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Arizona side of the Phoenix metro area",
+    "active_individual_providers": {
+      "pt": 3746,
+      "pta": 786,
+      "ot": 1673,
+      "ota": 810,
+      "slp": 3305,
+      "aud": 276
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 215,
+        "by_month": {
+          "2025-09": 19,
+          "2025-10": 7,
+          "2025-11": 12,
+          "2025-12": 33,
+          "2026-01": 25,
+          "2026-02": 23,
+          "2026-03": 17,
+          "2026-04": 4,
+          "2026-05": 9,
+          "2026-06": 28,
+          "2026-07": 13,
+          "2026-08": 25
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 36,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 5,
+          "2025-11": 2,
+          "2025-12": 3,
+          "2026-01": 2,
+          "2026-02": 1,
+          "2026-03": 3,
+          "2026-04": 4,
+          "2026-05": 4,
+          "2026-06": 3,
+          "2026-07": 4,
+          "2026-08": 3
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 71,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 5,
+          "2025-11": 11,
+          "2025-12": 9,
+          "2026-01": 11,
+          "2026-02": 5,
+          "2026-03": 1,
+          "2026-04": 3,
+          "2026-05": 5,
+          "2026-06": 2,
+          "2026-07": 5,
+          "2026-08": 8
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 31,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 3,
+          "2026-01": 4,
+          "2026-02": 2,
+          "2026-03": 3,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 4,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 120,
+        "by_month": {
+          "2025-09": 13,
+          "2025-10": 8,
+          "2025-11": 5,
+          "2025-12": 3,
+          "2026-01": 4,
+          "2026-02": 2,
+          "2026-03": 2,
+          "2026-04": 14,
+          "2026-05": 12,
+          "2026-06": 16,
+          "2026-07": 29,
+          "2026-08": 12
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Phoenix-Mesa-Chandler, AZ metropolitan area",
+    "pt": {
+      "employment": 3760,
+      "annual_mean_wage": 108050,
+      "annual_median_wage": 103220
+    },
+    "pta": {
+      "employment": 1440,
+      "annual_mean_wage": 65220,
+      "annual_median_wage": 64720
+    },
+    "ot": {
+      "employment": 2070,
+      "annual_mean_wage": 105650,
+      "annual_median_wage": 105060
+    },
+    "ota": {
+      "employment": 800,
+      "annual_mean_wage": 74260,
+      "annual_median_wage": 76080
+    },
+    "slp": {
+      "employment": 2640,
+      "annual_mean_wage": 101300,
+      "annual_median_wage": 98040
+    },
+    "aud": {
+      "employment": 170,
+      "annual_mean_wage": 95690,
+      "annual_median_wage": 91160
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Arizona-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 9255,
+      "establishments": 713,
+      "avg_weekly_wage": 1014,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "home_health_naics_6216": {
+      "employment": 27007,
+      "establishments": 564,
+      "avg_weekly_wage": 844,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 11109,
+      "establishments": 136,
+      "avg_weekly_wage": 1064,
+      "counties_disclosed": 1,
+      "counties_total": 2
+    },
+    "hospitals_naics_6221": {
+      "employment": 70733,
+      "establishments": 121,
+      "avg_weekly_wage": 1849,
+      "counties_disclosed": 1,
+      "counties_total": 2
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Arizona side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 80,
+      "certified_beds": 9524,
+      "avg_overall_rating": 3.76,
+      "for_profit_pct": 85.0
+    },
+    "home_health_agencies": {
+      "count": 113,
+      "avg_quality_star": 3.41,
+      "for_profit_pct": 93.3,
+      "offers_pt_pct": 95.6,
+      "offers_ot_pct": 93.3,
+      "offers_slp_pct": 82.2
+    }
+  },
+  "narrative_extra": null
+}

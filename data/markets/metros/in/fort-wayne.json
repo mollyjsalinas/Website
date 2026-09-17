@@ -1,0 +1,211 @@
+{
+  "metro": "Fort Wayne, IN",
+  "city": "Fort Wayne",
+  "city_slug": "fort-wayne",
+  "cbsa": "23060",
+  "state_abbr": "IN",
+  "state": "Indiana",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Indiana side of the Fort Wayne metro area",
+    "active_individual_providers": {
+      "pt": 361,
+      "pta": 102,
+      "ot": 165,
+      "ota": 128,
+      "slp": 220,
+      "aud": 48
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 6,
+          "2026-06": 3,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 11,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 2,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Fort Wayne, IN metropolitan area",
+    "pt": {
+      "employment": 450,
+      "annual_mean_wage": 98280,
+      "annual_median_wage": 98450
+    },
+    "pta": {
+      "employment": 230,
+      "annual_mean_wage": 61610,
+      "annual_median_wage": 62360
+    },
+    "ot": {
+      "employment": 300,
+      "annual_mean_wage": 87360,
+      "annual_median_wage": 86580
+    },
+    "ota": {
+      "employment": 100,
+      "annual_mean_wage": 71150,
+      "annual_median_wage": 73130
+    },
+    "slp": {
+      "employment": 270,
+      "annual_mean_wage": 88540,
+      "annual_median_wage": 83200
+    },
+    "aud": {
+      "employment": 50,
+      "annual_mean_wage": 86600,
+      "annual_median_wage": 80080
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Indiana-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1054,
+      "establishments": 104,
+      "avg_weekly_wage": 879,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "home_health_naics_6216": {
+      "employment": 3152,
+      "establishments": 83,
+      "avg_weekly_wage": 821,
+      "counties_disclosed": 1,
+      "counties_total": 2
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 3038,
+      "establishments": 43,
+      "avg_weekly_wage": 959,
+      "counties_disclosed": 1,
+      "counties_total": 2
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Indiana side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 31,
+      "certified_beds": 3147,
+      "avg_overall_rating": 3.68,
+      "for_profit_pct": 61.3
+    },
+    "home_health_agencies": {
+      "count": 12,
+      "avg_quality_star": 3.71,
+      "for_profit_pct": 91.7,
+      "offers_pt_pct": 91.7,
+      "offers_ot_pct": 66.7,
+      "offers_slp_pct": 75.0
+    }
+  },
+  "narrative_extra": null
+}

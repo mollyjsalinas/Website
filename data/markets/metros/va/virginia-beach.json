@@ -1,0 +1,217 @@
+{
+  "metro": "Virginia Beach-Norfolk-Newport News, VA-NC",
+  "city": "Virginia Beach",
+  "city_slug": "virginia-beach",
+  "cbsa": "47260",
+  "state_abbr": "VA",
+  "state": "Virginia",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Virginia side of the Virginia Beach metro area",
+    "active_individual_providers": {
+      "pt": 1223,
+      "pta": 438,
+      "ot": 589,
+      "ota": 301,
+      "slp": 1093,
+      "aud": 111
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 59,
+        "by_month": {
+          "2025-09": 7,
+          "2025-10": 2,
+          "2025-11": 3,
+          "2025-12": 4,
+          "2026-01": 0,
+          "2026-02": 5,
+          "2026-03": 5,
+          "2026-04": 5,
+          "2026-05": 5,
+          "2026-06": 10,
+          "2026-07": 4,
+          "2026-08": 9
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 20,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 2,
+          "2025-12": 2,
+          "2026-01": 3,
+          "2026-02": 1,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 23,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 2,
+          "2025-11": 2,
+          "2025-12": 2,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 5,
+          "2026-04": 2,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 3
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 3,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 0,
+          "2026-07": 2,
+          "2026-08": 3
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 44,
+        "by_month": {
+          "2025-09": 7,
+          "2025-10": 4,
+          "2025-11": 2,
+          "2025-12": 2,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 5,
+          "2026-04": 2,
+          "2026-05": 9,
+          "2026-06": 4,
+          "2026-07": 4,
+          "2026-08": 4
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Virginia Beach-Chesapeake-Norfolk, VA-NC metropolitan area",
+    "pt": {
+      "employment": 1470,
+      "annual_mean_wage": 101470,
+      "annual_median_wage": 100840
+    },
+    "pta": {
+      "employment": 790,
+      "annual_mean_wage": 70570,
+      "annual_median_wage": 73300
+    },
+    "ot": {
+      "employment": 830,
+      "annual_mean_wage": 96140,
+      "annual_median_wage": 99400
+    },
+    "ota": {
+      "employment": 300,
+      "annual_mean_wage": 68830,
+      "annual_median_wage": 65730
+    },
+    "slp": {
+      "employment": 880,
+      "annual_mean_wage": 99010,
+      "annual_median_wage": 97870
+    },
+    "aud": {
+      "employment": null,
+      "annual_mean_wage": 93560,
+      "annual_median_wage": 79780
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Virginia-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 2738,
+      "establishments": 297,
+      "avg_weekly_wage": 1125,
+      "counties_disclosed": 12,
+      "counties_total": 16
+    },
+    "home_health_naics_6216": {
+      "employment": 12544,
+      "establishments": 539,
+      "avg_weekly_wage": 682,
+      "counties_disclosed": 12,
+      "counties_total": 16
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 5395,
+      "establishments": 76,
+      "avg_weekly_wage": 968,
+      "counties_disclosed": 8,
+      "counties_total": 16
+    },
+    "hospitals_naics_6221": {
+      "employment": 10,
+      "establishments": 4,
+      "avg_weekly_wage": 1098,
+      "counties_disclosed": 1,
+      "counties_total": 16
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Virginia side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 58,
+      "certified_beds": 6346,
+      "avg_overall_rating": 2.65,
+      "for_profit_pct": 74.1
+    },
+    "home_health_agencies": {
+      "count": 40,
+      "avg_quality_star": 3.45,
+      "for_profit_pct": 81.1,
+      "offers_pt_pct": 94.6,
+      "offers_ot_pct": 91.9,
+      "offers_slp_pct": 86.5
+    }
+  },
+  "narrative_extra": null
+}

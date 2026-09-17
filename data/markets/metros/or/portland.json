@@ -1,0 +1,217 @@
+{
+  "metro": "Portland-Vancouver-Hillsboro, OR-WA",
+  "city": "Portland",
+  "city_slug": "portland",
+  "cbsa": "38900",
+  "state_abbr": "OR",
+  "state": "Oregon",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Oregon side of the Portland metro area",
+    "active_individual_providers": {
+      "pt": 2167,
+      "pta": 483,
+      "ot": 944,
+      "ota": 248,
+      "slp": 1299,
+      "aud": 204
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 85,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 6,
+          "2025-11": 10,
+          "2025-12": 10,
+          "2026-01": 1,
+          "2026-02": 7,
+          "2026-03": 7,
+          "2026-04": 3,
+          "2026-05": 8,
+          "2026-06": 8,
+          "2026-07": 3,
+          "2026-08": 16
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 17,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 3,
+          "2025-11": 0,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 3,
+          "2026-03": 1,
+          "2026-04": 3,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 4,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 24,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 3,
+          "2025-11": 2,
+          "2025-12": 3,
+          "2026-01": 3,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 3,
+          "2026-07": 1,
+          "2026-08": 2
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 75,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 3,
+          "2025-11": 3,
+          "2025-12": 11,
+          "2026-01": 5,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 7,
+          "2026-07": 24,
+          "2026-08": 10
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Portland-Vancouver-Hillsboro, OR-WA metropolitan area",
+    "pt": {
+      "employment": 1810,
+      "annual_mean_wage": 109210,
+      "annual_median_wage": 106250
+    },
+    "pta": {
+      "employment": 470,
+      "annual_mean_wage": 72410,
+      "annual_median_wage": 74690
+    },
+    "ot": {
+      "employment": 730,
+      "annual_mean_wage": 114410,
+      "annual_median_wage": 112100
+    },
+    "ota": {
+      "employment": 170,
+      "annual_mean_wage": 78380,
+      "annual_median_wage": 78640
+    },
+    "slp": {
+      "employment": 1140,
+      "annual_mean_wage": 110510,
+      "annual_median_wage": 107650
+    },
+    "aud": {
+      "employment": 90,
+      "annual_mean_wage": 111780,
+      "annual_median_wage": 109560
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Oregon-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 2900,
+      "establishments": 340,
+      "avg_weekly_wage": 1113,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "home_health_naics_6216": {
+      "employment": 3967,
+      "establishments": 152,
+      "avg_weekly_wage": 964,
+      "counties_disclosed": 3,
+      "counties_total": 5
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 5984,
+      "establishments": 88,
+      "avg_weekly_wage": 1160,
+      "counties_disclosed": 3,
+      "counties_total": 5
+    },
+    "hospitals_naics_6221": {
+      "employment": 26513,
+      "establishments": 42,
+      "avg_weekly_wage": 1834,
+      "counties_disclosed": 3,
+      "counties_total": 5
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Oregon side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 63,
+      "certified_beds": 5097,
+      "avg_overall_rating": 3.27,
+      "for_profit_pct": 88.9
+    },
+    "home_health_agencies": {
+      "count": 17,
+      "avg_quality_star": 3.31,
+      "for_profit_pct": 80.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

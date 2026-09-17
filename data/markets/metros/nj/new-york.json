@@ -1,0 +1,217 @@
+{
+  "metro": "New York-Newark-Jersey City, NY-NJ-PA",
+  "city": "New York",
+  "city_slug": "new-york",
+  "cbsa": "35620",
+  "state_abbr": "NJ",
+  "state": "New Jersey",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "New Jersey side of the New York metro area",
+    "active_individual_providers": {
+      "pt": 6977,
+      "pta": 780,
+      "ot": 3397,
+      "ota": 498,
+      "slp": 3822,
+      "aud": 326
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 378,
+        "by_month": {
+          "2025-09": 53,
+          "2025-10": 20,
+          "2025-11": 30,
+          "2025-12": 35,
+          "2026-01": 10,
+          "2026-02": 43,
+          "2026-03": 31,
+          "2026-04": 27,
+          "2026-05": 26,
+          "2026-06": 34,
+          "2026-07": 19,
+          "2026-08": 50
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 51,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 4,
+          "2025-11": 4,
+          "2025-12": 1,
+          "2026-01": 2,
+          "2026-02": 3,
+          "2026-03": 3,
+          "2026-04": 3,
+          "2026-05": 4,
+          "2026-06": 4,
+          "2026-07": 6,
+          "2026-08": 11
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 202,
+        "by_month": {
+          "2025-09": 22,
+          "2025-10": 21,
+          "2025-11": 18,
+          "2025-12": 16,
+          "2026-01": 16,
+          "2026-02": 18,
+          "2026-03": 24,
+          "2026-04": 18,
+          "2026-05": 14,
+          "2026-06": 12,
+          "2026-07": 14,
+          "2026-08": 9
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 22,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 3,
+          "2025-11": 4,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 2,
+          "2026-04": 0,
+          "2026-05": 3,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 4
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 274,
+        "by_month": {
+          "2025-09": 18,
+          "2025-10": 24,
+          "2025-11": 13,
+          "2025-12": 19,
+          "2026-01": 24,
+          "2026-02": 15,
+          "2026-03": 22,
+          "2026-04": 30,
+          "2026-05": 16,
+          "2026-06": 30,
+          "2026-07": 31,
+          "2026-08": 32
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 3,
+          "2026-05": 0,
+          "2026-06": 4,
+          "2026-07": 3,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole New York-Newark-Jersey City, NY-NJ metropolitan area",
+    "pt": {
+      "employment": 21240,
+      "annual_mean_wage": 110480,
+      "annual_median_wage": 107650
+    },
+    "pta": {
+      "employment": 3220,
+      "annual_mean_wage": 73320,
+      "annual_median_wage": 75620
+    },
+    "ot": {
+      "employment": 11640,
+      "annual_mean_wage": 107110,
+      "annual_median_wage": 101460
+    },
+    "ota": {
+      "employment": 2200,
+      "annual_mean_wage": 74600,
+      "annual_median_wage": 74960
+    },
+    "slp": {
+      "employment": 15260,
+      "annual_mean_wage": 115310,
+      "annual_median_wage": 107860
+    },
+    "aud": {
+      "employment": 530,
+      "annual_mean_wage": 115890,
+      "annual_median_wage": 115070
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "New Jersey-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 15138,
+      "establishments": 1671,
+      "avg_weekly_wage": 1086,
+      "counties_disclosed": 12,
+      "counties_total": 12
+    },
+    "home_health_naics_6216": {
+      "employment": 43607,
+      "establishments": 746,
+      "avg_weekly_wage": 837,
+      "counties_disclosed": 11,
+      "counties_total": 12
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 32079,
+      "establishments": 279,
+      "avg_weekly_wage": 1142,
+      "counties_disclosed": 10,
+      "counties_total": 12
+    },
+    "hospitals_naics_6221": {
+      "employment": 54173,
+      "establishments": 47,
+      "avg_weekly_wage": 1667,
+      "counties_disclosed": 5,
+      "counties_total": 12
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "New Jersey side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 251,
+      "certified_beds": 36871,
+      "avg_overall_rating": 3.44,
+      "for_profit_pct": 81.3
+    },
+    "home_health_agencies": {
+      "count": 27,
+      "avg_quality_star": 3.83,
+      "for_profit_pct": 44.4,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 96.3,
+      "offers_slp_pct": 96.3
+    }
+  },
+  "narrative_extra": null
+}

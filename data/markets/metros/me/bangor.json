@@ -1,0 +1,212 @@
+{
+  "metro": "Bangor, ME",
+  "city": "Bangor",
+  "city_slug": "bangor",
+  "cbsa": "12620",
+  "state_abbr": "ME",
+  "state": "Maine",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Maine side of the Bangor metro area",
+    "active_individual_providers": {
+      "pt": 201,
+      "pta": 41,
+      "ot": 156,
+      "ota": 37,
+      "slp": 132,
+      "aud": 16
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 8,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 2
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 3,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Bangor, ME metropolitan area",
+    "pt": {
+      "employment": 220,
+      "annual_mean_wage": 95310,
+      "annual_median_wage": 94510
+    },
+    "pta": {
+      "employment": 60,
+      "annual_mean_wage": 61990,
+      "annual_median_wage": 61090
+    },
+    "ot": {
+      "employment": 150,
+      "annual_mean_wage": 83620,
+      "annual_median_wage": 80780
+    },
+    "ota": {
+      "employment": 40,
+      "annual_mean_wage": 67910,
+      "annual_median_wage": 63520
+    },
+    "slp": {
+      "employment": 110,
+      "annual_mean_wage": 79650,
+      "annual_median_wage": 77160
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Maine-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 374,
+      "establishments": 48,
+      "avg_weekly_wage": 1008,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 481,
+      "establishments": 17,
+      "avg_weekly_wage": 1062,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 842,
+      "establishments": 11,
+      "avg_weekly_wage": 959,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": {
+      "employment": 4239,
+      "establishments": 8,
+      "avg_weekly_wage": 1932,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Maine side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 11,
+      "certified_beds": 794,
+      "avg_overall_rating": 3.27,
+      "for_profit_pct": 81.8
+    },
+    "home_health_agencies": {
+      "count": 4,
+      "avg_quality_star": 3.62,
+      "for_profit_pct": 50.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

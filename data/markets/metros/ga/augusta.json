@@ -1,0 +1,212 @@
+{
+  "metro": "Augusta-Richmond County, GA-SC",
+  "city": "Augusta",
+  "city_slug": "augusta",
+  "cbsa": "12260",
+  "state_abbr": "GA",
+  "state": "Georgia",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Georgia side of the Augusta metro area",
+    "active_individual_providers": {
+      "pt": 315,
+      "pta": 50,
+      "ot": 226,
+      "ota": 50,
+      "slp": 178,
+      "aud": 31
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 4
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 4,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 3,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 5,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 11,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Augusta-Richmond County, GA-SC metropolitan area",
+    "pt": {
+      "employment": 330,
+      "annual_mean_wage": 97480,
+      "annual_median_wage": 97260
+    },
+    "pta": {
+      "employment": 150,
+      "annual_mean_wage": 62610,
+      "annual_median_wage": 62510
+    },
+    "ot": {
+      "employment": 260,
+      "annual_mean_wage": 96070,
+      "annual_median_wage": 99880
+    },
+    "ota": {
+      "employment": 100,
+      "annual_mean_wage": 66070,
+      "annual_median_wage": 67780
+    },
+    "slp": {
+      "employment": 260,
+      "annual_mean_wage": 86420,
+      "annual_median_wage": 82950
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Georgia-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 708,
+      "establishments": 48,
+      "avg_weekly_wage": 976,
+      "counties_disclosed": 2,
+      "counties_total": 5
+    },
+    "home_health_naics_6216": {
+      "employment": 1771,
+      "establishments": 99,
+      "avg_weekly_wage": 913,
+      "counties_disclosed": 2,
+      "counties_total": 5
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 748,
+      "establishments": 14,
+      "avg_weekly_wage": 916,
+      "counties_disclosed": 1,
+      "counties_total": 5
+    },
+    "hospitals_naics_6221": {
+      "employment": 9817,
+      "establishments": 9,
+      "avg_weekly_wage": 1388,
+      "counties_disclosed": 1,
+      "counties_total": 5
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Georgia side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 17,
+      "certified_beds": 1725,
+      "avg_overall_rating": 2.71,
+      "for_profit_pct": 82.4
+    },
+    "home_health_agencies": {
+      "count": 5,
+      "avg_quality_star": 4.0,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 80.0,
+      "offers_ot_pct": 80.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

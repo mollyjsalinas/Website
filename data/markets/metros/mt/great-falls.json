@@ -1,0 +1,201 @@
+{
+  "metro": "Great Falls, MT",
+  "city": "Great Falls",
+  "city_slug": "great-falls",
+  "cbsa": "24500",
+  "state_abbr": "MT",
+  "state": "Montana",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Montana side of the Great Falls metro area",
+    "active_individual_providers": {
+      "pt": 94,
+      "pta": 41,
+      "ot": 43,
+      "ota": 15,
+      "slp": 46,
+      "aud": 5
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 5,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Great Falls, MT metropolitan area",
+    "pt": {
+      "employment": 70,
+      "annual_mean_wage": 89890,
+      "annual_median_wage": 81960
+    },
+    "pta": {
+      "employment": 30,
+      "annual_mean_wage": 61590,
+      "annual_median_wage": 61900
+    },
+    "ot": {
+      "employment": 40,
+      "annual_mean_wage": 87820,
+      "annual_median_wage": 80390
+    },
+    "slp": {
+      "employment": 40,
+      "annual_mean_wage": 80000,
+      "annual_median_wage": 80110
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Montana-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 60,
+      "establishments": 14,
+      "avg_weekly_wage": 1161,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 269,
+      "establishments": 9,
+      "avg_weekly_wage": 455,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 207,
+      "establishments": 3,
+      "avg_weekly_wage": 799,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Montana side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 4,
+      "certified_beds": 335,
+      "avg_overall_rating": 2.0,
+      "for_profit_pct": 25.0
+    },
+    "home_health_agencies": {
+      "count": 2,
+      "avg_quality_star": 3.0,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

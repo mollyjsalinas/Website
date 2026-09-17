@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/*
+  APT Recruiting palette, measured from the WordPress site it replaces.
+  Accent teal #1883AA, deep navy #044463, body grey #6E7180, near-black
+  #1A1A1A, light surface #E2E5E7, blush #EBE5E5, lavender tint #DEE1F8.
+  The teal and navy scales are interpolated around those two anchors so
+  Tailwind utilities (bg-teal-500, text-navy-600) land on the brand colors.
+*/
+@theme {
+  --color-teal-50: #eef7fb;
+  --color-teal-100: #d6ecf5;
+  --color-teal-200: #aed9eb;
+  --color-teal-300: #7fc1dd;
+  --color-teal-400: #4aa3c7;
+  --color-teal-500: #1883aa;
+  --color-teal-600: #146d8e;
+  --color-teal-700: #105872;
+  --color-teal-800: #0c4357;
+  --color-teal-900: #08303f;
+
+  --color-navy-50: #edf3f7;
+  --color-navy-100: #d3e1ea;
+  --color-navy-200: #a8c3d5;
+  --color-navy-300: #6f9bb5;
+  --color-navy-400: #3f7592;
+  --color-navy-500: #1f5a7a;
+  --color-navy-600: #044463;
+  --color-navy-700: #03384f;
+  --color-navy-800: #032c3e;
+  --color-navy-900: #02202e;
+  --color-navy-950: #01161f;
+
+  --color-ink: #1a1a1a;
+  --color-body: #6e7180;
+  --color-mist: #e2e5e7;
+  --color-mist-light: #f1f3f4;
+  --color-blush: #ebe5e5;
+  --color-lavender: #dee1f8;
+
+  --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background-color: var(--color-teal-200);
+  color: var(--color-navy-900);
+}

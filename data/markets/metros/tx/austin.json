@@ -1,0 +1,217 @@
+{
+  "metro": "Austin-Round Rock-Georgetown, TX",
+  "city": "Austin",
+  "city_slug": "austin",
+  "cbsa": "12420",
+  "state_abbr": "TX",
+  "state": "Texas",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Texas side of the Austin metro area",
+    "active_individual_providers": {
+      "pt": 1774,
+      "pta": 338,
+      "ot": 758,
+      "ota": 230,
+      "slp": 1723,
+      "aud": 170
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 130,
+        "by_month": {
+          "2025-09": 16,
+          "2025-10": 9,
+          "2025-11": 10,
+          "2025-12": 4,
+          "2026-01": 12,
+          "2026-02": 19,
+          "2026-03": 5,
+          "2026-04": 2,
+          "2026-05": 13,
+          "2026-06": 10,
+          "2026-07": 6,
+          "2026-08": 24
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 22,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 3,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 4,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 3,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 4
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 47,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 5,
+          "2025-11": 3,
+          "2025-12": 3,
+          "2026-01": 2,
+          "2026-02": 1,
+          "2026-03": 3,
+          "2026-04": 6,
+          "2026-05": 3,
+          "2026-06": 4,
+          "2026-07": 7,
+          "2026-08": 6
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 3,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 88,
+        "by_month": {
+          "2025-09": 10,
+          "2025-10": 9,
+          "2025-11": 2,
+          "2025-12": 6,
+          "2026-01": 4,
+          "2026-02": 5,
+          "2026-03": 7,
+          "2026-04": 8,
+          "2026-05": 8,
+          "2026-06": 7,
+          "2026-07": 9,
+          "2026-08": 13
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 9,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 3,
+          "2026-06": 4,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Austin-Round Rock-San Marcos, TX metropolitan area",
+    "pt": {
+      "employment": 2470,
+      "annual_mean_wage": 111940,
+      "annual_median_wage": 103630
+    },
+    "pta": {
+      "employment": 1180,
+      "annual_mean_wage": 82060,
+      "annual_median_wage": 84930
+    },
+    "ot": {
+      "employment": 1600,
+      "annual_mean_wage": 113410,
+      "annual_median_wage": 122050
+    },
+    "ota": {
+      "employment": 1190,
+      "annual_mean_wage": 86300,
+      "annual_median_wage": 81500
+    },
+    "slp": {
+      "employment": 2860,
+      "annual_mean_wage": 106310,
+      "annual_median_wage": 106290
+    },
+    "aud": {
+      "employment": 110,
+      "annual_mean_wage": 108460,
+      "annual_median_wage": 104820
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Texas-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 14038,
+      "establishments": 330,
+      "avg_weekly_wage": 902,
+      "counties_disclosed": 3,
+      "counties_total": 5
+    },
+    "home_health_naics_6216": {
+      "employment": 7569,
+      "establishments": 251,
+      "avg_weekly_wage": 921,
+      "counties_disclosed": 4,
+      "counties_total": 5
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 6342,
+      "establishments": 103,
+      "avg_weekly_wage": 927,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "hospitals_naics_6221": {
+      "employment": 26441,
+      "establishments": 39,
+      "avg_weekly_wage": 1780,
+      "counties_disclosed": 2,
+      "counties_total": 5
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Texas side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 59,
+      "certified_beds": 6709,
+      "avg_overall_rating": 2.62,
+      "for_profit_pct": 61.0
+    },
+    "home_health_agencies": {
+      "count": 53,
+      "avg_quality_star": 3.51,
+      "for_profit_pct": 98.1,
+      "offers_pt_pct": 96.2,
+      "offers_ot_pct": 94.2,
+      "offers_slp_pct": 92.3
+    }
+  },
+  "narrative_extra": null
+}

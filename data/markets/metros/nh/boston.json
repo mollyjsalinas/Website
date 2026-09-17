@@ -1,0 +1,211 @@
+{
+  "metro": "Boston-Cambridge-Newton, MA-NH",
+  "city": "Boston",
+  "city_slug": "boston",
+  "cbsa": "14460",
+  "state_abbr": "NH",
+  "state": "New Hampshire",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "New Hampshire side of the Boston metro area",
+    "active_individual_providers": {
+      "pt": 692,
+      "pta": 138,
+      "ot": 488,
+      "ota": 74,
+      "slp": 430,
+      "aud": 27
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 18,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 4,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 4,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 3
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 15,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 21,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 3,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 6
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Boston-Cambridge-Newton, MA-NH metropolitan area",
+    "pt": {
+      "employment": 5330,
+      "annual_mean_wage": 106830,
+      "annual_median_wage": 103550
+    },
+    "pta": {
+      "employment": 1860,
+      "annual_mean_wage": 77660,
+      "annual_median_wage": 80430
+    },
+    "ot": {
+      "employment": 4790,
+      "annual_mean_wage": 100730,
+      "annual_median_wage": 101940
+    },
+    "ota": {
+      "employment": 850,
+      "annual_mean_wage": 69820,
+      "annual_median_wage": 75300
+    },
+    "slp": {
+      "employment": 3720,
+      "annual_mean_wage": 103120,
+      "annual_median_wage": 102810
+    },
+    "aud": {
+      "employment": 160,
+      "annual_mean_wage": 105710,
+      "annual_median_wage": 108960
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "New Hampshire-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 742,
+      "establishments": 83,
+      "avg_weekly_wage": 1171,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "home_health_naics_6216": {
+      "employment": 1350,
+      "establishments": 33,
+      "avg_weekly_wage": 1223,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1574,
+      "establishments": 30,
+      "avg_weekly_wage": 1145,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "New Hampshire side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 18,
+      "certified_beds": 1715,
+      "avg_overall_rating": 3.56,
+      "for_profit_pct": 61.1
+    },
+    "home_health_agencies": {
+      "count": 10,
+      "avg_quality_star": 3.56,
+      "for_profit_pct": 70.0,
+      "offers_pt_pct": 80.0,
+      "offers_ot_pct": 80.0,
+      "offers_slp_pct": 80.0
+    }
+  },
+  "narrative_extra": null
+}

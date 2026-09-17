@@ -1,0 +1,206 @@
+{
+  "metro": "Greensboro-High Point, NC",
+  "city": "Greensboro",
+  "city_slug": "greensboro",
+  "cbsa": "24660",
+  "state_abbr": "NC",
+  "state": "North Carolina",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "North Carolina side of the Greensboro metro area",
+    "active_individual_providers": {
+      "pt": 433,
+      "pta": 135,
+      "ot": 219,
+      "ota": 81,
+      "slp": 608,
+      "aud": 56
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 25,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 6,
+          "2026-03": 2,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 3,
+          "2026-07": 3,
+          "2026-08": 2
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 15,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 9,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 90,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 5,
+          "2026-04": 64,
+          "2026-05": 6,
+          "2026-06": 5,
+          "2026-07": 3,
+          "2026-08": 4
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Greensboro-High Point, NC metropolitan area",
+    "pt": {
+      "employment": 540,
+      "annual_mean_wage": 97620,
+      "annual_median_wage": 99320
+    },
+    "pta": {
+      "employment": 190,
+      "annual_mean_wage": 67880,
+      "annual_median_wage": 64610
+    },
+    "ot": {
+      "employment": 270,
+      "annual_mean_wage": 91600,
+      "annual_median_wage": 96820
+    },
+    "ota": {
+      "employment": 80,
+      "annual_mean_wage": 71890,
+      "annual_median_wage": 74290
+    },
+    "slp": {
+      "employment": 430,
+      "annual_mean_wage": 84950,
+      "annual_median_wage": 78830
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "North Carolina-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1078,
+      "establishments": 96,
+      "avg_weekly_wage": 1050,
+      "counties_disclosed": 3,
+      "counties_total": 3
+    },
+    "home_health_naics_6216": {
+      "employment": 3720,
+      "establishments": 101,
+      "avg_weekly_wage": 869,
+      "counties_disclosed": 3,
+      "counties_total": 3
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 3363,
+      "establishments": 41,
+      "avg_weekly_wage": 877,
+      "counties_disclosed": 3,
+      "counties_total": 3
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "North Carolina side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 31,
+      "certified_beds": 3599,
+      "avg_overall_rating": 3.33,
+      "for_profit_pct": 77.4
+    },
+    "home_health_agencies": {
+      "count": 9,
+      "avg_quality_star": 3.61,
+      "for_profit_pct": 55.6,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 88.9
+    }
+  },
+  "narrative_extra": null
+}

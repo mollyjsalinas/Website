@@ -1,0 +1,261 @@
+{
+  "market": "Michigan",
+  "market_abbr": "MI",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "population": {
+    "source": "Census Vintage 2025 state estimates",
+    "total": 10127884
+  },
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
+    "active_individual_providers": {
+      "pt": 9519,
+      "pta": 2039,
+      "ot": 5210,
+      "ota": 902,
+      "slp": 3903,
+      "aud": 692
+    },
+    "per_100k": {
+      "pt": 94.0,
+      "ot": 51.4,
+      "slp": 38.5,
+      "aud": 6.8
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 315,
+        "by_month": {
+          "2025-09": 39,
+          "2025-10": 14,
+          "2025-11": 21,
+          "2025-12": 34,
+          "2026-01": 32,
+          "2026-02": 32,
+          "2026-03": 25,
+          "2026-04": 11,
+          "2026-05": 24,
+          "2026-06": 23,
+          "2026-07": 16,
+          "2026-08": 44
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 127,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 4,
+          "2025-11": 13,
+          "2025-12": 13,
+          "2026-01": 2,
+          "2026-02": 5,
+          "2026-03": 9,
+          "2026-04": 12,
+          "2026-05": 11,
+          "2026-06": 14,
+          "2026-07": 16,
+          "2026-08": 22
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 176,
+        "by_month": {
+          "2025-09": 12,
+          "2025-10": 24,
+          "2025-11": 14,
+          "2025-12": 22,
+          "2026-01": 11,
+          "2026-02": 14,
+          "2026-03": 6,
+          "2026-04": 9,
+          "2026-05": 11,
+          "2026-06": 6,
+          "2026-07": 12,
+          "2026-08": 35
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 40,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 2,
+          "2025-11": 5,
+          "2025-12": 7,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 3,
+          "2026-07": 4,
+          "2026-08": 6
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 314,
+        "by_month": {
+          "2025-09": 17,
+          "2025-10": 11,
+          "2025-11": 12,
+          "2025-12": 11,
+          "2026-01": 14,
+          "2026-02": 10,
+          "2026-03": 17,
+          "2026-04": 9,
+          "2026-05": 14,
+          "2026-06": 30,
+          "2026-07": 35,
+          "2026-08": 134
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 23,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 10,
+          "2026-06": 4,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates",
+    "pt": {
+      "employment": 8630,
+      "annual_mean_wage": 100630,
+      "annual_median_wage": 100900
+    },
+    "pta": {
+      "employment": 4520,
+      "annual_mean_wage": 60260,
+      "annual_median_wage": 61670
+    },
+    "ot": {
+      "employment": 5120,
+      "annual_mean_wage": 89150,
+      "annual_median_wage": 89910
+    },
+    "ota": {
+      "employment": 1250,
+      "annual_mean_wage": 65400,
+      "annual_median_wage": 63260
+    },
+    "slp": {
+      "employment": 4730,
+      "annual_mean_wage": 88650,
+      "annual_median_wage": 89120
+    },
+    "aud": {
+      "employment": 250,
+      "annual_mean_wage": 94580,
+      "annual_median_wage": 97790
+    },
+    "national": {
+      "pt": {
+        "employment": 267330,
+        "annual_mean_wage": 105280,
+        "annual_median_wage": 102760
+      },
+      "pta": {
+        "employment": 112430,
+        "annual_mean_wage": 68730,
+        "annual_median_wage": 68380
+      },
+      "ot": {
+        "employment": 162450,
+        "annual_mean_wage": 101280,
+        "annual_median_wage": 100330
+      },
+      "ota": {
+        "employment": 51290,
+        "annual_mean_wage": 70710,
+        "annual_median_wage": 72300
+      },
+      "slp": {
+        "employment": 183390,
+        "annual_mean_wage": 98170,
+        "annual_median_wage": 97870
+      },
+      "aud": {
+        "employment": 13660,
+        "annual_mean_wage": 97740,
+        "annual_median_wage": 95780
+      }
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW, statewide, private ownership, Q4 2024 vs Q4 2025",
+    "therapy_offices_naics_62134": {
+      "employment": 17396,
+      "establishments": 1194,
+      "avg_weekly_wage": 981,
+      "employment_yoy_pct": 2.49,
+      "establishments_yoy_pct": 2.49,
+      "avg_weekly_wage_yoy_pct": 5.03
+    },
+    "home_health_naics_6216": {
+      "employment": 47357,
+      "establishments": 2484,
+      "avg_weekly_wage": 822,
+      "employment_yoy_pct": 9.67,
+      "establishments_yoy_pct": 8.28,
+      "avg_weekly_wage_yoy_pct": 1.86
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 43766,
+      "establishments": 497,
+      "avg_weekly_wage": 942,
+      "employment_yoy_pct": 5.8,
+      "establishments_yoy_pct": 1.84,
+      "avg_weekly_wage_yoy_pct": 2.84
+    },
+    "hospitals_naics_6221": {
+      "employment": 205373,
+      "establishments": 550,
+      "avg_weekly_wage": 1560,
+      "employment_yoy_pct": 1.57,
+      "establishments_yoy_pct": 7.84,
+      "avg_weekly_wage_yoy_pct": 4.0
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "nursing_homes": {
+      "count": 422,
+      "certified_beds": 44005,
+      "avg_overall_rating": 3.12,
+      "for_profit_pct": 76.5
+    },
+    "home_health_agencies": {
+      "count": 371,
+      "avg_quality_star": 3.34,
+      "for_profit_pct": 89.5,
+      "offers_pt_pct": 97.7,
+      "offers_ot_pct": 94.3,
+      "offers_slp_pct": 89.0
+    }
+  },
+  "compacts": {
+    "source": "ptcompact.org, otcompact.gov, aslpcompact.com, checked 2026-09-02",
+    "pt": "member",
+    "ot": "member",
+    "aslp": "none"
+  },
+  "narrative_extra": null
+}

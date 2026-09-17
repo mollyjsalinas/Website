@@ -1,0 +1,7 @@
+*
+!.gitignore
+# Committed on purpose: inputs the refresh cannot re-fetch on a clean runner.
+#   oews.json      BLS OEWS bulk xlsx, annual (May); bls.gov blocks scripted downloads
+#   compacts.json  hand-maintained licensure compact table (compacts.py)
+!oews.json
+!compacts.json

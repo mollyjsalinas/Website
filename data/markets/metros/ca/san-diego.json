@@ -1,0 +1,217 @@
+{
+  "metro": "San Diego-Chula Vista-Carlsbad, CA",
+  "city": "San Diego",
+  "city_slug": "san-diego",
+  "cbsa": "41740",
+  "state_abbr": "CA",
+  "state": "California",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "California side of the San Diego metro area",
+    "active_individual_providers": {
+      "pt": 2860,
+      "pta": 456,
+      "ot": 1156,
+      "ota": 227,
+      "slp": 1639,
+      "aud": 224
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 192,
+        "by_month": {
+          "2025-09": 27,
+          "2025-10": 11,
+          "2025-11": 15,
+          "2025-12": 13,
+          "2026-01": 8,
+          "2026-02": 19,
+          "2026-03": 17,
+          "2026-04": 4,
+          "2026-05": 22,
+          "2026-06": 12,
+          "2026-07": 12,
+          "2026-08": 32
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 53,
+        "by_month": {
+          "2025-09": 11,
+          "2025-10": 4,
+          "2025-11": 6,
+          "2025-12": 4,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 3,
+          "2026-04": 4,
+          "2026-05": 6,
+          "2026-06": 2,
+          "2026-07": 5,
+          "2026-08": 5
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 123,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 7,
+          "2025-11": 5,
+          "2025-12": 5,
+          "2026-01": 4,
+          "2026-02": 2,
+          "2026-03": 46,
+          "2026-04": 9,
+          "2026-05": 9,
+          "2026-06": 8,
+          "2026-07": 9,
+          "2026-08": 16
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 38,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 2,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 20,
+          "2026-04": 3,
+          "2026-05": 2,
+          "2026-06": 3,
+          "2026-07": 3,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 407,
+        "by_month": {
+          "2025-09": 9,
+          "2025-10": 4,
+          "2025-11": 3,
+          "2025-12": 5,
+          "2026-01": 12,
+          "2026-02": 97,
+          "2026-03": 84,
+          "2026-04": 70,
+          "2026-05": 37,
+          "2026-06": 30,
+          "2026-07": 17,
+          "2026-08": 39
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 12,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 4,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 4,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole San Diego-Chula Vista-Carlsbad, CA metropolitan area",
+    "pt": {
+      "employment": 2680,
+      "annual_mean_wage": 114510,
+      "annual_median_wage": 113850
+    },
+    "pta": {
+      "employment": 870,
+      "annual_mean_wage": 78720,
+      "annual_median_wage": 82160
+    },
+    "ot": {
+      "employment": 1620,
+      "annual_mean_wage": 119390,
+      "annual_median_wage": 121680
+    },
+    "ota": {
+      "employment": 360,
+      "annual_mean_wage": 85120,
+      "annual_median_wage": 82680
+    },
+    "slp": {
+      "employment": 1590,
+      "annual_mean_wage": 116040,
+      "annual_median_wage": 119690
+    },
+    "aud": {
+      "employment": 390,
+      "annual_mean_wage": 84440,
+      "annual_median_wage": 83200
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "California-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 5257,
+      "establishments": 619,
+      "avg_weekly_wage": 1110,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 10962,
+      "establishments": 389,
+      "avg_weekly_wage": 899,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 13447,
+      "establishments": 147,
+      "avg_weekly_wage": 1120,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": {
+      "employment": 24552,
+      "establishments": 24,
+      "avg_weekly_wage": 1982,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "California side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 83,
+      "certified_beds": 8791,
+      "avg_overall_rating": 3.95,
+      "for_profit_pct": 83.1
+    },
+    "home_health_agencies": {
+      "count": 78,
+      "avg_quality_star": 3.44,
+      "for_profit_pct": 90.3,
+      "offers_pt_pct": 98.4,
+      "offers_ot_pct": 96.8,
+      "offers_slp_pct": 95.2
+    }
+  },
+  "narrative_extra": null
+}

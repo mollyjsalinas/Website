@@ -1,0 +1,211 @@
+{
+  "metro": "Charlotte-Concord-Gastonia, NC-SC",
+  "city": "Charlotte",
+  "city_slug": "charlotte",
+  "cbsa": "16740",
+  "state_abbr": "NC",
+  "state": "North Carolina",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "North Carolina side of the Charlotte metro area",
+    "active_individual_providers": {
+      "pt": 1934,
+      "pta": 370,
+      "ot": 1193,
+      "ota": 330,
+      "slp": 1518,
+      "aud": 149
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 110,
+        "by_month": {
+          "2025-09": 12,
+          "2025-10": 5,
+          "2025-11": 10,
+          "2025-12": 9,
+          "2026-01": 6,
+          "2026-02": 10,
+          "2026-03": 7,
+          "2026-04": 13,
+          "2026-05": 11,
+          "2026-06": 15,
+          "2026-07": 3,
+          "2026-08": 9
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 31,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 4,
+          "2025-11": 2,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 3,
+          "2026-03": 0,
+          "2026-04": 10,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 3
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 99,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 4,
+          "2025-11": 4,
+          "2025-12": 6,
+          "2026-01": 3,
+          "2026-02": 4,
+          "2026-03": 7,
+          "2026-04": 35,
+          "2026-05": 8,
+          "2026-06": 2,
+          "2026-07": 13,
+          "2026-08": 7
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 21,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 4,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 3,
+          "2026-08": 2
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 180,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 5,
+          "2025-11": 5,
+          "2025-12": 4,
+          "2026-01": 5,
+          "2026-02": 4,
+          "2026-03": 20,
+          "2026-04": 65,
+          "2026-05": 40,
+          "2026-06": 8,
+          "2026-07": 12,
+          "2026-08": 8
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Charlotte-Concord-Gastonia, NC-SC metropolitan area",
+    "pt": {
+      "employment": 1680,
+      "annual_mean_wage": 103700,
+      "annual_median_wage": 101060
+    },
+    "pta": {
+      "employment": 870,
+      "annual_mean_wage": 70870,
+      "annual_median_wage": 70720
+    },
+    "ot": {
+      "employment": 1140,
+      "annual_mean_wage": 95960,
+      "annual_median_wage": 98450
+    },
+    "ota": {
+      "employment": 450,
+      "annual_mean_wage": 70690,
+      "annual_median_wage": 72780
+    },
+    "slp": {
+      "employment": 1260,
+      "annual_mean_wage": 91280,
+      "annual_median_wage": 90960
+    },
+    "aud": {
+      "employment": 60,
+      "annual_mean_wage": 89420,
+      "annual_median_wage": 89190
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "North Carolina-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 4166,
+      "establishments": 351,
+      "avg_weekly_wage": 1044,
+      "counties_disclosed": 7,
+      "counties_total": 8
+    },
+    "home_health_naics_6216": {
+      "employment": 7723,
+      "establishments": 348,
+      "avg_weekly_wage": 820,
+      "counties_disclosed": 8,
+      "counties_total": 8
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 7129,
+      "establishments": 111,
+      "avg_weekly_wage": 983,
+      "counties_disclosed": 7,
+      "counties_total": 8
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "North Carolina side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 72,
+      "certified_beds": 7100,
+      "avg_overall_rating": 2.94,
+      "for_profit_pct": 80.6
+    },
+    "home_health_agencies": {
+      "count": 26,
+      "avg_quality_star": 3.73,
+      "for_profit_pct": 53.8,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 96.2
+    }
+  },
+  "narrative_extra": null
+}

@@ -1,0 +1,217 @@
+{
+  "metro": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+  "city": "Nashville",
+  "city_slug": "nashville",
+  "cbsa": "34980",
+  "state_abbr": "TN",
+  "state": "Tennessee",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Tennessee side of the Nashville metro area",
+    "active_individual_providers": {
+      "pt": 1959,
+      "pta": 452,
+      "ot": 885,
+      "ota": 321,
+      "slp": 1343,
+      "aud": 214
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 100,
+        "by_month": {
+          "2025-09": 18,
+          "2025-10": 3,
+          "2025-11": 5,
+          "2025-12": 6,
+          "2026-01": 7,
+          "2026-02": 3,
+          "2026-03": 5,
+          "2026-04": 0,
+          "2026-05": 5,
+          "2026-06": 6,
+          "2026-07": 10,
+          "2026-08": 32
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 19,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 4,
+          "2026-06": 3,
+          "2026-07": 3,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 45,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 3,
+          "2025-11": 4,
+          "2025-12": 4,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 5,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 5,
+          "2026-07": 7,
+          "2026-08": 5
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 3,
+          "2026-08": 3
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 80,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 10,
+          "2025-11": 4,
+          "2025-12": 1,
+          "2026-01": 5,
+          "2026-02": 6,
+          "2026-03": 3,
+          "2026-04": 10,
+          "2026-05": 10,
+          "2026-06": 7,
+          "2026-07": 10,
+          "2026-08": 12
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Nashville-Davidson--Murfreesboro--Franklin, TN metropolitan area",
+    "pt": {
+      "employment": 1400,
+      "annual_mean_wage": 100180,
+      "annual_median_wage": 103380
+    },
+    "pta": {
+      "employment": 830,
+      "annual_mean_wage": 67080,
+      "annual_median_wage": 65650
+    },
+    "ot": {
+      "employment": 710,
+      "annual_mean_wage": 97890,
+      "annual_median_wage": 100630
+    },
+    "ota": {
+      "employment": 270,
+      "annual_mean_wage": 64830,
+      "annual_median_wage": 65380
+    },
+    "slp": {
+      "employment": 980,
+      "annual_mean_wage": 85040,
+      "annual_median_wage": 83780
+    },
+    "aud": {
+      "employment": 110,
+      "annual_mean_wage": 94680,
+      "annual_median_wage": 97610
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Tennessee-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 2181,
+      "establishments": 276,
+      "avg_weekly_wage": 1179,
+      "counties_disclosed": 7,
+      "counties_total": 13
+    },
+    "home_health_naics_6216": {
+      "employment": 6284,
+      "establishments": 279,
+      "avg_weekly_wage": 1269,
+      "counties_disclosed": 8,
+      "counties_total": 13
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 6200,
+      "establishments": 70,
+      "avg_weekly_wage": 1061,
+      "counties_disclosed": 7,
+      "counties_total": 13
+    },
+    "hospitals_naics_6221": {
+      "employment": 42528,
+      "establishments": 349,
+      "avg_weekly_wage": 1942,
+      "counties_disclosed": 2,
+      "counties_total": 13
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Tennessee side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 61,
+      "certified_beds": 6805,
+      "avg_overall_rating": 2.98,
+      "for_profit_pct": 85.2
+    },
+    "home_health_agencies": {
+      "count": 29,
+      "avg_quality_star": 3.87,
+      "for_profit_pct": 92.9,
+      "offers_pt_pct": 92.9,
+      "offers_ot_pct": 89.3,
+      "offers_slp_pct": 92.9
+    }
+  },
+  "narrative_extra": null
+}

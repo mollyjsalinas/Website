@@ -1,0 +1,201 @@
+{
+  "metro": "Casper, WY",
+  "city": "Casper",
+  "city_slug": "casper",
+  "cbsa": "16220",
+  "state_abbr": "WY",
+  "state": "Wyoming",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Wyoming side of the Casper metro area",
+    "active_individual_providers": {
+      "pt": 87,
+      "pta": 11,
+      "ot": 69,
+      "ota": 20,
+      "slp": 42,
+      "aud": 5
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Casper, WY metropolitan area",
+    "pt": {
+      "employment": 100,
+      "annual_mean_wage": 100020,
+      "annual_median_wage": 98880
+    },
+    "pta": {
+      "employment": 40,
+      "annual_mean_wage": 62700,
+      "annual_median_wage": 62110
+    },
+    "ot": {
+      "employment": 80,
+      "annual_mean_wage": 89350,
+      "annual_median_wage": 85450
+    },
+    "slp": {
+      "employment": 40,
+      "annual_mean_wage": 106650,
+      "annual_median_wage": 109540
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Wyoming-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 207,
+      "establishments": 26,
+      "avg_weekly_wage": 1200,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 145,
+      "establishments": 16,
+      "avg_weekly_wage": 746,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 500,
+      "establishments": 6,
+      "avg_weekly_wage": 992,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Wyoming side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 3,
+      "certified_beds": 432,
+      "avg_overall_rating": 2.33,
+      "for_profit_pct": 100.0
+    },
+    "home_health_agencies": {
+      "count": 5,
+      "avg_quality_star": 3.5,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 80.0,
+      "offers_ot_pct": 80.0,
+      "offers_slp_pct": 80.0
+    }
+  },
+  "narrative_extra": null
+}

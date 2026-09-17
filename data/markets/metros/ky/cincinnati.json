@@ -1,0 +1,211 @@
+{
+  "metro": "Cincinnati, OH-KY-IN",
+  "city": "Cincinnati",
+  "city_slug": "cincinnati",
+  "cbsa": "17140",
+  "state_abbr": "KY",
+  "state": "Kentucky",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Kentucky side of the Cincinnati metro area",
+    "active_individual_providers": {
+      "pt": 263,
+      "pta": 33,
+      "ot": 112,
+      "ota": 46,
+      "slp": 209,
+      "aud": 15
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 12,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 3,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 5,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 2,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 1,
+          "2026-07": 3,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Cincinnati, OH-KY-IN metropolitan area",
+    "pt": {
+      "employment": 2090,
+      "annual_mean_wage": 102550,
+      "annual_median_wage": 102890
+    },
+    "pta": {
+      "employment": 930,
+      "annual_mean_wage": 68650,
+      "annual_median_wage": 65170
+    },
+    "ot": {
+      "employment": 1360,
+      "annual_mean_wage": 101830,
+      "annual_median_wage": 100870
+    },
+    "ota": {
+      "employment": 480,
+      "annual_mean_wage": 68470,
+      "annual_median_wage": 67460
+    },
+    "slp": {
+      "employment": 1690,
+      "annual_mean_wage": 94430,
+      "annual_median_wage": 95930
+    },
+    "aud": {
+      "employment": 220,
+      "annual_mean_wage": 90090,
+      "annual_median_wage": 87030
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Kentucky-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 424,
+      "establishments": 49,
+      "avg_weekly_wage": 992,
+      "counties_disclosed": 3,
+      "counties_total": 7
+    },
+    "home_health_naics_6216": {
+      "employment": 780,
+      "establishments": 37,
+      "avg_weekly_wage": 960,
+      "counties_disclosed": 3,
+      "counties_total": 7
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1473,
+      "establishments": 18,
+      "avg_weekly_wage": 926,
+      "counties_disclosed": 2,
+      "counties_total": 7
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Kentucky side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 20,
+      "certified_beds": 2035,
+      "avg_overall_rating": 2.7,
+      "for_profit_pct": 65.0
+    },
+    "home_health_agencies": {
+      "count": 6,
+      "avg_quality_star": 3.42,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

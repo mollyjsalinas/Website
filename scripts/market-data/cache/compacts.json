@@ -1,0 +1,276 @@
+{
+ "check_date": "2026-09-02",
+ "source": "ptcompact.org, otcompact.gov, aslpcompact.com, checked 2026-09-02",
+ "counts": {
+  "pt": {
+   "issuing": 38,
+   "member": 3
+  },
+  "ot": {
+   "issuing": 8,
+   "member": 29
+  },
+  "aslp": {
+   "issuing": 4,
+   "member": 32,
+   "territories": 1
+  }
+ },
+ "states": {
+  "AL": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "AK": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "AZ": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "AR": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "CA": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "CO": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "CT": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "DE": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "DC": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "FL": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "member"
+  },
+  "GA": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "HI": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "ID": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "member"
+  },
+  "IL": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "IN": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "member"
+  },
+  "IA": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "KS": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "KY": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "LA": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "issuing"
+  },
+  "ME": {
+   "pt": "member",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "MD": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "member"
+  },
+  "MA": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "MI": {
+   "pt": "member",
+   "ot": "member",
+   "aslp": "none"
+  },
+  "MN": {
+   "pt": "none",
+   "ot": "issuing",
+   "aslp": "member"
+  },
+  "MS": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "MO": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "MT": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "NE": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "NV": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "member"
+  },
+  "NH": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "NJ": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "NM": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "NY": {
+   "pt": "none",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "NC": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "ND": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "none"
+  },
+  "OH": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "issuing"
+  },
+  "OK": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "OR": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "PA": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "none"
+  },
+  "RI": {
+   "pt": "member",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "SC": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "SD": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "none"
+  },
+  "TN": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "issuing"
+  },
+  "TX": {
+   "pt": "issuing",
+   "ot": "none",
+   "aslp": "none"
+  },
+  "UT": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "VT": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "VA": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "member"
+  },
+  "WA": {
+   "pt": "issuing",
+   "ot": "member",
+   "aslp": "member"
+  },
+  "WV": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "issuing"
+  },
+  "WI": {
+   "pt": "issuing",
+   "ot": "issuing",
+   "aslp": "member"
+  },
+  "WY": {
+   "pt": "none",
+   "ot": "member",
+   "aslp": "member"
+  }
+ }
+}

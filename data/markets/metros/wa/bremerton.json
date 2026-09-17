@@ -1,0 +1,206 @@
+{
+  "metro": "Bremerton-Silverdale-Port Orchard, WA",
+  "city": "Bremerton",
+  "city_slug": "bremerton",
+  "cbsa": "14740",
+  "state_abbr": "WA",
+  "state": "Washington",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Washington side of the Bremerton metro area",
+    "active_individual_providers": {
+      "pt": 291,
+      "pta": 74,
+      "ot": 76,
+      "ota": 31,
+      "slp": 135,
+      "aud": 23
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 19,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 3,
+          "2026-02": 0,
+          "2026-03": 3,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 5
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 3,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 2,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 2,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Bremerton-Silverdale-Port Orchard, WA metropolitan area",
+    "pt": {
+      "employment": 210,
+      "annual_mean_wage": 104570,
+      "annual_median_wage": 97750
+    },
+    "pta": {
+      "employment": 80,
+      "annual_mean_wage": 67170,
+      "annual_median_wage": 66810
+    },
+    "ot": {
+      "employment": 100,
+      "annual_mean_wage": 108570,
+      "annual_median_wage": 106530
+    },
+    "ota": {
+      "employment": 40,
+      "annual_mean_wage": 73270,
+      "annual_median_wage": 76090
+    },
+    "slp": {
+      "employment": 120,
+      "annual_mean_wage": 105620,
+      "annual_median_wage": 104440
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Washington-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 544,
+      "establishments": 33,
+      "avg_weekly_wage": 1208,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 209,
+      "establishments": 16,
+      "avg_weekly_wage": 936,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 1436,
+      "establishments": 15,
+      "avg_weekly_wage": 1051,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Washington side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 9,
+      "certified_beds": 1036,
+      "avg_overall_rating": 3.56,
+      "for_profit_pct": 77.8
+    },
+    "home_health_agencies": {
+      "count": 3,
+      "avg_quality_star": 4.0,
+      "for_profit_pct": 66.7,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

@@ -1,0 +1,201 @@
+{
+  "metro": "Atlantic City-Hammonton, NJ",
+  "city": "Atlantic City",
+  "city_slug": "atlantic-city",
+  "cbsa": "12100",
+  "state_abbr": "NJ",
+  "state": "New Jersey",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "New Jersey side of the Atlantic City metro area",
+    "active_individual_providers": {
+      "pt": 271,
+      "pta": 21,
+      "ot": 88,
+      "ota": 12,
+      "slp": 96,
+      "aud": 10
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 12,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 5
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 8,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 3,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 8,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Atlantic City-Hammonton, NJ metropolitan area",
+    "pt": {
+      "employment": 290,
+      "annual_mean_wage": 104980,
+      "annual_median_wage": 101430
+    },
+    "pta": {
+      "employment": 50,
+      "annual_mean_wage": 70330,
+      "annual_median_wage": 73440
+    },
+    "ot": {
+      "employment": 110,
+      "annual_mean_wage": 99930,
+      "annual_median_wage": 97130
+    },
+    "slp": {
+      "employment": 170,
+      "annual_mean_wage": 92990,
+      "annual_median_wage": 85580
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "New Jersey-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 336,
+      "establishments": 47,
+      "avg_weekly_wage": 1195,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "home_health_naics_6216": {
+      "employment": 1465,
+      "establishments": 31,
+      "avg_weekly_wage": 980,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 894,
+      "establishments": 7,
+      "avg_weekly_wage": 1146,
+      "counties_disclosed": 1,
+      "counties_total": 1
+    },
+    "hospitals_naics_6221": null
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "New Jersey side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 10,
+      "certified_beds": 1698,
+      "avg_overall_rating": 2.9,
+      "for_profit_pct": 90.0
+    },
+    "home_health_agencies": {
+      "count": 2,
+      "avg_quality_star": 3.5,
+      "for_profit_pct": 50.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

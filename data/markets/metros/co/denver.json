@@ -1,0 +1,217 @@
+{
+  "metro": "Denver-Aurora-Lakewood, CO",
+  "city": "Denver",
+  "city_slug": "denver",
+  "cbsa": "19740",
+  "state_abbr": "CO",
+  "state": "Colorado",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Colorado side of the Denver metro area",
+    "active_individual_providers": {
+      "pt": 3246,
+      "pta": 572,
+      "ot": 1489,
+      "ota": 347,
+      "slp": 2504,
+      "aud": 347
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 178,
+        "by_month": {
+          "2025-09": 13,
+          "2025-10": 5,
+          "2025-11": 9,
+          "2025-12": 17,
+          "2026-01": 15,
+          "2026-02": 9,
+          "2026-03": 17,
+          "2026-04": 7,
+          "2026-05": 24,
+          "2026-06": 22,
+          "2026-07": 19,
+          "2026-08": 21
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 28,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 6,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 4,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 4,
+          "2026-08": 3
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 59,
+        "by_month": {
+          "2025-09": 7,
+          "2025-10": 6,
+          "2025-11": 3,
+          "2025-12": 3,
+          "2026-01": 3,
+          "2026-02": 2,
+          "2026-03": 2,
+          "2026-04": 3,
+          "2026-05": 5,
+          "2026-06": 7,
+          "2026-07": 11,
+          "2026-08": 7
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 9,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 107,
+        "by_month": {
+          "2025-09": 15,
+          "2025-10": 12,
+          "2025-11": 1,
+          "2025-12": 7,
+          "2026-01": 8,
+          "2026-02": 2,
+          "2026-03": 5,
+          "2026-04": 5,
+          "2026-05": 6,
+          "2026-06": 3,
+          "2026-07": 11,
+          "2026-08": 32
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 3,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Denver-Aurora-Centennial, CO metropolitan area",
+    "pt": {
+      "employment": 2730,
+      "annual_mean_wage": 105720,
+      "annual_median_wage": 102340
+    },
+    "pta": {
+      "employment": 590,
+      "annual_mean_wage": 70610,
+      "annual_median_wage": 65320
+    },
+    "ot": {
+      "employment": 1870,
+      "annual_mean_wage": 110720,
+      "annual_median_wage": 107500
+    },
+    "ota": {
+      "employment": 340,
+      "annual_mean_wage": 79250,
+      "annual_median_wage": 76980
+    },
+    "slp": {
+      "employment": 2480,
+      "annual_mean_wage": 117840,
+      "annual_median_wage": 112090
+    },
+    "aud": {
+      "employment": 230,
+      "annual_mean_wage": 111070,
+      "annual_median_wage": 114730
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Colorado-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 4824,
+      "establishments": 627,
+      "avg_weekly_wage": 1209,
+      "counties_disclosed": 7,
+      "counties_total": 10
+    },
+    "home_health_naics_6216": {
+      "employment": 17143,
+      "establishments": 466,
+      "avg_weekly_wage": 1012,
+      "counties_disclosed": 6,
+      "counties_total": 10
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 9941,
+      "establishments": 130,
+      "avg_weekly_wage": 1125,
+      "counties_disclosed": 5,
+      "counties_total": 10
+    },
+    "hospitals_naics_6221": {
+      "employment": 22038,
+      "establishments": 107,
+      "avg_weekly_wage": 1710,
+      "counties_disclosed": 4,
+      "counties_total": 10
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Colorado side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 86,
+      "certified_beds": 9142,
+      "avg_overall_rating": 3.26,
+      "for_profit_pct": 90.7
+    },
+    "home_health_agencies": {
+      "count": 122,
+      "avg_quality_star": 2.77,
+      "for_profit_pct": 99.1,
+      "offers_pt_pct": 88.7,
+      "offers_ot_pct": 88.7,
+      "offers_slp_pct": 81.1
+    }
+  },
+  "narrative_extra": null
+}

@@ -1,0 +1,217 @@
+{
+  "metro": "Albuquerque, NM",
+  "city": "Albuquerque",
+  "city_slug": "albuquerque",
+  "cbsa": "10740",
+  "state_abbr": "NM",
+  "state": "New Mexico",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "New Mexico side of the Albuquerque metro area",
+    "active_individual_providers": {
+      "pt": 706,
+      "pta": 150,
+      "ot": 492,
+      "ota": 111,
+      "slp": 1025,
+      "aud": 77
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 22,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 2,
+          "2025-11": 3,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 4,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 1,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 3,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 16,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 3,
+          "2025-12": 1,
+          "2026-01": 2,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 8,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 18,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 2,
+          "2026-01": 1,
+          "2026-02": 2,
+          "2026-03": 1,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 7
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Albuquerque, NM metropolitan area",
+    "pt": {
+      "employment": 690,
+      "annual_mean_wage": 107630,
+      "annual_median_wage": 103510
+    },
+    "pta": {
+      "employment": 370,
+      "annual_mean_wage": 60900,
+      "annual_median_wage": 59620
+    },
+    "ot": {
+      "employment": 550,
+      "annual_mean_wage": 101980,
+      "annual_median_wage": 99170
+    },
+    "ota": {
+      "employment": 150,
+      "annual_mean_wage": 69630,
+      "annual_median_wage": 74380
+    },
+    "slp": {
+      "employment": 580,
+      "annual_mean_wage": 103060,
+      "annual_median_wage": 99160
+    },
+    "aud": {
+      "employment": 40,
+      "annual_mean_wage": 95130,
+      "annual_median_wage": 92440
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "New Mexico-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1411,
+      "establishments": 166,
+      "avg_weekly_wage": 1002,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    },
+    "home_health_naics_6216": {
+      "employment": 5969,
+      "establishments": 121,
+      "avg_weekly_wage": 715,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 2644,
+      "establishments": 36,
+      "avg_weekly_wage": 1214,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    },
+    "hospitals_naics_6221": {
+      "employment": 13049,
+      "establishments": 8,
+      "avg_weekly_wage": 1845,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "New Mexico side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 22,
+      "certified_beds": 2687,
+      "avg_overall_rating": 2.55,
+      "for_profit_pct": 90.9
+    },
+    "home_health_agencies": {
+      "count": 23,
+      "avg_quality_star": 3.25,
+      "for_profit_pct": 90.5,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 90.5,
+      "offers_slp_pct": 85.7
+    }
+  },
+  "narrative_extra": null
+}

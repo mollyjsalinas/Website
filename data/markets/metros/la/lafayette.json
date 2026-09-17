@@ -1,0 +1,212 @@
+{
+  "metro": "Lafayette, LA",
+  "city": "Lafayette",
+  "city_slug": "lafayette",
+  "cbsa": "29180",
+  "state_abbr": "LA",
+  "state": "Louisiana",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Louisiana side of the Lafayette metro area",
+    "active_individual_providers": {
+      "pt": 292,
+      "pta": 25,
+      "ot": 137,
+      "ota": 14,
+      "slp": 401,
+      "aud": 34
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 14,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 2,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 4,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 2,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 1,
+          "2026-03": 1,
+          "2026-04": 2,
+          "2026-05": 1,
+          "2026-06": 2,
+          "2026-07": 2,
+          "2026-08": 0
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 21,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 5,
+          "2026-07": 0,
+          "2026-08": 6
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Lafayette, LA metropolitan area",
+    "pt": {
+      "employment": 290,
+      "annual_mean_wage": 88420,
+      "annual_median_wage": 84340
+    },
+    "pta": {
+      "employment": 180,
+      "annual_mean_wage": 53630,
+      "annual_median_wage": 60760
+    },
+    "ot": {
+      "employment": 150,
+      "annual_mean_wage": 90070,
+      "annual_median_wage": 85710
+    },
+    "ota": {
+      "employment": 60,
+      "annual_mean_wage": 66910,
+      "annual_median_wage": 64900
+    },
+    "slp": {
+      "employment": 200,
+      "annual_mean_wage": 73350,
+      "annual_median_wage": 69610
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Louisiana-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 769,
+      "establishments": 134,
+      "avg_weekly_wage": 895,
+      "counties_disclosed": 5,
+      "counties_total": 5
+    },
+    "home_health_naics_6216": {
+      "employment": 3110,
+      "establishments": 90,
+      "avg_weekly_wage": 977,
+      "counties_disclosed": 4,
+      "counties_total": 5
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 2646,
+      "establishments": 30,
+      "avg_weekly_wage": 756,
+      "counties_disclosed": 4,
+      "counties_total": 5
+    },
+    "hospitals_naics_6221": {
+      "employment": 6977,
+      "establishments": 30,
+      "avg_weekly_wage": 1245,
+      "counties_disclosed": 1,
+      "counties_total": 5
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Louisiana side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 28,
+      "certified_beds": 3347,
+      "avg_overall_rating": 2.36,
+      "for_profit_pct": 82.1
+    },
+    "home_health_agencies": {
+      "count": 17,
+      "avg_quality_star": 3.69,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 100.0
+    }
+  },
+  "narrative_extra": null
+}

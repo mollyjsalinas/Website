@@ -1,0 +1,96 @@
+name: Monthly data refresh
+
+# Re-pulls the public inputs behind data/markets/ (NPPES monthly file, QCEW,
+# CMS facility files, GeoNames, Census), re-assembles every state and metro
+# snapshot with today's snapshot_date, and commits to main so Vercel deploys
+# and the sitemap lastmod moves. Runs on the 15th, after the NPPES monthly
+# file (published in the second week) has landed. OEWS and the compact table
+# stay manual: see docs/DATA_NOTES.md, "Monthly refresh".
+
+on:
+  schedule:
+    - cron: "0 12 15 * *"
+  workflow_dispatch:
+    inputs:
+      snapshot_date:
+        description: "snapshot_date to stamp (YYYY-MM-DD); blank = today UTC"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python deps
+        run: pip install openpyxl
+
+      - name: Refresh data
+        env:
+          SNAPSHOT_DATE_INPUT: ${{ github.event.inputs.snapshot_date }}
+        run: |
+          SNAPSHOT_DATE="${SNAPSHOT_DATE_INPUT:-$(date -u +%F)}"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_ENV"
+          SNAPSHOT_DATE="$SNAPSHOT_DATE" bash scripts/market-data/refresh.sh
+
+      - name: Check fixtures
+        run: node scripts/check-fixtures.mjs
+
+      - name: Guard the output
+        run: |
+          set -euo pipefail
+          # grep exits 1 when nothing matches; under pipefail that would fail the
+          # happy path (it did, run 33708701761), so the no-match case is caught.
+          fixtures=$( (grep -rl '"fixture": true' data/markets --include='*.json' || true) | wc -l)
+          if [ "$fixtures" -ne 0 ]; then
+            echo "::error::$fixtures snapshot(s) still flagged fixture: true"
+            grep -rl '"fixture": true' data/markets --include='*.json'
+            exit 1
+          fi
+          changed=$(git diff -U0 -- 'data/markets/*-therapy.json' | grep -c '^+  "snapshot_date": ' || true)
+          echo "state files with a new snapshot_date: $changed (need 51)"
+          if [ "$changed" -lt 51 ]; then
+            echo "::error::only $changed of 51 state files changed snapshot_date (is SNAPSHOT_DATE=$SNAPSHOT_DATE already the committed date?)"
+            exit 1
+          fi
+          cat scripts/market-data/cache/refresh-summary.json
+
+      - name: Commit and push
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "No data changes; nothing to commit."
+            exit 0
+          fi
+          # Author as the repo owner: Vercel only deploys commits whose author
+          # is a team member.
+          git config user.name "jj5288"
+          git config user.email "125397311+jj5288@users.noreply.github.com"
+          NPPES=$(jq -r .nppes_month scripts/market-data/cache/refresh-summary.json)
+          QCEW=$(jq -r .qcew_period scripts/market-data/cache/refresh-summary.json)
+          git add data/
+          git commit -m "Monthly data refresh: NPPES $NPPES, QCEW $QCEW" \
+            -m "snapshot_date $SNAPSHOT_DATE. Automated by .github/workflows/monthly-data-refresh.yml (run ${{ github.run_id }})."
+          # main may have moved during the hour this job runs; data/ never
+          # collides with source edits.
+          git pull --rebase origin main
+          git push origin HEAD:main

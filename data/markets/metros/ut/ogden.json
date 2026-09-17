@@ -1,0 +1,212 @@
+{
+  "metro": "Ogden-Clearfield, UT",
+  "city": "Ogden",
+  "city_slug": "ogden",
+  "cbsa": "36260",
+  "state_abbr": "UT",
+  "state": "Utah",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Utah side of the Ogden metro area",
+    "active_individual_providers": {
+      "pt": 356,
+      "pta": 58,
+      "ot": 140,
+      "ota": 39,
+      "slp": 223,
+      "aud": 44
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 20,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 0,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 10,
+          "2026-06": 2,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 1,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 1,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 6,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 2,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 1
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 0,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 13,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 5,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 3,
+          "2026-03": 0,
+          "2026-04": 1,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Ogden, UT metropolitan area",
+    "pt": {
+      "employment": 440,
+      "annual_mean_wage": 97770,
+      "annual_median_wage": 99170
+    },
+    "pta": {
+      "employment": 210,
+      "annual_mean_wage": 56980,
+      "annual_median_wage": 60880
+    },
+    "ot": {
+      "employment": 210,
+      "annual_mean_wage": 94130,
+      "annual_median_wage": 95940
+    },
+    "ota": {
+      "employment": 80,
+      "annual_mean_wage": 63940,
+      "annual_median_wage": 64050
+    },
+    "slp": {
+      "employment": 430,
+      "annual_mean_wage": 81760,
+      "annual_median_wage": 82640
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Utah-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 1227,
+      "establishments": 94,
+      "avg_weekly_wage": 752,
+      "counties_disclosed": 2,
+      "counties_total": 4
+    },
+    "home_health_naics_6216": {
+      "employment": 1687,
+      "establishments": 75,
+      "avg_weekly_wage": 847,
+      "counties_disclosed": 3,
+      "counties_total": 4
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 2347,
+      "establishments": 28,
+      "avg_weekly_wage": 804,
+      "counties_disclosed": 2,
+      "counties_total": 4
+    },
+    "hospitals_naics_6221": {
+      "employment": 1825,
+      "establishments": 5,
+      "avg_weekly_wage": 1359,
+      "counties_disclosed": 1,
+      "counties_total": 4
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Utah side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 20,
+      "certified_beds": 1872,
+      "avg_overall_rating": 3.53,
+      "for_profit_pct": 75.0
+    },
+    "home_health_agencies": {
+      "count": 13,
+      "avg_quality_star": 4.2,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 100.0,
+      "offers_slp_pct": 92.3
+    }
+  },
+  "narrative_extra": null
+}

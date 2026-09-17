@@ -1,0 +1,217 @@
+{
+  "metro": "Birmingham-Hoover, AL",
+  "city": "Birmingham",
+  "city_slug": "birmingham",
+  "cbsa": "13820",
+  "state_abbr": "AL",
+  "state": "Alabama",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Alabama side of the Birmingham metro area",
+    "active_individual_providers": {
+      "pt": 1038,
+      "pta": 133,
+      "ot": 411,
+      "ota": 59,
+      "slp": 583,
+      "aud": 122
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 48,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 3,
+          "2025-11": 3,
+          "2025-12": 4,
+          "2026-01": 7,
+          "2026-02": 6,
+          "2026-03": 1,
+          "2026-04": 1,
+          "2026-05": 8,
+          "2026-06": 6,
+          "2026-07": 2,
+          "2026-08": 7
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 11,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 1,
+          "2026-04": 3,
+          "2026-05": 1,
+          "2026-06": 0,
+          "2026-07": 1,
+          "2026-08": 1
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 22,
+        "by_month": {
+          "2025-09": 1,
+          "2025-10": 2,
+          "2025-11": 1,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 3,
+          "2026-03": 3,
+          "2026-04": 1,
+          "2026-05": 4,
+          "2026-06": 1,
+          "2026-07": 1,
+          "2026-08": 3
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 4,
+        "by_month": {
+          "2025-09": 3,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 1,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 0,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 41,
+        "by_month": {
+          "2025-09": 5,
+          "2025-10": 2,
+          "2025-11": 2,
+          "2025-12": 1,
+          "2026-01": 1,
+          "2026-02": 3,
+          "2026-03": 6,
+          "2026-04": 5,
+          "2026-05": 5,
+          "2026-06": 4,
+          "2026-07": 4,
+          "2026-08": 3
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 2,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 0,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 1,
+          "2026-06": 1,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole Birmingham, AL metropolitan area",
+    "pt": {
+      "employment": 1030,
+      "annual_mean_wage": 102390,
+      "annual_median_wage": 97750
+    },
+    "pta": {
+      "employment": 800,
+      "annual_mean_wage": 63090,
+      "annual_median_wage": 62380
+    },
+    "ot": {
+      "employment": 540,
+      "annual_mean_wage": 97770,
+      "annual_median_wage": 95250
+    },
+    "ota": {
+      "employment": 190,
+      "annual_mean_wage": 67830,
+      "annual_median_wage": 63170
+    },
+    "slp": {
+      "employment": 600,
+      "annual_mean_wage": 81830,
+      "annual_median_wage": 75750
+    },
+    "aud": {
+      "employment": null,
+      "annual_mean_wage": 88910,
+      "annual_median_wage": 86300
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Alabama-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 2547,
+      "establishments": 235,
+      "avg_weekly_wage": 985,
+      "counties_disclosed": 5,
+      "counties_total": 6
+    },
+    "home_health_naics_6216": {
+      "employment": 2561,
+      "establishments": 127,
+      "avg_weekly_wage": 1136,
+      "counties_disclosed": 5,
+      "counties_total": 6
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 4880,
+      "establishments": 51,
+      "avg_weekly_wage": 830,
+      "counties_disclosed": 3,
+      "counties_total": 6
+    },
+    "hospitals_naics_6221": {
+      "employment": 10975,
+      "establishments": 26,
+      "avg_weekly_wage": 1554,
+      "counties_disclosed": 1,
+      "counties_total": 6
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Alabama side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 45,
+      "certified_beds": 5284,
+      "avg_overall_rating": 2.27,
+      "for_profit_pct": 84.4
+    },
+    "home_health_agencies": {
+      "count": 16,
+      "avg_quality_star": 4.0,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 100.0,
+      "offers_ot_pct": 93.8,
+      "offers_slp_pct": 93.8
+    }
+  },
+  "narrative_extra": null
+}

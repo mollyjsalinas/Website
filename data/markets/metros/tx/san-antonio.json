@@ -1,0 +1,217 @@
+{
+  "metro": "San Antonio-New Braunfels, TX",
+  "city": "San Antonio",
+  "city_slug": "san-antonio",
+  "cbsa": "41700",
+  "state_abbr": "TX",
+  "state": "Texas",
+  "desk": "therapy",
+  "snapshot_date": "2026-09-15",
+  "fixture": false,
+  "supply": {
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
+    "scope": "Texas side of the San Antonio metro area",
+    "active_individual_providers": {
+      "pt": 1719,
+      "pta": 606,
+      "ot": 785,
+      "ota": 423,
+      "slp": 1521,
+      "aud": 141
+    }
+  },
+  "new_provider_inflow": {
+    "source": "NPPES provider enumeration dates, September 2026 file",
+    "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
+    "trailing_12_months": {
+      "pt": {
+        "trailing_12mo_total": 104,
+        "by_month": {
+          "2025-09": 6,
+          "2025-10": 7,
+          "2025-11": 3,
+          "2025-12": 5,
+          "2026-01": 2,
+          "2026-02": 14,
+          "2026-03": 11,
+          "2026-04": 7,
+          "2026-05": 17,
+          "2026-06": 11,
+          "2026-07": 7,
+          "2026-08": 14
+        }
+      },
+      "pta": {
+        "trailing_12mo_total": 28,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 6,
+          "2025-11": 2,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 3,
+          "2026-03": 0,
+          "2026-04": 2,
+          "2026-05": 2,
+          "2026-06": 6,
+          "2026-07": 3,
+          "2026-08": 4
+        }
+      },
+      "ot": {
+        "trailing_12mo_total": 44,
+        "by_month": {
+          "2025-09": 4,
+          "2025-10": 6,
+          "2025-11": 0,
+          "2025-12": 4,
+          "2026-01": 6,
+          "2026-02": 5,
+          "2026-03": 4,
+          "2026-04": 1,
+          "2026-05": 0,
+          "2026-06": 6,
+          "2026-07": 2,
+          "2026-08": 6
+        }
+      },
+      "ota": {
+        "trailing_12mo_total": 19,
+        "by_month": {
+          "2025-09": 2,
+          "2025-10": 3,
+          "2025-11": 1,
+          "2025-12": 0,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 5,
+          "2026-04": 0,
+          "2026-05": 2,
+          "2026-06": 2,
+          "2026-07": 0,
+          "2026-08": 0
+        }
+      },
+      "slp": {
+        "trailing_12mo_total": 64,
+        "by_month": {
+          "2025-09": 10,
+          "2025-10": 9,
+          "2025-11": 0,
+          "2025-12": 6,
+          "2026-01": 2,
+          "2026-02": 2,
+          "2026-03": 4,
+          "2026-04": 7,
+          "2026-05": 4,
+          "2026-06": 11,
+          "2026-07": 3,
+          "2026-08": 6
+        }
+      },
+      "aud": {
+        "trailing_12mo_total": 7,
+        "by_month": {
+          "2025-09": 0,
+          "2025-10": 1,
+          "2025-11": 0,
+          "2025-12": 0,
+          "2026-01": 0,
+          "2026-02": 0,
+          "2026-03": 0,
+          "2026-04": 0,
+          "2026-05": 0,
+          "2026-06": 3,
+          "2026-07": 2,
+          "2026-08": 1
+        }
+      }
+    }
+  },
+  "compensation": {
+    "source": "BLS OEWS, May 2025 estimates, metropolitan area",
+    "scope": "whole San Antonio-New Braunfels, TX metropolitan area",
+    "pt": {
+      "employment": 1700,
+      "annual_mean_wage": 108060,
+      "annual_median_wage": 106010
+    },
+    "pta": {
+      "employment": 960,
+      "annual_mean_wage": 75020,
+      "annual_median_wage": 76830
+    },
+    "ot": {
+      "employment": 1780,
+      "annual_mean_wage": 111140,
+      "annual_median_wage": 107650
+    },
+    "ota": {
+      "employment": 420,
+      "annual_mean_wage": 79960,
+      "annual_median_wage": 79240
+    },
+    "slp": {
+      "employment": 1780,
+      "annual_mean_wage": 95830,
+      "annual_median_wage": 92700
+    },
+    "aud": {
+      "employment": 100,
+      "annual_mean_wage": 101610,
+      "annual_median_wage": 99420
+    }
+  },
+  "sector_employment": {
+    "source": "BLS QCEW county files, private ownership, Q4 2025",
+    "scope": "Texas-side counties of the metro with disclosed data; wages employment-weighted",
+    "therapy_offices_naics_62134": {
+      "employment": 3755,
+      "establishments": 299,
+      "avg_weekly_wage": 1136,
+      "counties_disclosed": 5,
+      "counties_total": 8
+    },
+    "home_health_naics_6216": {
+      "employment": 27340,
+      "establishments": 408,
+      "avg_weekly_wage": 617,
+      "counties_disclosed": 5,
+      "counties_total": 8
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 10177,
+      "establishments": 153,
+      "avg_weekly_wage": 935,
+      "counties_disclosed": 7,
+      "counties_total": 8
+    },
+    "hospitals_naics_6221": {
+      "employment": 24239,
+      "establishments": 46,
+      "avg_weekly_wage": 1224,
+      "counties_disclosed": 1,
+      "counties_total": 8
+    }
+  },
+  "facilities": {
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "scope": "Texas side of the metro (facility ZIP mapped to CBSA)",
+    "nursing_homes": {
+      "count": 96,
+      "certified_beds": 11349,
+      "avg_overall_rating": 2.29,
+      "for_profit_pct": 71.9
+    },
+    "home_health_agencies": {
+      "count": 88,
+      "avg_quality_star": 3.19,
+      "for_profit_pct": 100.0,
+      "offers_pt_pct": 95.5,
+      "offers_ot_pct": 94.3,
+      "offers_slp_pct": 90.9
+    }
+  },
+  "narrative_extra": null
+}
