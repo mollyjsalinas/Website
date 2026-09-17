@@ -43,9 +43,12 @@ In order. Each step has a check that proves it, not a "should work".
 
 - [ ] resend.com > Domains > Add `aptrecruiting.com`. Add the DKIM and Return-Path records it
       shows to DNS (these are separate from the MX records and do not affect inbound mail).
-- [ ] Once verified, set `CONTACT_FROM_EMAIL="APT Recruiting Website <website@aptrecruiting.com>"`
-      on Vercel and redeploy. Until then the forms send from Resend's onboarding address, which
-      works but lands in spam more often.
+- [ ] ⛔ NOTHING SENDS UNTIL THAT DOMAIN IS VERIFIED **in the same Resend account the
+      `RESEND_API_KEY` came from**. The sender is `info@aptrecruiting.com`, an alias Molly already has (John, 9/17); a
+      From on a domain that account has not verified is refused and the form answers 502.
+- [ ] Leave `CONTACT_FROM_EMAIL` unset to use that default, or set it to override. If it is
+      set to a vollrecruiting.com address on the Vercel project, clear it: the Voll domain is
+      verified on Voll's Resend account, not on Molly's.
 - [ ] Submit both forms on the live domain and confirm delivery again.
 
 ## 4. Google Search Console

@@ -20,11 +20,12 @@ export const SITE = {
   phone: "(409) 225-1441",
   phoneHref: "tel:+14092251441",
   telephone: "+1-409-225-1441",
+  // ⛔ City and state only. Molly gave a street address for the privacy policy,
+  // but it is a home address and is deliberately not published anywhere in this
+  // repo; email and phone are the contact route on /privacy-policy/.
   mailingAddress: {
-    street: "4001 Fort Collins Way",
     city: "Austin",
     region: "TX",
-    postalCode: "78744",
   },
   tagline:
     "Discovering apt candidates for our clients' success: our expertise, your perfect match.",

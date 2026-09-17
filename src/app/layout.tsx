@@ -22,8 +22,14 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
+// Which commit built the page you are looking at. Vercel sets this at build
+// time; it makes "is the live site running the latest code?" answerable from
+// outside, which a deploy chased across two Vercel accounts on 9/17 was not.
+const BUILD_SHA = (process.env.VERCEL_GIT_COMMIT_SHA ?? "local").slice(0, 7);
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
+  other: { "x-build": BUILD_SHA },
   title: {
     default: "Physical Therapy, OT & SLP Recruiters | APT Recruiting",
     template: "%s | APT Recruiting",
@@ -83,10 +89,8 @@ const organizationSchema = {
   telephone: SITE.telephone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: SITE.mailingAddress.street,
     addressLocality: SITE.mailingAddress.city,
     addressRegion: SITE.mailingAddress.region,
-    postalCode: SITE.mailingAddress.postalCode,
     addressCountry: "US",
   },
   contactPoint: {

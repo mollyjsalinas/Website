@@ -91,9 +91,11 @@ export async function POST(req: Request) {
 
   const resend = new Resend(apiKey);
   const { error } = await resend.emails.send({
-    // Until aptrecruiting.com is verified in Resend, send from Voll's verified domain.
+    // ⛔ The sender must be on a domain verified in the SAME Resend account as
+    // RESEND_API_KEY, or Resend refuses the send (the 502 branch below).
+    // aptrecruiting.com has to be verified in Resend for this to work.
     // Replies go to the visitor; the inbox that RECEIVES is molly@ (CONTACT_TO_EMAIL).
-    from: process.env.CONTACT_FROM_EMAIL ?? "APT Recruiting Website <apt@vollrecruiting.com>",
+    from: process.env.CONTACT_FROM_EMAIL ?? "APT Recruiting Website <info@aptrecruiting.com>",
     to: (isHire ? hireTo : candidateTo).split(",").map((t) => t.trim()),
     replyTo: email,
     subject: isHire

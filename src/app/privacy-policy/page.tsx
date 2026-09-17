@@ -61,8 +61,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <h2 className="font-heading text-xl font-semibold text-navy-600">Contact</h2>
           <p>
-            {SITE.legalName}, {SITE.mailingAddress.street}, {SITE.mailingAddress.city},{" "}
-            {SITE.mailingAddress.region} {SITE.mailingAddress.postalCode}.{" "}
+            {SITE.legalName}, {SITE.mailingAddress.city}, {SITE.mailingAddress.region}.{" "}
             <a href={`mailto:${SITE.email}`} className="font-semibold text-teal-600 hover:text-teal-700">
               {SITE.email}
             </a>
