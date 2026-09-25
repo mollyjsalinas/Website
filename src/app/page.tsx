@@ -84,7 +84,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading eyebrow="Who we place" title="Four therapy professions. One recruiter who has done the clinical work.">
             Physical therapists, occupational therapists, speech-language pathologists and
-            audiologists, with PTAs and COTAs alongside them, plus the therapy leaders who run
+            audiologists, with PTAs, COTAs and SLPAs alongside them, plus the therapy leaders who run
             the department. We also recruit nurse practitioners and physician assistants.
           </SectionHeading>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

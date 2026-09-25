@@ -97,7 +97,7 @@ export function employerFaqs(place?: string): { q: string; a: string }[] {
     },
     {
       q: "Which roles and settings do you cover?",
-      a: `Physical therapists, occupational therapists, speech-language pathologists and audiologists, including PTAs and COTAs, plus directors of rehab and other therapy leadership. Settings${where} include hospitals and acute rehab, skilled nursing, home health, outpatient clinics, schools and pediatrics, and telehealth. We also recruit nurse practitioners and physician assistants.`,
+      a: `Physical therapists, occupational therapists, speech-language pathologists and audiologists, including PTAs, COTAs and SLPAs, plus directors of rehab and other therapy leadership. Settings${where} include hospitals and acute rehab, skilled nursing, home health, outpatient clinics, schools and pediatrics, and telehealth. We also recruit nurse practitioners and physician assistants.`,
     },
   ];
 }
@@ -110,7 +110,7 @@ export const candidateFaqs: { q: string; a: string }[] = [
   },
   {
     q: "What kinds of therapy jobs do you place?",
-    a: "Physical therapy, occupational therapy, speech-language pathology and audiology roles across hospitals, skilled nursing, home health, outpatient, schools and telehealth, plus PTA and COTA positions and rehab leadership such as director of rehab. Mostly permanent full-time and part-time positions, with contract roles when an employer has an immediate need. We also recruit nurse practitioners and physician assistants.",
+    a: "Physical therapy, occupational therapy, speech-language pathology and audiology roles across hospitals, skilled nursing, home health, outpatient, schools and telehealth, plus PTA, COTA and SLPA positions and rehab leadership such as director of rehab. Mostly permanent full-time and part-time positions, with contract roles when an employer has an immediate need. We also recruit nurse practitioners and physician assistants.",
   },
   {
     q: "Will you tell me the honest picture of a job before I interview?",
