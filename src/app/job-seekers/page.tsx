@@ -35,14 +35,16 @@ export default function JobSeekersPage() {
   return (
     <>
       <Hero
-        eyebrow="For therapists"
+        eyebrow="For clinicians"
         title="A therapy recruiter who has actually held the job."
         primary={{ href: "#contact", label: "Start a confidential conversation" }}
         secondary={{ href: "/jobs/", label: "See open roles" }}
       >
-        APT Recruiting was founded by a licensed speech-language pathologist. If you are a PT,
-        OT, SLP, audiologist, PTA or COTA thinking about a move, you will talk to someone who
-        knows the difference between a good setting and a good posting.
+        APT Recruiting was founded by a licensed speech-language pathologist. If you&apos;re a
+        physical therapist, occupational therapist, speech-language pathologist, audiologist,
+        or therapy assistant considering your next move, you&apos;ll work with someone who knows
+        the difference between a job that&apos;s actually a good fit and one that just looks
+        good on paper.
       </Hero>
 
       <section className="py-20">
@@ -114,7 +116,7 @@ export default function JobSeekersPage() {
       <Breadcrumbs
         items={[
           { name: "Home", href: `${SITE.url}/` },
-          { name: "For Therapists", href: `${SITE.url}/job-seekers/` },
+          { name: "For Clinicians", href: `${SITE.url}/job-seekers/` },
         ]}
       />
     </>

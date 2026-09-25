@@ -115,7 +115,7 @@ export function ProfessionHub({ p }: { p: Profession }) {
 
       <MollyByline place="national" reviewedOn={reviewedOn} />
 
-      <CtaBand title={`Need a ${p.label.toLowerCase()}?`} body="Tell us the setting, the caseload and the market. A licensed clinician reads every brief." />
+      <CtaBand title={`Need ${/^[aeiou]/i.test(p.label) ? "an" : "a"} ${p.label.toLowerCase()}?`} body="Tell us the setting, the caseload and the market. A licensed clinician reads every brief." />
 
       <JsonLd
         data={{

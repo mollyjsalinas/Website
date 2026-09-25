@@ -86,13 +86,16 @@ export default function EmployersPage() {
                       {p.label} recruiters →
                     </Link>
                     <span className="ml-2 text-sm text-body">
-                      {p.nppesRoles.length > 1 ? `${p.short} and ${p.short}A` : p.short}, all settings
+                      {/* Molly: OT assistants read as COTA (the credential), not OTA. */}
+                      {p.nppesRoles.length > 1 ? `${p.short} and ${p.key === "ot" ? "COTA" : `${p.short}A`}` : p.short}, all settings
                     </span>
                   </li>
                 ))}
                 <li className="text-body">
-                  Directors of rehab, rehab managers, clinic directors, and for the same organizations,
-                  physicians, nurse practitioners, medical directors and administrators.
+                  We also recruit experienced therapy professionals for leadership roles, including
+                  Directors of Rehabilitation, Rehab Managers, and Clinic Directors. In addition to our
+                  therapy and audiology specialties, we provide recruiting services for Nurse
+                  Practitioners and Physician Assistants.
                 </li>
               </ul>
             </div>

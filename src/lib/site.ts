@@ -7,7 +7,7 @@
 // exactly: the handoff greps for it.
 
 // Bumped manually when page copy meaningfully changes; feeds sitemap lastModified.
-export const CONTENT_UPDATED = "2026-09-17";
+export const CONTENT_UPDATED = "2026-09-25";
 
 export const SITE = {
   name: "APT Recruiting",
@@ -50,7 +50,9 @@ export const MOLLY = {
   basedIn: "Austin, Texas",
   bio: [
     "Molly Salinas is a licensed speech-language pathologist who has worked across telehealth, schools, skilled nursing, hospitals, outpatient care and travel assignments, and founded APT Recruiting to bring a clinician's eye to healthcare hiring.",
-    "APT Recruiting places physicians, nurse practitioners, physical therapists, occupational therapists, speech-language pathologists, audiologists, medical directors and administrators in hospitals, skilled nursing facilities, private clinics, telehealth and other healthcare organizations.",
+    // Molly's positioning copy, verbatim (9/25 "Website updates" email). APT does
+    // NOT recruit physicians, medical directors or administrators; NP/PA come second.
+    "APT Recruiting specializes in recruiting Physical Therapists, Occupational Therapists, Speech-Language Pathologists, Audiologists, therapy assistants, and experienced therapy professionals for leadership roles. We also provide recruiting services for Nurse Practitioners and Physician Assistants. We work with skilled nursing facilities, private practices, outpatient clinics, telehealth organizations, home health agencies, schools, and other healthcare organizations nationwide.",
   ],
   // Her founder story, in her own words (first person).
   story: [
@@ -79,11 +81,11 @@ export const EMPLOYER_TERMS = {
 // national pages. Exactly four questions: the block emits one FAQPage per URL.
 export function employerFaqs(place?: string): { q: string; a: string }[] {
   const where = place ? ` in ${place}` : "";
-  const local = place ?? "your";
+  const local = place ? `the ${place}` : "your";
   return [
     {
       q: `How does a therapy search with APT Recruiting work${where}?`,
-      a: `It starts with a short call to take the brief: the discipline, the setting, the caseload and productivity expectations, the schedule and the pay range. Because APT is run by a licensed speech-language pathologist, the screen covers clinical fit, not just a license check. We then work the ${local} market for PTs, OTs, SLPs or audiologists who match, confirm interest, and send you candidates who have already said yes to a conversation about your organization. ${EMPLOYER_TERMS.speed}`,
+      a: `It starts with a short call to take the brief: the discipline, the setting, the caseload and productivity expectations, the schedule and the pay range. Because APT is run by a licensed speech-language pathologist, the screen covers clinical fit, not just a license check. We then work ${local} market for PTs, OTs, SLPs or audiologists who match, confirm interest, and send you candidates who have already said yes to a conversation about your organization. ${EMPLOYER_TERMS.speed}`,
     },
     {
       q: "Do you work on contingency or retained?",
@@ -95,7 +97,7 @@ export function employerFaqs(place?: string): { q: string; a: string }[] {
     },
     {
       q: "Which roles and settings do you cover?",
-      a: `Physical therapists, occupational therapists, speech-language pathologists and audiologists, including PTAs and COTAs, plus directors of rehab and other therapy leadership. Settings include hospitals and acute rehab, skilled nursing, home health, outpatient clinics, schools and pediatrics, and telehealth${where}. We also place physicians, nurse practitioners, medical directors and administrators for the same organizations.`,
+      a: `Physical therapists, occupational therapists, speech-language pathologists and audiologists, including PTAs and COTAs, plus directors of rehab and other therapy leadership. Settings${where} include hospitals and acute rehab, skilled nursing, home health, outpatient clinics, schools and pediatrics, and telehealth. We also recruit nurse practitioners and physician assistants.`,
     },
   ];
 }
@@ -108,7 +110,7 @@ export const candidateFaqs: { q: string; a: string }[] = [
   },
   {
     q: "What kinds of therapy jobs do you place?",
-    a: "Physical therapy, occupational therapy, speech-language pathology and audiology roles across hospitals, skilled nursing, home health, outpatient, schools and telehealth, plus PTA and COTA positions and rehab leadership such as director of rehab. Mostly permanent full-time and part-time positions, with contract roles when an employer has an immediate need.",
+    a: "Physical therapy, occupational therapy, speech-language pathology and audiology roles across hospitals, skilled nursing, home health, outpatient, schools and telehealth, plus PTA and COTA positions and rehab leadership such as director of rehab. Mostly permanent full-time and part-time positions, with contract roles when an employer has an immediate need. We also recruit nurse practitioners and physician assistants.",
   },
   {
     q: "Will you tell me the honest picture of a job before I interview?",

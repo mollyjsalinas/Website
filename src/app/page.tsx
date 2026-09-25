@@ -51,13 +51,16 @@ export default function HomePage() {
             Rehab therapy recruiting, nationwide
           </p>
           <h1 className="mt-4 max-w-3xl font-heading text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
-            Physical therapy, OT and SLP recruiters,{" "}
-            <span className="text-teal-300">run by a licensed speech-language pathologist.</span>
+            Specialized Rehabilitation Therapy &amp; Audiology Recruiting,{" "}
+            <span className="text-teal-300">Led by a Licensed Clinician</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy-100">
-            APT Recruiting fills PT, OT, SLP and audiology roles for hospitals, skilled
-            nursing, home health, outpatient clinics and schools. Every candidate is screened by a
-            clinician for the setting, the caseload and the schedule before you see a name.
+            APT Recruiting connects Physical Therapists, Occupational Therapists,
+            Speech-Language Pathologists, and Audiologists with healthcare organizations
+            nationwide. We also provide recruiting services for Nurse Practitioners and Physician
+            Assistants. Every candidate we present is screened by a clinician for the setting,
+            caseload, and schedule—so you receive qualified candidates who align with the needs of
+            your position.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Link
@@ -70,7 +73,7 @@ export default function HomePage() {
               href="/job-seekers/"
               className="rounded-md border border-navy-200 px-6 py-3 text-center text-base font-semibold text-white transition-colors hover:border-teal-300 hover:text-teal-200"
             >
-              I&apos;m a therapist
+              I&apos;m a clinician
             </Link>
           </div>
           <p className="mt-8 text-sm text-navy-200">{SITE.tagline}</p>
@@ -81,8 +84,8 @@ export default function HomePage() {
         <Container>
           <SectionHeading eyebrow="Who we place" title="Four therapy professions. One recruiter who has done the clinical work.">
             Physical therapists, occupational therapists, speech-language pathologists and
-            audiologists, with PTAs and COTAs alongside them. We also place physicians, nurse
-            practitioners, medical directors and administrators for the same organizations.
+            audiologists, with PTAs and COTAs alongside them, plus the therapy leaders who run
+            the department. We also recruit nurse practitioners and physician assistants.
           </SectionHeading>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PROFESSION_LIST.map((p) => (

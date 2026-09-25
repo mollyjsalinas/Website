@@ -4,8 +4,8 @@ import { SITE, PROFESSION_LIST, SETTING_LIST } from "@/lib/site";
 
 const COMPANY_LINKS = [
   { href: "/employers/", label: "For Employers" },
-  { href: "/contact/hire/", label: "Hire a Therapist" },
-  { href: "/job-seekers/", label: "For Therapists" },
+  { href: "/contact/hire/", label: "Hire a Clinician" },
+  { href: "/job-seekers/", label: "For Clinicians" },
   { href: "/jobs/", label: "Open Roles" },
   { href: "/therapy-recruiters/", label: "Markets by State" },
   { href: "/licensure-compacts/", label: "Licensure Compacts" },

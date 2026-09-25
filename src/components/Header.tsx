@@ -7,7 +7,7 @@ const NAV = [
   { href: "/employers/", label: "Employers" },
   { href: "/therapy-recruiters/", label: "Markets" },
   { href: "/licensure-compacts/", label: "Compacts" },
-  { href: "/job-seekers/", label: "Therapists" },
+  { href: "/job-seekers/", label: "Clinicians" },
   { href: "/about/", label: "About" },
   { href: "/blog/", label: "Insights" },
 ];
@@ -47,7 +47,7 @@ export function Header() {
             href="/contact/hire/"
             className="rounded-md bg-teal-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-teal-600"
           >
-            Hire a therapist
+            Hire a clinician
           </Link>
         </nav>
 
@@ -88,7 +88,7 @@ export function Header() {
                 className="mt-1 block rounded-md bg-teal-500 px-4 py-2 text-center text-base font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                Hire a therapist
+                Hire a clinician
               </Link>
             </li>
             <li>

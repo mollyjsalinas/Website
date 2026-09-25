@@ -101,11 +101,11 @@ export default function AboutPage() {
 
       <section className="py-20">
         <Container>
-          <SectionHeading eyebrow="Who we place" title="Rehab therapy first, and the people who run the building">
+          <SectionHeading eyebrow="Who we place" title="Rehab therapy and audiology first">
             Physical therapists, occupational therapists, speech-language pathologists and
-            audiologists are the core of the desk. For the same hospitals, SNFs, clinics and
-            telehealth organizations we also place physicians, nurse practitioners, medical
-            directors and administrators.
+            audiologists are the core of the desk, along with therapy assistants and the therapy
+            leaders who run the department. We also recruit nurse practitioners and physician
+            assistants.
           </SectionHeading>
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
             {PROFESSION_LIST.map((p) => (

@@ -39,8 +39,8 @@ export function EmployerBlock({
           title={`Hiring${where}? Physical therapy, OT and SLP recruiting, run by a clinician.`}
         >
           Employers find us under a lot of names: physical therapy staffing agency, SLP
-          recruiter, OT headhunter, rehab staffing, therapy recruiting firm. What we do
-          {where} is the same under any of them. We work the whole market for PTs, OTs,
+          recruiter, OT headhunter, rehab staffing, therapy recruiting firm. {`What we do${where} is`}{" "}
+          the same under any of them. We work the whole market for PTs, OTs,
           SLPs and audiologists, screen each one with a licensed speech-language
           pathologist&apos;s eye for the setting and the caseload, and bring you clinicians
           who have already said yes to a conversation about your organization.

@@ -63,7 +63,7 @@ export function SettingHub({ s }: { s: Setting }) {
 
       <section className={hasData ? "bg-mist-light py-20" : "py-20"}>
         <Container>
-          <SectionHeading eyebrow="How we screen" title={`What a ${s.shortLabel.toLowerCase()} hire needs that a resume does not show`} />
+          <SectionHeading eyebrow="How we screen" title={`What ${/^[aeiou]/i.test(s.shortLabel) ? "an" : "a"} ${s.shortLabel.toLowerCase()} hire needs that a resume does not show`} />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {s.pains.map((p) => (
               <div key={p.title} className="rounded-lg border border-mist bg-white p-6 shadow-sm">
