@@ -2,38 +2,37 @@
   "market": "Montana",
   "market_abbr": "MT",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 1144694
   },
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 1414,
-      "pta": 202,
-      "ot": 434,
-      "ota": 87,
+      "pt": 1438,
+      "pta": 205,
+      "ot": 446,
+      "ota": 89,
       "slp": 561,
-      "aud": 56
+      "aud": 76
     },
     "per_100k": {
-      "pt": 123.5,
-      "ot": 37.9,
+      "pt": 125.6,
+      "ot": 39.0,
       "slp": 49.0,
-      "aud": 4.9
+      "aud": 6.6
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 56,
+        "trailing_12mo_total": 54,
         "by_month": {
-          "2025-09": 4,
           "2025-10": 2,
           "2025-11": 7,
           "2025-12": 1,
@@ -44,13 +43,13 @@
           "2026-05": 5,
           "2026-06": 13,
           "2026-07": 6,
-          "2026-08": 5
+          "2026-08": 5,
+          "2026-09": 2
         }
       },
       "pta": {
-        "trailing_12mo_total": 5,
+        "trailing_12mo_total": 6,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 4,
           "2025-12": 1,
@@ -61,13 +60,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 1
         }
       },
       "ot": {
         "trailing_12mo_total": 15,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 2,
           "2025-12": 3,
@@ -78,13 +77,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 2,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 2
         }
       },
       "ota": {
         "trailing_12mo_total": 0,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -95,13 +94,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 26,
+        "trailing_12mo_total": 24,
         "by_month": {
-          "2025-09": 3,
           "2025-10": 0,
           "2025-11": 2,
           "2025-12": 0,
@@ -112,13 +111,13 @@
           "2026-05": 3,
           "2026-06": 0,
           "2026-07": 5,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 1
         }
       },
       "aud": {
         "trailing_12mo_total": 3,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -129,7 +128,8 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 0
         }
       }
     }
@@ -235,7 +235,7 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "nursing_homes": {
       "count": 61,
       "certified_beds": 4997,

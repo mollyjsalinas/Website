@@ -6,29 +6,28 @@
   "state_abbr": "IA",
   "state": "Iowa",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Iowa side of the Des Moines metro area",
     "active_individual_providers": {
-      "pt": 816,
-      "pta": 102,
-      "ot": 357,
-      "ota": 59,
-      "slp": 359,
-      "aud": 49
+      "pt": 832,
+      "pta": 103,
+      "ot": 365,
+      "ota": 61,
+      "slp": 360,
+      "aud": 66
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 39,
+        "trailing_12mo_total": 40,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 2,
@@ -39,13 +38,13 @@
           "2026-05": 4,
           "2026-06": 4,
           "2026-07": 1,
-          "2026-08": 4
+          "2026-08": 4,
+          "2026-09": 2
         }
       },
       "pta": {
         "trailing_12mo_total": 6,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 2,
           "2025-11": 0,
           "2025-12": 1,
@@ -56,13 +55,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 0
         }
       },
       "ot": {
         "trailing_12mo_total": 35,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 5,
           "2025-11": 2,
           "2025-12": 3,
@@ -73,13 +72,13 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 6,
-          "2026-08": 11
+          "2026-08": 11,
+          "2026-09": 2
         }
       },
       "ota": {
-        "trailing_12mo_total": 2,
+        "trailing_12mo_total": 3,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 12,
+        "trailing_12mo_total": 15,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 1,
@@ -107,13 +106,13 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 2,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 4
         }
       },
       "aud": {
-        "trailing_12mo_total": 0,
+        "trailing_12mo_total": 1,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +122,9 @@
           "2026-04": 0,
           "2026-05": 0,
           "2026-06": 0,
-          "2026-07": 0,
-          "2026-08": 0
+          "2026-07": 1,
+          "2026-08": 0,
+          "2026-09": 0
         }
       }
     }
@@ -166,36 +166,18 @@
   "sector_employment": {
     "source": "BLS QCEW county files, private ownership, Q4 2025",
     "scope": "Iowa-side counties of the metro with disclosed data; wages employment-weighted",
-    "therapy_offices_naics_62134": {
-      "employment": 1514,
-      "establishments": 159,
-      "avg_weekly_wage": 1095,
-      "counties_disclosed": 3,
-      "counties_total": 6
-    },
-    "home_health_naics_6216": {
-      "employment": 2445,
-      "establishments": 81,
-      "avg_weekly_wage": 1029,
-      "counties_disclosed": 4,
-      "counties_total": 6
-    },
-    "nursing_facilities_naics_6231": {
-      "employment": 3951,
-      "establishments": 49,
-      "avg_weekly_wage": 920,
-      "counties_disclosed": 4,
-      "counties_total": 6
-    },
+    "therapy_offices_naics_62134": null,
+    "home_health_naics_6216": null,
+    "nursing_facilities_naics_6231": null,
     "hospitals_naics_6221": null
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Iowa side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 52,
       "certified_beds": 3619,
-      "avg_overall_rating": 2.88,
+      "avg_overall_rating": 2.86,
       "for_profit_pct": 57.7
     },
     "home_health_agencies": {

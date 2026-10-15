@@ -6,29 +6,28 @@
   "state_abbr": "OH",
   "state": "Ohio",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Ohio side of the Cleveland metro area",
     "active_individual_providers": {
-      "pt": 1566,
-      "pta": 343,
-      "ot": 878,
-      "ota": 319,
-      "slp": 1415,
-      "aud": 210
+      "pt": 1580,
+      "pta": 351,
+      "ot": 886,
+      "ota": 327,
+      "slp": 1417,
+      "aud": 218
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 76,
+        "trailing_12mo_total": 77,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 3,
           "2025-12": 3,
@@ -38,14 +37,14 @@
           "2026-04": 5,
           "2026-05": 8,
           "2026-06": 6,
-          "2026-07": 5,
-          "2026-08": 3
+          "2026-07": 6,
+          "2026-08": 3,
+          "2026-09": 1
         }
       },
       "pta": {
         "trailing_12mo_total": 26,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 4,
           "2025-11": 1,
           "2025-12": 1,
@@ -56,14 +55,14 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 3,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 42,
+        "trailing_12mo_total": 40,
         "by_month": {
-          "2025-09": 5,
-          "2025-10": 2,
+          "2025-10": 3,
           "2025-11": 6,
           "2025-12": 2,
           "2026-01": 7,
@@ -73,13 +72,13 @@
           "2026-05": 3,
           "2026-06": 3,
           "2026-07": 5,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 2
         }
       },
       "ota": {
-        "trailing_12mo_total": 29,
+        "trailing_12mo_total": 32,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 6,
-          "2026-08": 11
+          "2026-08": 11,
+          "2026-09": 5
         }
       },
       "slp": {
         "trailing_12mo_total": 64,
         "by_month": {
-          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 4,
@@ -107,13 +106,13 @@
           "2026-05": 7,
           "2026-06": 4,
           "2026-07": 7,
-          "2026-08": 16
+          "2026-08": 16,
+          "2026-09": 5
         }
       },
       "aud": {
-        "trailing_12mo_total": 6,
+        "trailing_12mo_total": 7,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -124,7 +123,8 @@
           "2026-05": 3,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 1
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Ohio side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 146,
       "certified_beds": 14996,
-      "avg_overall_rating": 3.22,
+      "avg_overall_rating": 3.23,
       "for_profit_pct": 86.3
     },
     "home_health_agencies": {

@@ -2,40 +2,39 @@
   "market": "Rhode Island",
   "market_abbr": "RI",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 1114521
   },
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 1235,
-      "pta": 213,
-      "ot": 475,
+      "pt": 1245,
+      "pta": 216,
+      "ot": 490,
       "ota": 175,
-      "slp": 648,
-      "aud": 73
+      "slp": 651,
+      "aud": 72
     },
     "per_100k": {
-      "pt": 110.8,
-      "ot": 42.6,
-      "slp": 58.1,
+      "pt": 111.7,
+      "ot": 44.0,
+      "slp": 58.4,
       "aud": 6.5
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 50,
+        "trailing_12mo_total": 49,
         "by_month": {
-          "2025-09": 3,
           "2025-10": 5,
-          "2025-11": 5,
+          "2025-11": 4,
           "2025-12": 2,
           "2026-01": 1,
           "2026-02": 3,
@@ -44,13 +43,13 @@
           "2026-05": 4,
           "2026-06": 3,
           "2026-07": 1,
-          "2026-08": 13
+          "2026-08": 13,
+          "2026-09": 3
         }
       },
       "pta": {
         "trailing_12mo_total": 26,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 1,
@@ -61,13 +60,13 @@
           "2026-05": 4,
           "2026-06": 2,
           "2026-07": 3,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 2
         }
       },
       "ot": {
         "trailing_12mo_total": 35,
         "by_month": {
-          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 1,
           "2025-12": 0,
@@ -78,13 +77,13 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 5,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 5
         }
       },
       "ota": {
         "trailing_12mo_total": 14,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 2,
@@ -95,13 +94,13 @@
           "2026-05": 4,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 27,
+        "trailing_12mo_total": 30,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 1,
@@ -112,13 +111,13 @@
           "2026-05": 2,
           "2026-06": 3,
           "2026-07": 7,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 3
         }
       },
       "aud": {
         "trailing_12mo_total": 1,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -129,7 +128,8 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       }
     }
@@ -199,42 +199,30 @@
     "therapy_offices_naics_62134": {
       "employment": 1989,
       "establishments": 209,
-      "avg_weekly_wage": 1066,
-      "employment_yoy_pct": -0.45,
-      "establishments_yoy_pct": 6.63,
-      "avg_weekly_wage_yoy_pct": 3.7
+      "avg_weekly_wage": 1066
     },
     "home_health_naics_6216": {
       "employment": 6204,
       "establishments": 251,
-      "avg_weekly_wage": 990,
-      "employment_yoy_pct": 7.04,
-      "establishments_yoy_pct": 3.29,
-      "avg_weekly_wage_yoy_pct": 5.21
+      "avg_weekly_wage": 990
     },
     "nursing_facilities_naics_6231": {
       "employment": 8750,
       "establishments": 94,
-      "avg_weekly_wage": 1092,
-      "employment_yoy_pct": 0.08,
-      "establishments_yoy_pct": 3.3,
-      "avg_weekly_wage_yoy_pct": 7.37
+      "avg_weekly_wage": 1092
     },
     "hospitals_naics_6221": {
       "employment": 19005,
       "establishments": 42,
-      "avg_weekly_wage": 1518,
-      "employment_yoy_pct": -1.79,
-      "establishments_yoy_pct": 27.27,
-      "avg_weekly_wage_yoy_pct": 5.78
+      "avg_weekly_wage": 1518
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "nursing_homes": {
       "count": 72,
       "certified_beds": 8190,
-      "avg_overall_rating": 2.89,
+      "avg_overall_rating": 2.9,
       "for_profit_pct": 84.7
     },
     "home_health_agencies": {

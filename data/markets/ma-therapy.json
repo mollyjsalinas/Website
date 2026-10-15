@@ -2,41 +2,40 @@
   "market": "Massachusetts",
   "market_abbr": "MA",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 7154084
   },
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 7178,
-      "pta": 1149,
-      "ot": 3545,
-      "ota": 756,
-      "slp": 3959,
-      "aud": 605
+      "pt": 7256,
+      "pta": 1142,
+      "ot": 3609,
+      "ota": 760,
+      "slp": 3999,
+      "aud": 630
     },
     "per_100k": {
-      "pt": 100.3,
-      "ot": 49.6,
-      "slp": 55.3,
-      "aud": 8.5
+      "pt": 101.4,
+      "ot": 50.4,
+      "slp": 55.9,
+      "aud": 8.8
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 377,
+        "trailing_12mo_total": 375,
         "by_month": {
-          "2025-09": 50,
           "2025-10": 18,
-          "2025-11": 44,
-          "2025-12": 15,
+          "2025-11": 45,
+          "2025-12": 16,
           "2026-01": 12,
           "2026-02": 33,
           "2026-03": 26,
@@ -44,31 +43,31 @@
           "2026-05": 22,
           "2026-06": 20,
           "2026-07": 21,
-          "2026-08": 107
+          "2026-08": 107,
+          "2026-09": 46
         }
       },
       "pta": {
-        "trailing_12mo_total": 37,
+        "trailing_12mo_total": 30,
         "by_month": {
-          "2025-09": 6,
           "2025-10": 4,
           "2025-11": 1,
           "2025-12": 4,
           "2026-01": 3,
-          "2026-02": 1,
+          "2026-02": 0,
           "2026-03": 1,
           "2026-04": 2,
           "2026-05": 4,
           "2026-06": 5,
           "2026-07": 1,
-          "2026-08": 5
+          "2026-08": 5,
+          "2026-09": 0
         }
       },
       "ot": {
-        "trailing_12mo_total": 177,
+        "trailing_12mo_total": 179,
         "by_month": {
-          "2025-09": 20,
-          "2025-10": 18,
+          "2025-10": 19,
           "2025-11": 17,
           "2025-12": 11,
           "2026-01": 10,
@@ -78,13 +77,13 @@
           "2026-05": 18,
           "2026-06": 14,
           "2026-07": 11,
-          "2026-08": 17
+          "2026-08": 18,
+          "2026-09": 20
         }
       },
       "ota": {
-        "trailing_12mo_total": 31,
+        "trailing_12mo_total": 26,
         "by_month": {
-          "2025-09": 6,
           "2025-10": 4,
           "2025-11": 3,
           "2025-12": 3,
@@ -95,13 +94,13 @@
           "2026-05": 0,
           "2026-06": 3,
           "2026-07": 2,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 227,
+        "trailing_12mo_total": 232,
         "by_month": {
-          "2025-09": 26,
           "2025-10": 8,
           "2025-11": 10,
           "2025-12": 12,
@@ -112,13 +111,13 @@
           "2026-05": 20,
           "2026-06": 22,
           "2026-07": 27,
-          "2026-08": 23
+          "2026-08": 23,
+          "2026-09": 31
         }
       },
       "aud": {
-        "trailing_12mo_total": 14,
+        "trailing_12mo_total": 15,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -129,7 +128,8 @@
           "2026-05": 2,
           "2026-06": 8,
           "2026-07": 1,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 2
         }
       }
     }
@@ -235,12 +235,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "nursing_homes": {
       "count": 341,
-      "certified_beds": 40961,
-      "avg_overall_rating": 3.04,
-      "for_profit_pct": 73.0
+      "certified_beds": 40920,
+      "avg_overall_rating": 3.05,
+      "for_profit_pct": 73.6
     },
     "home_health_agencies": {
       "count": 287,
