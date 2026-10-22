@@ -23,8 +23,8 @@ export default function LicensureIndexPage() {
         primary={{ href: "/licensure-compacts/", label: "How the compacts work" }}
         secondary={{ href: "/jobs/", label: "See open roles" }}
       >
-        Exams, background checks, fees, endorsement and renewal, taken from each state board&apos;s own
-        pages and linked to them. We are adding states; the compacts page covers where a privilege to
+        Exams, background checks, fees, endorsement and renewal for all 50 states and DC, taken from each
+        state board&apos;s own pages and linked to them. The compacts page covers where a privilege to
         practice replaces a new license.
       </Hero>
       <section className="py-20">

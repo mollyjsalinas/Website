@@ -6,9 +6,9 @@ verbatim after whitespace/quote/dash normalisation, and that every number
 in the value (fees, hours, years) also appears on that page. Writes <ST>.verified.json with
 only the facts whose quote was found, and prints each drop. Run on Linux:
     python3 scripts/check-licensure-quotes.py FL TX CA   (from the research folder)"""
-import html, json, re, subprocess, sys, unicodedata
+import html, json, os, re, subprocess, sys, tempfile, time, unicodedata
 
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 cache = {}
 
 
@@ -21,11 +21,42 @@ def norm(s: str) -> str:
 def text_of(url: str) -> str:
     if url in cache:
         return cache[url]
-    raw = subprocess.run(["curl", "-sL", "--max-time", "40", "-A", UA, url], capture_output=True).stdout
+    raw = b""
+    browser = ["-A", UA, "-H", "Accept: text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",
+               "-H", "Accept-Language: en-US,en;q=0.9"]
+    # sites differ: some 403 a browser UA but serve curl's default, some challenge intermittently.
+    # Only an HTTP 200 that is not a bot-challenge page counts.
+    tmp = os.path.join(tempfile.gettempdir(), f"chk_{os.getpid()}.bin")
+    full = ["--compressed", "-A", UA, "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "-H", "Accept-Language: en-US,en;q=0.9", "-H", "Sec-Fetch-Dest: document", "-H", "Sec-Fetch-Mode: navigate",
+            "-H", "Sec-Fetch-Site: none", "-H", "Sec-Fetch-User: ?1", "-H", "Upgrade-Insecure-Requests: 1",
+            "-H", 'sec-ch-ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
+            "-H", "sec-ch-ua-mobile: ?0", "-H", 'sec-ch-ua-platform: "Windows"']
+    for attempt, hdrs in enumerate([full, ["-A", UA], [], browser, full, ["-A", UA], []]):
+        if attempt >= 2:
+            time.sleep(3 * attempt)
+        code = subprocess.run(["curl", "-sL", "--max-time", "40", "--ssl-no-revoke", *hdrs, "-o", tmp,
+                               "-w", "%{http_code}", url], capture_output=True).stdout.decode()
+        raw = open(tmp, "rb").read() if os.path.exists(tmp) else b""
+        head = raw[:6000]
+        if code == "200" and b"Incapsula" not in head and b"Just a moment" not in head and b"challenge-platform" not in head:
+            break
+        raw = b""
     if raw[:4] == b"%PDF":
-        t = subprocess.run(["pdftotext", "-layout", "-", "-"], input=raw, capture_output=True).stdout.decode("utf-8", "ignore")
+        # xpdf's pdftotext does not read stdin: use the downloaded file. Keep layout and plain
+        # extraction side by side so a quote can match either reading order.
+        t = " ".join(subprocess.run(["pdftotext", *mode, "-enc", "UTF-8", tmp, "-"], capture_output=True).stdout.decode("utf-8", "ignore")
+                     for mode in (["-layout"], []))
     else:
-        t = raw.decode("utf-8", "ignore")
+        if raw[:2] in (bytes([255, 254]), bytes([254, 255])) or raw[:200].count(bytes([0])) > 50:
+            t = raw.decode("utf-16", "ignore")  # e.g. sdlegislature.gov rule pages
+        else:
+            t = raw.decode("utf-8", "ignore")
+        if t.lstrip().startswith("{"):  # JSON-wrapped HTML fragments (e.g. azdhs.gov content endpoints)
+            try:
+                t = " ".join(str(v) for v in json.loads(t).values())
+            except (ValueError, AttributeError):
+                pass
         t = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", t)
         t = re.sub(r"(?s)<[^>]+>", " ", t)
     cache[url] = norm(t)
