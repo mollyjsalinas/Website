@@ -25,6 +25,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Pediatric Speech-Language Pathologist",
+    slug: "pediatric-speech-language-pathologist-pelham-al",
+    profession: "slp",
+    setting: "outpatient-rehab",
+    city: "Pelham",
+    state: "AL",
+    employmentType: ["FULL_TIME", "CONTRACTOR"],
+    datePosted: "2026-10-22",
+    salary: { min: 65000, max: 70000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential pediatric outpatient therapy practice in the Birmingham area that is seeking an experienced Speech-Language Pathologist. This role is a rewarding fit for an SLP who values individualized care, meaningful family relationships, clinical independence, and a stable, supportive setting. Full-time W-2 employment is preferred, with contract consideration for the right clinician.\n\nYou will conduct comprehensive pediatric speech-language evaluations, create evidence-based treatment plans, provide intervention for speech, language, and communication needs, monitor progress, and partner with caregivers to help children reach functional goals. Treatment is entirely one-on-one, with no co-treatment, so each child receives your full attention.\n\nThe practice offers a predictable weekday schedule with no weekends, including an early Friday finish. A typical day is capped at 12 patients, with 30-minute visits, built-in breaks, and 60–90-minute evaluations. Dedicated documentation time is scheduled each week, and salaried clinicians receive consistent pay when patients cancel or caseloads fluctuate. Administrative staff handle scheduling, insurance verification, and authorizations, letting you focus on clinical care.\n\nCompensation starts at $65,000–$70,000+ annually depending on experience, with a substantial sign-on bonus available for qualified candidates. Eligible salaried employees receive medical, dental, and vision coverage with an employer premium contribution; a retirement plan with employer match; employer-paid life and disability insurance; generous vacation and sick leave; paid holidays and seasonal closure time; CEU support and professional-development days; licensure and ASHA reimbursement; and resources for specialty training and therapy materials.\n\nCandidates need a master's degree in Speech-Language Pathology, active Alabama SLP licensure, and pediatric SLP experience. The ideal clinician brings strong clinical reasoning, communicates warmly with children and families, works independently, and contributes positively to a collaborative team.",
+  },
+  {
     title: "Physical Therapist — Outpatient Orthopedics",
     slug: "physical-therapist-outpatient-orthopedics-mountlake-terrace-wa",
     profession: "pt",
