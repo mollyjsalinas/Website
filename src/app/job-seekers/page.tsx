@@ -6,9 +6,9 @@ import { Hero, SectionHeading, FaqSection, Breadcrumbs } from "@/components/Sect
 import { SITE, candidateFaqs, PROFESSION_LIST } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "PT, OT, SLP & Audiology Jobs: Work With a Therapy Recruiter",
+  title: "Therapy, NP & PA Jobs: Work With a Healthcare Recruiter",
   description:
-    "Physical therapy, occupational therapy, speech-language pathology and audiology jobs in hospitals, SNFs, home health, outpatient and schools. Free to therapists, confidential, and run by a licensed SLP.",
+    "Physical therapy, occupational therapy, speech-language pathology, audiology, nurse practitioner and physician assistant opportunities nationwide. Confidential, candidate-first recruiting.",
   alternates: { canonical: "/job-seekers/" },
 };
 
@@ -35,14 +35,12 @@ export default function JobSeekersPage() {
   return (
     <>
       <Hero
-        eyebrow="For therapists"
-        title="A therapy recruiter who has actually held the job."
+        eyebrow="For clinicians"
+        title="A healthcare recruiter who understands clinical work."
         primary={{ href: "#contact", label: "Start a confidential conversation" }}
         secondary={{ href: "/jobs/", label: "See open roles" }}
       >
-        APT Recruiting was founded by a licensed speech-language pathologist. If you are a PT,
-        OT, SLP, audiologist, PTA or COTA thinking about a move, you will talk to someone who
-        knows the difference between a good setting and a good posting.
+        APT Recruiting was founded by a licensed speech-language pathologist. If you are a PT, OT, SLP, audiologist, PTA, COTA, nurse practitioner or physician assistant considering a move, you will talk to someone who knows the difference between a good setting and a good posting.
       </Hero>
 
       <section className="py-20">
@@ -98,7 +96,7 @@ export default function JobSeekersPage() {
         </Container>
       </section>
 
-      <FaqSection faqs={candidateFaqs} title="Questions therapists ask us" />
+      <section className="py-20"><Container><SectionHeading eyebrow="Explore by specialty" title="Candidate career and salary guides by state">Use current BLS state wage estimates to benchmark your next move, then start a confidential conversation about the setting and schedule you want.</SectionHeading><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/salary/nurse-practitioner/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Nurse Practitioner salaries by state →</Link><Link href="/salary/physician-assistant/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Physician Assistant salaries by state →</Link><Link href="/career/certified-hand-therapist/texas/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Certified Hand Therapist careers →</Link><Link href="/career/pelvic-health-therapist/texas/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Pelvic Health Therapist careers →</Link><Link href="/salary/audiologist/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Audiologist salaries by state →</Link></div></Container></section>\n\n      <FaqSection faqs={candidateFaqs} title="Questions clinicians ask us" />
 
       <section id="contact" className="scroll-mt-24 bg-lavender/40 py-20">
         <Container>
