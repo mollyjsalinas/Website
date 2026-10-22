@@ -88,5 +88,5 @@ In order. Each step has a check that proves it, not a "should work".
 - Copy changes: bump `CONTENT_UPDATED` in `src/lib/site.ts` so the sitemap `lastmod` moves.
 - New open role: add it to `src/lib/jobs.ts`; the page, index and sitemap follow.
 - To notify Google about one live role after deployment, make a server-to-server `POST` to
-  `/api/internal/index-job?slug=<job-slug>` with `Authorization: Bearer <INDEXING_API_TRIGGER_SECRET>`.
+  `/api/internal/index-job/?slug=<job-slug>` with `Authorization: Bearer <INDEXING_API_TRIGGER_SECRET>`.
   The endpoint accepts only live registry jobs and submits `URL_UPDATED` through Google's Indexing API.
