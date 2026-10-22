@@ -19,10 +19,25 @@ export type Job = {
   datePosted: string; // ISO date
   validThrough?: string; // ISO date; once past, the role drops out of the registry
   salary?: { min: number; max: number; unit: "YEAR" | "HOUR" };
+  remote?: boolean;
   hold?: string; // why the role is not published yet
 };
 
 export const JOBS: Job[] = [
+  {
+    title: "Remote Speech-Language Pathologist",
+    slug: "remote-speech-language-pathologist-texas",
+    profession: "slp",
+    setting: "outpatient-rehab",
+    city: "Remote",
+    state: "TX",
+    remote: true,
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 45, max: 55, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a confidential, fully virtual specialty practice that is seeking an experienced Speech-Language Pathologist licensed in Texas. This W-2, work-from-home opportunity is ideal for a clinically curious SLP who wants to provide highly individualized care while deepening expertise in orofacial myofunctional, oral-motor, feeding, and airway-focused therapy.\n\nYour work may include orofacial myofunctional therapy; oral-motor and feeding therapy; speech treatment; tongue-tie, breathing, and airway-related concerns; TMJ-related needs; sleep and airway health; and early-intervention care. You will use your knowledge of anatomy, physiology, and muscle function to develop thoughtful treatment plans and help patients and families understand the reasoning behind recommendations.\n\nThe practice offers true remote flexibility alongside strong clinical support: weekly team meetings for case collaboration, extensive digital treatment resources, AI-assisted documentation, and the autonomy to apply your clinical judgment. Paid onboarding, observation, and documentation time help you get established and keep your focus on patient care.\n\nCompensation is $45–$55 per hour, based on experience, plus a $2,000 sign-on bonus for full-time clinicians. You will be paid for scheduled time when patients cancel or do not attend. Benefits include PTO, a $200 monthly wellness stipend, up to $1,000 per year in CEU reimbursement, paid state licenses and renewals, and financial support for approved specialty certifications.\n\nCandidates need Texas SLP licensure, or eligibility for licensure, as well as experience in orofacial myofunctional and oral-motor/feeding therapy. The ideal clinician is a clear communicator, independent and dependable, comfortable with remote technology, and interested in a long-term role with a growing specialty practice. Multi-state licensure is a plus.",
+  },
   {
     title: "Pediatric Occupational Therapist",
     slug: "pediatric-occupational-therapist-tumwater-wa",
