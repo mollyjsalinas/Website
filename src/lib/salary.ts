@@ -1,4 +1,5 @@
 import type { CompactKey, ProfessionKey, RoleKey } from "@/lib/site";
+import { advancedPracticeSalary } from "@/lib/advanced-practice-salary";
 import { ROLE_LABELS } from "@/lib/site";
 import { launchMarkets, marketBySlug, type MarketSnapshot, type OccBlock } from "@/lib/markets";
 import { liveJobs, type Job } from "@/lib/jobs";
@@ -8,12 +9,18 @@ import { liveJobs, type Job } from "@/lib/jobs";
 // (DataForSEO 2026-10-22: ~23k US searches a month across the 306 combinations).
 // Every number comes from the state and metro snapshots; nothing is typed by hand.
 
+export type SalaryKey = RoleKey | "np" | "pa";
 export type SalaryRole = {
-  key: RoleKey;
+  key: SalaryKey;
   slug: string;
-  profession: ProfessionKey; // which jobs count as "open roles" for this page
-  compact: CompactKey;
+  profession?: ProfessionKey; // which public jobs count for this page
+  compact?: CompactKey;
 };
+
+const ADVANCED_LABELS = {
+  np: { label: "nurse practitioner", plural: "nurse practitioners", short: "NP" },
+  pa: { label: "physician assistant", plural: "physician assistants", short: "PA" },
+} as const;
 
 export const SALARY_ROLES: SalaryRole[] = [
   { key: "pt", slug: "physical-therapist", profession: "pt", compact: "pt" },
@@ -22,13 +29,16 @@ export const SALARY_ROLES: SalaryRole[] = [
   { key: "ota", slug: "occupational-therapy-assistant", profession: "ot", compact: "ot" },
   { key: "slp", slug: "speech-language-pathologist", profession: "slp", compact: "aslp" },
   { key: "aud", slug: "audiologist", profession: "aud", compact: "aslp" },
+  { key: "np", slug: "nurse-practitioner" },
+  { key: "pa", slug: "physician-assistant" },
 ];
 
 export function salaryRoleBySlug(slug: string): SalaryRole | undefined {
   return SALARY_ROLES.find((r) => r.slug === slug);
 }
 
-export const roleLabel = (r: SalaryRole) => ROLE_LABELS[r.key];
+export const roleLabel = (r: SalaryRole) =>
+  r.key === "np" || r.key === "pa" ? ADVANCED_LABELS[r.key] : ROLE_LABELS[r.key];
 
 // "Speech-language pathologist" -> "Speech-Language Pathologist", for titles.
 export const titleCase = (s: string) => s.replace(/(^|[\s-])([a-z])/g, (_, p: string, c: string) => p + c.toUpperCase());
@@ -38,12 +48,13 @@ export function salaryHref(r: SalaryRole, m?: MarketSnapshot | { market: string 
 }
 
 export function stateWage(m: MarketSnapshot, r: SalaryRole): OccBlock | undefined {
-  const d = m.compensation[r.key];
+  const d = r.key === "np" || r.key === "pa" ? advancedPracticeSalary(r.slug, m.market_abbr) : m.compensation[r.key];
   return d && d.annual_mean_wage != null ? d : undefined;
 }
 
 export function nationalWage(r: SalaryRole): OccBlock | undefined {
   for (const m of launchMarkets()) {
+    if (r.key === "np" || r.key === "pa") return undefined;
     const d = m.compensation.national?.[r.key];
     if (d?.annual_mean_wage != null) return d;
   }
@@ -74,7 +85,8 @@ export function salaryPage(roleSlug: string, stateSlugValue: string) {
   return { r, m, d, rank: ranked.findIndex((x) => x.m.market_abbr === m.market_abbr) + 1, of: ranked.length };
 }
 
-export function jobsFor(profession: ProfessionKey, abbr?: string): Job[] {
+export function jobsFor(profession: ProfessionKey | undefined, abbr?: string): Job[] {
+  if (!profession) return [];
   return liveJobs().filter((j) => j.profession === profession && (!abbr || j.state === abbr));
 }
 
