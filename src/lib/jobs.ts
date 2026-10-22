@@ -25,6 +25,45 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Pediatric Occupational Therapist",
+    slug: "pediatric-occupational-therapist-kansas-city-ks",
+    profession: "ot",
+    setting: "outpatient-rehab",
+    city: "Kansas City",
+    state: "KS",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 80000, max: 130000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential pediatric therapy practice in the Kansas City, Kansas metro area that is seeking an Occupational Therapist. This is an excellent opportunity for an OT who enjoys working with young children, values flexibility, and wants to step into an established caseload rather than build one from scratch.\n\nYou will provide individualized occupational therapy for children ages 3–6, including many children with autism spectrum disorder and developmental needs. Care is one-on-one, with 30–60-minute treatment sessions and approximately 90-minute evaluations. You will collaborate with a multidisciplinary pediatric team, manage your daily caseload within clinic hours, and deliver child-centered treatment that supports meaningful progress.\n\nBoth full-time and part-time schedules are available, with the freedom to choose your hours, shape daily patient volume, and align your caseload with your professional and income goals. The clinic operates weekdays with no weekend requirement, and streamlined systems are designed to reduce unnecessary documentation burden.\n\nCompensation is $80,000–$130,000+ annually, depending on schedule, experience, and caseload. The role also offers annual compensation increases, ongoing professional development, and the potential to grow into clinical leadership as the program expands.\n\nCandidates need OT licensure in Kansas, or eligibility for licensure. The ideal clinician is passionate about pediatric care, comfortable working with children with autism, communicates clearly, collaborates well, and is excited to provide individualized therapy in a supportive environment.",
+  },
+  {
+    title: "Pediatric Occupational Therapist",
+    slug: "pediatric-occupational-therapist-kansas-city-mo",
+    profession: "ot",
+    setting: "outpatient-rehab",
+    city: "Kansas City",
+    state: "MO",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 80000, max: 130000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential pediatric therapy practice in the Kansas City, Missouri metro area that is seeking an Occupational Therapist. This is an excellent opportunity for an OT who enjoys working with young children, values flexibility, and wants to step into an established caseload rather than build one from scratch.\n\nYou will provide individualized occupational therapy for children ages 3–6, including many children with autism spectrum disorder and developmental needs. Care is one-on-one, with 30–60-minute treatment sessions and approximately 90-minute evaluations. You will collaborate with a multidisciplinary pediatric team, manage your daily caseload within clinic hours, and deliver child-centered treatment that supports meaningful progress.\n\nBoth full-time and part-time schedules are available, with the freedom to choose your hours, shape daily patient volume, and align your caseload with your professional and income goals. The clinic operates weekdays with no weekend requirement, and streamlined systems are designed to reduce unnecessary documentation burden.\n\nCompensation is $80,000–$130,000+ annually, depending on schedule, experience, and caseload. The role also offers annual compensation increases, ongoing professional development, and the potential to grow into clinical leadership as the program expands.\n\nCandidates need Missouri OT licensure, or eligibility for licensure. The ideal clinician is passionate about pediatric care, comfortable working with children with autism, communicates clearly, collaborates well, and is excited to provide individualized therapy in a supportive environment.",
+  },
+  {
+    title: "Pediatric Speech-Language Pathologist (SLP) / SLPA",
+    slug: "pediatric-speech-language-pathologist-kansas-city-ks",
+    profession: "slp",
+    setting: "outpatient-rehab",
+    city: "Kansas City",
+    state: "KS",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 80000, max: 130000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential pediatric therapy practice in the Kansas City, Kansas metro area that is seeking a Speech-Language Pathologist or Speech-Language Pathology Assistant. This is an excellent opportunity for a pediatric clinician who values flexibility, individualized care, and the ability to join an established caseload.\n\nYou will provide one-on-one speech-language therapy for children ages 3–6, including many children with autism spectrum disorder and developmental needs. Care includes 30–60-minute treatment sessions, approximately 90-minute evaluations, and close collaboration with a multidisciplinary pediatric team. You will manage your daily caseload within clinic hours and deliver thoughtful, child-centered intervention.\n\nBoth full-time and part-time schedules are available, with the freedom to choose your hours, shape daily patient volume, and align your caseload with your professional and income goals. The clinic operates weekdays with no weekend requirement, and streamlined systems are designed to reduce unnecessary documentation burden.\n\nCompensation is $80,000–$130,000+ annually, depending on schedule, experience, and caseload. The role also offers annual compensation increases, ongoing professional development, and potential leadership opportunities as the program expands.\n\nCandidates need Kansas SLP licensure, or eligibility for licensure; qualified SLPAs are also welcome. The ideal clinician has an interest in pediatric care, is comfortable supporting children with autism, communicates clearly, collaborates well, and is committed to individualized, family-centered therapy.",
+  },
+  {
     title: "Pediatric Speech-Language Pathologist",
     slug: "pediatric-speech-language-pathologist-yulee-fl",
     profession: "slp",
