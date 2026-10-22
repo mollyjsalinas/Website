@@ -221,19 +221,18 @@ export const JOBS: Job[] = [
       "Join a privately owned pediatric speech therapy clinic in Huntsville, TX founded by two SLPs who understand firsthand what clinicians need to thrive in their careers. This full-time opportunity offers an exceptionally flexible schedule, allowing you to choose your own hours, including the option to work four 10-hour days, while providing individualized evaluations and therapy to pediatric clients and building meaningful relationships with children and their families.\n\nThe position offers $36–$57/hour ($74,880–$118,560 annually based on experience), health, dental and vision insurance, life insurance, PTO, retirement benefits, CEU support, professional growth opportunities, and a supportive team environment focused on quality patient care and clinician flexibility.",
   },
   {
-    title: "Occupational Therapist, CHT (Hand & Upper Extremity)",
-    slug: "occupational-therapist-cht-campbell-ca",
+    title: "Occupational Therapist — Hand & Upper Extremity Therapy",
+    slug: "occupational-therapist-hand-upper-extremity-campbell-ca",
     profession: "ot",
     setting: "outpatient-rehab",
     city: "Campbell",
     state: "CA",
     employmentType: ["FULL_TIME"],
-    datePosted: "2026-07-28",
-    salary: { min: 104000, max: 128960, unit: "YEAR" },
-    hold: "Location says Campbell, CA but the description says San Jose, CA; confirm with Molly.",
+    datePosted: "2026-10-22",
+    salary: { min: 104000, max: 128000, unit: "YEAR" },
     description:
-      "Join a well-established and growing specialty practice in San Jose, CA focused exclusively on shoulder, elbow, wrist, and hand rehabilitation. This full-time opportunity offers primarily one-on-one patient care with no routine double-booking, the chance to work with professional athletes, and the opportunity to learn alongside experienced hand therapists and surgeons through strong mentorship and hands-on training.\n\nThe position offers $104,000–$128,960 annually, medical, dental and vision insurance, 401(k) with employer match, generous PTO, paid holidays, performance-based incentives, and an annual CE allowance with support for licensing and professional memberships.",
-  },
+      "APT Recruiting is representing a confidential, established specialty outpatient practice in Campbell, California that is seeking a full-time Occupational Therapist. This is a strong opportunity for an OT who wants to build a long-term career in hand therapy and complex upper-extremity rehabilitation while delivering individualized, high-quality care.\n\nYou will focus on shoulder, elbow, wrist, and hand rehabilitation in a specialty clinical environment. Care is primarily one-on-one, with no routine double-booking, giving you the time to apply sound clinical reasoning, build strong patient relationships, and develop thoughtful treatment plans.\n\nThe practice offers a collaborative learning environment with experienced hand-therapy colleagues, robust mentorship, and hands-on training for clinicians who want to deepen their expertise. This role is well suited to an OT who values both clinical growth and a team-oriented setting.\n\nCompensation is $104,000–$128,000 annually, based on experience and skills, with performance-based incentive opportunities. Benefits include medical, dental, and vision insurance; a 401(k) with employer match; paid holidays; PTO that grows with tenure; an annual continuing-education allowance of $1,000 or more; and support for licensure and professional memberships.\n\nCandidates need active California OT licensure. One or more years of hand-therapy experience is preferred, but motivated OTs with relevant fieldwork and a strong interest in hand and upper-extremity therapy are encouraged to apply. The ideal clinician is communicative, team-oriented, and eager to keep growing in this specialty.",
+  }
 ];
 
 export function liveJobs(today: string = new Date().toISOString().slice(0, 10)): Job[] {
