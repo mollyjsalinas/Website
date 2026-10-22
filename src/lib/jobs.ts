@@ -25,6 +25,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Pediatric Occupational Therapist",
+    slug: "pediatric-occupational-therapist-chandler-az",
+    profession: "ot",
+    setting: "outpatient-rehab",
+    city: "Chandler",
+    state: "AZ",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 90000, max: 115000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential, family-centered pediatric therapy practice in Chandler, Arizona that is seeking a full-time Occupational Therapist. This is a rare opportunity for a clinician who wants to make a meaningful difference for children while enjoying realistic productivity expectations, paid time for nonclinical work, and a real voice in an expanding OT service.\n\nYou will provide engaging, individualized occupational therapy for children and adolescents with needs that may include autism spectrum disorder, developmental challenges, and functional skill development. Services are delivered primarily in an outpatient setting, with occasional community-based school visits. You will collaborate with families and fellow therapists to support each child's progress and create thoughtful, individualized plans of care.\n\nThe role is intentionally designed around sustainable practice: only 50% productivity is expected, or about 20 hours of direct patient care each week. The remaining time is paid and reserved for documentation, treatment planning, care coordination, and program-building work—so you can focus on quality without a packed back-to-back schedule.\n\nCompensation is $90,000–$115,000 annually, negotiable based on experience. Benefits include health, dental, and vision insurance; a 401(k); paid holidays; PTO and additional sick time; paid CEUs; license-renewal support; professional training; and opportunities for specialty certification. The schedule is primarily Monday–Friday, with potential for a four-day workweek or another flexible arrangement.\n\nCandidates need Arizona OT licensure, or eligibility for licensure. Pediatric experience is preferred, but confident, motivated new graduates are encouraged to apply. The ideal clinician is a clear communicator, works well with children and families, takes initiative, and is excited to help grow a patient-centered pediatric OT program.",
+  },
+  {
     title: "Speech-Language Pathologist / Clinical Fellow",
     slug: "speech-language-pathologist-clinical-fellow-batesville-ar",
     profession: "slp",
