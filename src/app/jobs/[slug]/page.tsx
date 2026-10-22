@@ -8,6 +8,17 @@ import { SectionHeading, Breadcrumbs } from "@/components/Sections";
 import { SITE, PROFESSIONS, SETTINGS } from "@/lib/site";
 import { liveJobs, jobBySlug } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
+import { marketByAbbr, metrosForState, metroHref, stateHref } from "@/lib/markets";
+import { SALARY_ROLES, salaryHref, roleLabel, stateWage } from "@/lib/salary";
+
+// Google Jobs reads only <p>, <ul> and <li> in a JobPosting description, and
+// requires the description to be HTML.
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+function payLine(s: NonNullable<ReturnType<typeof jobBySlug>>["salary"]): string {
+  if (!s) return "";
+  return `$${s.min.toLocaleString("en-US")} to $${s.max.toLocaleString("en-US")} per ${s.unit === "YEAR" ? "year" : "hour"}`;
+}
 
 export async function generateStaticParams() {
   return liveJobs().map((j) => ({ slug: j.slug }));
@@ -22,7 +33,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!j) return {};
   return {
     title: `${j.title} in ${j.city}, ${j.state}`,
-    description: `${PROFESSIONS[j.profession].label} opening in ${j.city}, ${j.state} (${SETTINGS[j.setting].label}), represented by APT Recruiting. ${j.description.slice(0, 120)}`,
+    description: [
+      `${j.title} opening in ${j.city}, ${j.state}`,
+      j.salary ? `paying ${payLine(j.salary)}` : "",
+      `${SETTINGS[j.setting].label.toLowerCase()}. Confidential and free to clinicians; apply through APT Recruiting.`,
+    ]
+      .filter(Boolean)
+      .join(", "),
     alternates: { canonical: `/jobs/${slug}/` },
   };
 }
@@ -34,6 +51,9 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
 
   const url = `${SITE.url}/jobs/${j.slug}/`;
   const paragraphs = j.description.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  const market = marketByAbbr(j.state);
+  const metro = metrosForState(j.state).find((c) => c.city.toLowerCase() === j.city.toLowerCase());
+  const salaryRoles = market ? SALARY_ROLES.filter((r) => r.key === j.profession && stateWage(market, r)) : [];
 
   return (
     <>
@@ -66,6 +86,25 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                   More {PROFESSIONS[j.profession].short} roles →
                 </Link>
               </p>
+              {market && (
+                <div className="mt-8 rounded-lg border border-mist bg-white p-6">
+                  <h2 className="font-heading text-lg font-semibold text-navy-600">How this pay compares</h2>
+                  <ul className="mt-3 space-y-2">
+                    {salaryRoles.map((r) => (
+                      <li key={r.key}>
+                        <Link href={salaryHref(r, market)} className="text-teal-600 hover:text-teal-700">
+                          What {roleLabel(r).plural.toLowerCase()} earn in {market.market}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href={metro ? metroHref(metro) : stateHref(market)} className="text-teal-600 hover:text-teal-700">
+                        The {metro ? metro.city : market.market} therapy job market
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </article>
             <aside>
               <SectionHeading eyebrow="Apply" title="Ask about this role.">
@@ -84,7 +123,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           "@context": "https://schema.org",
           "@type": "JobPosting",
           title: j.title,
-          description: j.description,
+          description: paragraphs.map((p) => `<p>${esc(p)}</p>`).join(""),
           datePosted: j.datePosted,
           ...(j.validThrough ? { validThrough: j.validThrough } : {}),
           employmentType: j.employmentType.length === 1 ? j.employmentType[0] : j.employmentType,

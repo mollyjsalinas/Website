@@ -6,30 +6,29 @@
   "state_abbr": "OR",
   "state": "Oregon",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Oregon side of the Portland metro area",
     "active_individual_providers": {
-      "pt": 2167,
-      "pta": 483,
-      "ot": 944,
-      "ota": 248,
-      "slp": 1299,
-      "aud": 204
+      "pt": 2195,
+      "pta": 485,
+      "ot": 959,
+      "ota": 251,
+      "slp": 1313,
+      "aud": 217
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
         "trailing_12mo_total": 85,
         "by_month": {
-          "2025-09": 6,
-          "2025-10": 6,
+          "2025-10": 7,
           "2025-11": 10,
           "2025-12": 10,
           "2026-01": 1,
@@ -39,13 +38,13 @@
           "2026-05": 8,
           "2026-06": 8,
           "2026-07": 3,
-          "2026-08": 16
+          "2026-08": 16,
+          "2026-09": 5
         }
       },
       "pta": {
-        "trailing_12mo_total": 17,
+        "trailing_12mo_total": 18,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 3,
           "2025-11": 0,
           "2025-12": 2,
@@ -56,14 +55,14 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 4,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 24,
+        "trailing_12mo_total": 23,
         "by_month": {
-          "2025-09": 4,
-          "2025-10": 3,
+          "2025-10": 4,
           "2025-11": 2,
           "2025-12": 3,
           "2026-01": 3,
@@ -73,13 +72,13 @@
           "2026-05": 1,
           "2026-06": 3,
           "2026-07": 1,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 2
         }
       },
       "ota": {
         "trailing_12mo_total": 1,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 75,
+        "trailing_12mo_total": 77,
         "by_month": {
-          "2025-09": 6,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 11,
@@ -107,13 +106,13 @@
           "2026-05": 2,
           "2026-06": 7,
           "2026-07": 24,
-          "2026-08": 10
+          "2026-08": 10,
+          "2026-09": 8
         }
       },
       "aud": {
-        "trailing_12mo_total": 6,
+        "trailing_12mo_total": 3,
         "by_month": {
-          "2025-09": 3,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 1,
@@ -124,7 +123,8 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Oregon side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 63,
       "certified_beds": 5097,
-      "avg_overall_rating": 3.27,
+      "avg_overall_rating": 3.29,
       "for_profit_pct": 88.9
     },
     "home_health_agencies": {
