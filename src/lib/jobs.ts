@@ -24,6 +24,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Pediatric Occupational Therapist",
+    slug: "pediatric-occupational-therapist-tumwater-wa",
+    profession: "ot",
+    setting: "outpatient-rehab",
+    city: "Tumwater",
+    state: "WA",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 50, max: 65, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient pediatric therapy practice in Tumwater, Washington that is seeking a full-time Occupational Therapist. This is a thoughtful, clinician-centered opportunity for a pediatric OT who wants exceptional support, flexibility, and the time to provide meaningful care to children and their families.\n\nYou will deliver individualized occupational therapy for children from birth through age 21, with occasional adult care. Your caseload may include autism spectrum disorder, ADHD, sensory-processing needs, fine-motor and developmental delays, visual-motor concerns, and functional-skill development. You will work in a well-equipped treatment environment and collaborate with experienced OT and speech-language pathology colleagues, including interdisciplinary co-treatment when it benefits the child.\n\nThe schedule is built for genuine work-life balance. This is a 40-hour role with the option of four 10-hour days, five 8-hour days, or another mutually agreeable arrangement. Documentation time and special-project time are intentionally built into the schedule, and hourly pay is guaranteed even when a patient cancels or does not attend.\n\nCompensation is $50–$65 per hour ($104,000–$135,200 annually based on a full-time schedule), plus productivity-bonus opportunities. Benefits include employer coverage of 90% of health-insurance premiums, dental and vision insurance, a 401(k), PTO that grows with tenure, continuing-education assistance, and support for professional-license renewals.\n\nApplicants need current Washington OT licensure, or eligibility for licensure, along with pediatric therapy experience. Both seasoned clinicians and new graduate pediatric OTs are encouraged to apply. The ideal candidate is a clear communicator, collaborates well with families and teammates, and is excited to bring creativity and clinical expertise to a quality-first pediatric setting.",
+  },
+  {
     title: "Physical Therapist — Orthopedic & Injury Rehabilitation",
     slug: "physical-therapist-orthopedic-injury-rehabilitation-colorado",
     profession: "pt",
