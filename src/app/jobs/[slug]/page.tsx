@@ -31,10 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const j = jobBySlug(slug);
   if (!j) return {};
+  const location = j.remote ? `Remote · ${j.state}` : `${j.city}, ${j.state}`;
   return {
-    title: `${j.title} in ${j.city}, ${j.state}`,
+    title: `${j.title} in ${location}`,
     description: [
-      `${j.title} opening in ${j.city}, ${j.state}`,
+      `${j.title} opening in ${location}`,
       j.salary ? `paying ${payLine(j.salary)}` : "",
       `${SETTINGS[j.setting].label.toLowerCase()}. Confidential and free to clinicians; apply through APT Recruiting.`,
     ]
@@ -49,6 +50,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const j = jobBySlug(slug);
   if (!j) notFound();
 
+  const location = j.remote ? `Remote · ${j.state}` : `${j.city}, ${j.state}`;
   const url = `${SITE.url}/jobs/${j.slug}/`;
   const paragraphs = j.description.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
   const market = marketByAbbr(j.state);
@@ -66,7 +68,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
               </p>
               <h1 className="mt-2 font-heading text-4xl font-semibold text-navy-600">{j.title}</h1>
               <p className="mt-2 text-lg text-body">
-                {j.city}, {j.state} · {j.employmentType.map((t) => t.replace("_", "-").toLowerCase()).join(" or ")} · posted{" "}
+                {location} · {j.employmentType.map((t) => t.replace("_", "-").toLowerCase()).join(" or ")} · posted{" "}
                 {longDate(j.datePosted)}
               </p>
               {j.salary && (
@@ -131,10 +133,17 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             "@type": "Organization",
             name: "confidential",
           },
-          jobLocation: {
-            "@type": "Place",
-            address: { "@type": "PostalAddress", addressLocality: j.city, addressRegion: j.state, addressCountry: "US" },
-          },
+          ...(j.remote
+            ? {
+                jobLocationType: "TELECOMMUTE",
+                applicantLocationRequirements: { "@type": "AdministrativeArea", name: `${j.state}, US` },
+              }
+            : {
+                jobLocation: {
+                  "@type": "Place",
+                  address: { "@type": "PostalAddress", addressLocality: j.city, addressRegion: j.state, addressCountry: "US" },
+                },
+              }),
           ...(j.salary
             ? {
                 baseSalary: {
