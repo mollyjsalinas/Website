@@ -52,7 +52,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const isHire = clean(form.get("intent"), 20) === "hire";
+  const intent = clean(form.get("intent"), 20);
+  const isHire = intent === "hire";
+  const isAlert = intent === "alert";
   const firstName = clean(form.get("firstName"), 100);
   const lastName = clean(form.get("lastName"), 100);
   const email = clean(form.get("email"), 200);
@@ -66,7 +68,9 @@ export async function POST(req: Request) {
 
   const complete = isHire
     ? firstName && lastName && email && organization && market && role
-    : firstName && lastName && email && message;
+    : isAlert
+      ? firstName && email && clean(form.get("consent"), 10) === "yes"
+      : firstName && lastName && email && message;
   if (!complete) {
     return NextResponse.json({ error: "Please fill in all required fields." }, { status: 400 });
   }
@@ -100,9 +104,11 @@ export async function POST(req: Request) {
     replyTo: email,
     subject: isHire
       ? `Hiring inquiry: ${role} at ${organization} (${market})`
-      : `Website inquiry from ${firstName} ${lastName}`,
+      : isAlert
+        ? `Candidate alert signup: ${discipline || "discipline not selected"} (${market || "location not selected"})`
+        : `Website inquiry from ${firstName} ${lastName}`,
     text: [
-      isHire ? "HIRING INQUIRY (from /contact/hire/)" : null,
+      isHire ? "HIRING INQUIRY (from /contact/hire/)" : isAlert ? "CANDIDATE ALERT SIGNUP" : null,
       `Name: ${firstName} ${lastName}`,
       isHire ? `Organization: ${organization}` : null,
       `Email: ${email}`,
