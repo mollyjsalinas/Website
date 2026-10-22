@@ -25,6 +25,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Occupational Therapist or Physical Therapist — Manual Therapy",
+    slug: "occupational-therapist-physical-therapist-manual-therapy-keene-nh",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Keene",
+    state: "NH",
+    employmentType: ["PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 45, max: 60, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a confidential specialized outpatient manual-therapy practice in Keene, New Hampshire that is seeking an Occupational Therapist or Physical Therapist. This part-time opportunity is ideal for a clinician who loves hands-on treatment and wants to step away from a rushed, high-volume setting in favor of individualized, quality-focused care.\n\nYou will provide one-on-one manual therapy and myofascial release treatment in private rooms, with 50–60-minute visits that give you the time to connect with patients and personalize care. Experience with myofascial release is welcomed but not required: clinicians with a genuine interest in developing these skills will receive hands-on mentorship and training from an experienced practitioner.\n\nThe position starts at approximately 20 hours per week with a flexible daytime and evening schedule, including a preference for one or two evenings weekly. There are no required weekends, and the role may grow into full-time employment as the caseload develops. You will work independently while collaborating with a small, supportive clinical team.\n\nCompensation is $45–$60 per hour based on experience and qualifications. Benefits include annual raises, license-renewal assistance, a 401(k) with employer match, and opportunities to earn CEUs through in-house training. Health and dental coverage are available for part-time staff with employee-paid premiums; clinicians who move into a qualifying full-time schedule receive an employer contribution plus PTO eligibility and additional continuing-education support.\n\nCandidates need OT or PT licensure in New Hampshire, or eligibility for licensure. Manual-therapy or myofascial-release experience is preferred, but newer therapists with strong hands-on skills and an eagerness to learn are encouraged to apply. The ideal clinician is comfortable working independently, values individualized patient care, and enjoys collaborating with a supportive team.",
+  },
+  {
     title: "Pediatric Occupational Therapist",
     slug: "pediatric-occupational-therapist-chandler-az",
     profession: "ot",
