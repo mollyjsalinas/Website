@@ -8,6 +8,7 @@ import { compactSentence } from "@/components/DataSections";
 import { SITE, CONTENT_UPDATED, COMPACTS, type CompactKey } from "@/lib/site";
 import { launchMarketsByName, stateHref, type CompactStatus, type MarketSnapshot } from "@/lib/markets";
 import { longDate } from "@/lib/format";
+import { LIC_PROFESSIONS, licensureGuides, licensureHref } from "@/lib/licensure";
 
 const GROUPS: { status: CompactStatus; title: string; blurb: string }[] = [
   {
@@ -121,6 +122,29 @@ export function CompactPage({ compactKey }: { compactKey: CompactKey }) {
       })}
 
       <EmployerBlock />
+
+      {(() => {
+        const guides = licensureGuides().filter((x) => LIC_PROFESSIONS[x.prof].compact === compactKey);
+        return guides.length === 0 ? null : (
+          <section className="py-14">
+            <Container>
+              <SectionHeading eyebrow="State guides" title="Getting a full state license instead">
+                Where a privilege is not available, or you want a license of your own, these guides walk through
+                each board&apos;s requirements with sources.
+              </SectionHeading>
+              <ul className="mt-6 space-y-2">
+                {guides.map((x) => (
+                  <li key={`${x.g.abbr}-${x.prof}`}>
+                    <Link href={licensureHref(x.g.abbr, x.prof)} className="font-semibold text-teal-600 hover:text-teal-700">
+                      {x.g.state} {LIC_PROFESSIONS[x.prof].discipline} license →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Container>
+          </section>
+        );
+      })()}
 
       <MollyByline place="compact status" reviewedOn={reviewedOn} />
 

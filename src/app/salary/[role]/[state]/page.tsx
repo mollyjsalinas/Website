@@ -20,6 +20,7 @@ import {
   titleCase,
 } from "@/lib/salary";
 import { n, usd, longDate } from "@/lib/format";
+import { hasLicensureGuide, licensureHref, type LicProfKey } from "@/lib/licensure";
 
 export async function generateStaticParams() {
   return salaryParams();
@@ -179,6 +180,14 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
             >
               How the {compact.shortName} works →
             </Link>
+            {(r.key === "pt" || r.key === "ot" || r.key === "slp") && hasLicensureGuide(m.market_abbr, r.key as LicProfKey) && (
+              <Link
+                href={licensureHref(m.market_abbr, r.key as LicProfKey)}
+                className="mt-2 block font-semibold text-teal-600 hover:text-teal-700"
+              >
+                How to get a {m.market} license, step by step →
+              </Link>
+            )}
           </div>
         </Container>
       </section>

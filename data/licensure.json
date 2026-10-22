@@ -1,0 +1,695 @@
+[
+ {
+  "state": "Florida",
+  "abbr": "FL",
+  "researched_on": "2026-10-22",
+  "professions": {
+   "pt": {
+    "board": {
+     "value": "Florida Board of Physical Therapy",
+     "source_url": "https://floridasphysicaltherapy.gov/",
+     "quote": "Welcome to the State of Florida's Online Resource for Physical Therapist and Physical Therapist Assistant Licensure, Renewal and Information.",
+     "verified": true
+    },
+    "education": {
+     "value": "A physical therapy degree from a program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE). Foreign-trained applicants need a credential evaluation showing equivalent education.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Applicants must have received a degree as a physical therapist from an institution that has been approved for the training of physical therapists by the Commission on Accreditation for Physical Therapy Education (CAPTE).",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "The National Physical Therapy Examination (NPTE), administered by the Federation of State Boards of Physical Therapy (FSBPT); scores must be transferred from FSBPT to the board. The NPTE fee to FSBPT is $485.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "If you have passed the NPTE, you must have your score report transferred from the Federation of State Boards of Physical Therapy (FSBPT)",
+     "verified": true
+    },
+    "state_exam": {
+     "value": "Yes. Exam applicants must also pass the Florida Laws and Rules exam, registered through FSBPT ($65 fee to FSBPT). Passing it is also a requirement for the PT temporary permit.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Applicants must register with the FSBPT for the NPTE and the Florida laws and rules exam.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "Required. Applicants must submit electronic fingerprints through an FDLE-approved Livescan provider for a Florida and national criminal history check; the applicant pays the cost.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Florida passed House Bill 975 following the 2024 legislative session, which requires this profession to complete electronic fingerprinting.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$180 application and licensing fee to the Board of Physical Therapy. Exam applicants also pay FSBPT $485 for the NPTE and $65 for the Florida Laws and Rules exam, plus Prometric fees; endorsement applicants pay FSBPT a $90 score transfer fee.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "$180.00 Application and Licensing Fee to Board of Physical Therapy",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "Through the MOBILE Endorsement pathway (s. 456.0145, F.S.): an active, unencumbered license in another U.S. jurisdiction, a passing national exam score, at least two years of active practice in the last four, and no recent discipline. Applicants request license verification from each state and an NPTE score transfer from FSBPT.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Must have actively practiced the profession for at least two years during the four-year period immediately preceding the date of submission of this application.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "A temporary permit is available to graduates of approved U.S. programs who have not yet passed the NPTE. They must pass the Florida Laws and Rules Examination, carry malpractice insurance, and work under the direct supervision of a licensed PT. The permit is valid for six months from graduation.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Temporary permits are valid for six months from the date of graduation.",
+     "verified": true
+    },
+    "required_courses": {
+     "value": "A 1-hour HIV/AIDS course is required at the first renewal only, not before initial licensure. Every renewal also requires a 2-hour Prevention of Medical Errors course.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist-renewal/",
+     "quote": "HIV/AIDS course required for first renewal only and are accepted if approved by any Board within the Division of Medical Quality Assurance",
+     "verified": true
+    },
+    "renewal": {
+     "value": "Licenses renew every two years (biennially). Current PT licenses expire at midnight Eastern Time on November 30, 2027.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist-renewal/",
+     "quote": "Current licenses expire at midnight, Eastern Time, on November 30, 2027",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "24 contact hours per two-year cycle, including 2 hours of Prevention of Medical Errors each renewal (plus 1 hour of HIV/AIDS at the first renewal). No more than 12 hours may be home study. Licenses issued in the second half of the cycle need only the Medical Errors and HIV/AIDS hours.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist-renewal/",
+     "quote": "Twenty-four (24) contact hours of continuing education (CE/CEU*) must be completed within the current biennium for which the license is being renewed.",
+     "verified": true
+    },
+    "compact": {
+     "value": "Florida is not a PT Compact member. Florida passed a compact law (SB 7016), but the Compact Commission found that it conflicts with the model statute, so Florida PTs cannot get compact privileges and other states' PTs cannot use compact privileges in Florida.",
+     "source_url": "https://floridasphysicaltherapy.gov/licensing/",
+     "quote": "As a result of this determination, Florida is deemed ineligible for Compact membership and shall not be entitled to any of the rights, privileges, or benefits of a Member State",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "The board says to allow up to 10 business days for initial review of a new application. Under Florida law, initial review must happen within 30 days, and a MOBILE endorsement license is issued within 7 days after all requirements are met.",
+     "source_url": "https://floridasphysicaltherapy.gov/physical-therapist/",
+     "quote": "Please allow up to 10 business days for initial review of new applications.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the Florida Department of Health MQA Online Services Portal (create a new applicant account).",
+     "source_url": "https://mqa-vo.doh.state.fl.us/datamart/voservicesportal",
+     "quote": "NOTE: Not all mobile devices are fully compatible with the online system at this time.",
+     "verified": true
+    }
+   },
+   "ot": {
+    "board": {
+     "value": "Florida Board of Occupational Therapy",
+     "source_url": "https://floridasoccupationaltherapy.gov/",
+     "quote": "Welcome to the State of Florida's Online Resource for Occupational Therapists and Occupational Therapy Assistants Licensing, Renewals and Information.",
+     "verified": true
+    },
+    "education": {
+     "value": "Graduation from an occupational therapy program accredited through the American Occupational Therapy Association (s. 468.209, F.S. names its Accreditation Council for Occupational Therapy Education), plus 24 weeks of supervised fieldwork.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Have graduated from an accredited occupational therapy program accredited by the American Occupational Therapy Association",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "The NBCOT certification exam for occupational therapists. Candidates apply to NBCOT directly; the Florida board does not give the exam.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Have passed an examination approved by the National Board for Certification in Occupational Therapy (NBCOT) for occupational therapists.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "Required. OT applicants must complete electronic fingerprinting (Livescan) for a background screening before the application can be approved.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Florida passed House Bill 975 following the 2024 legislative session, which requires this profession to complete electronic fingerprinting.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$180 total due with the application: a $100 non-refundable application fee, a $75 initial license fee and a $5 unlicensed activity fee. The fee is the same for exam and MOBILE endorsement applicants.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "You may submit your State of Florida licensure application and $180 application fee ONLINE -or- mail in your application and fee",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "Through the MOBILE Endorsement pathway (s. 456.0145, F.S.): an active, unencumbered OT license in another U.S. jurisdiction, NBCOT exam passage or current certification, at least two years of active practice in the last four, and no recent discipline. Applicants request license verification from each state where they were licensed.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Must have actively practiced the profession for at least two years during the four-year period immediately preceding the date of submission of this application.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "Florida law allows (but does not require) the board to issue a temporary permit to an applicant who meets all other requirements and is registered for the next exam. The permit lets them practice under a licensed OT's supervision until exam results arrive. The board's website does not describe an application for it.",
+     "source_url": "https://www.flsenate.gov/Laws/Statutes/2026/468.209",
+     "quote": "the board may issue the applicant a temporary permit allowing her or him to practice occupational therapy under the supervision of a licensed occupational therapist until notification of the results of the examination",
+     "verified": true
+    },
+    "required_courses": {
+     "value": "A 1-hour HIV/AIDS course is required at the first renewal only (not before initial licensure), along with 2 hours of Prevention of Medical Errors from a Florida OT Board approved provider.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "For the HIV/AIDS course this is a first renewal only requirement, and any course approved by any of the professions regulated within the Department of Health",
+     "verified": true
+    },
+    "renewal": {
+     "value": "Licenses renew every two years (biennially). Current OT licenses expire at midnight Eastern Time on February 28, 2027.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Current licenses expire at midnight, Eastern Time, on February 28, 2027",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "26 hours per two-year cycle: 22 general hours, 2 hours of Prevention of Medical Errors and 2 hours of Florida Laws and Rules (both from board-approved providers), plus 1 hour of HIV/AIDS at the first renewal. At least 14 hours must be live; no more than 12 may be home study.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "are required to complete all 26 as stated above, including the HIV/AIDS 1 hour (for first renewal only) requirement.",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "For MOBILE endorsement applications, the board says to allow up to 5 business days for initial review. Under Florida law, initial review must happen within 30 days, and the license is issued within 7 days after all requirements are met.",
+     "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
+     "quote": "Please allow up to 5 business days for initial review of new applications.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the Florida Department of Health MQA Online Services Portal (create a new applicant account).",
+     "source_url": "https://mqa-vo.doh.state.fl.us/datamart/voservicesportal",
+     "quote": "NOTE: Not all mobile devices are fully compatible with the online system at this time.",
+     "verified": true
+    }
+   },
+   "slp": {
+    "board": {
+     "value": "Florida Board of Speech-Language Pathology & Audiology",
+     "source_url": "https://floridasspeechaudiology.gov/",
+     "quote": "Welcome to the State of Florida's Online Resource for Speech-Language Pathologists & Audiologists Licensure, Renewal and Information.",
+     "verified": true
+    },
+    "education": {
+     "value": "A master's degree, or completion of the academic requirements of a doctoral program, with a major emphasis in speech-language pathology. Also required: 300 clock hours of supervised clinical experience (at least 200 in speech-language pathology) and nine months of professional employment experience.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Master’s degree or completion of the academic requirements of a doctoral program, with a major emphasis in speech-language pathology",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "The Praxis exam in speech-language pathology (ETS), passed no more than three years before the application date. ETS must send the official score report directly to the board. The board page does not state a passing score.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Proof of passing the Praxis exam no more than three (3) years prior to the date of this application",
+     "verified": true
+    },
+    "background_check": {
+     "value": "Required. SLP applicants must complete electronic fingerprinting (Livescan) for a background screening before the application can be approved.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Florida passed House Bill 975 following the 2024 legislative session, which requires this profession to complete electronic fingerprinting.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$75 non-refundable application fee. The full license totals $280 ($75 + $200 license fee + $5) if issued Aug 1 of an odd year through Dec 31 of an even year, or $180 ($75 + $100 + $5) if issued Jan 1 through Jul 31 of an odd year. The provisional license totals $180, including the $75 fee.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "$180.00 (includes a $75.00 non-refundable application processing fee)",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "Through the MOBILE Endorsement pathway (s. 456.0145, F.S.): an active, unencumbered license in another U.S. jurisdiction, a passing national exam score, at least two years of active practice in the last four, no National Practitioner Data Bank report, and no recent discipline.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Must have actively practiced the profession for at least two years during the four-year period immediately preceding the date of submission of this application.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "Applicants who cannot yet document nine months of supervised professional employment experience and a passing Praxis score (for example, clinical fellows) must hold a provisional license before starting that experience. The provisional license costs $180.",
+     "source_url": "https://www.flsenate.gov/Laws/Statutes/2026/468.1155",
+     "quote": "A provisional license shall be required of all applicants for a license in speech-language pathology who cannot document a minimum of 9 months of supervised professional employment experience and a passing score on the national examination.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "Licenses renew every two years and are due by December 31 of each odd-numbered year. Current licenses expire at midnight Eastern Time on December 31, 2027.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Licenses are renewable by December 31st of each odd year.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "30 hours per two-year cycle: 18 clinically related hours, 10 general hours (which may also be clinical) and a 2-hour Prevention of Medical Errors course approved by the board. First-time renewers licensed after July 1 of an odd year are exempt.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "complete 30 credit hours, 18 of which shall be clinically related, 10 non clinical hours and a 2 hour course relating to the prevention of medical errors",
+     "verified": true
+    },
+    "compact": {
+     "value": "Florida has joined the Audiology and Speech-Language Pathology Interstate Compact (ASLP-IC) through SB 7016 (2024). The board says privileges to practice will become available once the commission is operational and member states are connected to the compact's data system.",
+     "source_url": "https://floridasspeechaudiology.gov/licensing/",
+     "quote": "Florida joined the ASLP-IC as the 30th member state upon the passage of Senate Bill 7016 during the 2024 legislative session.",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "Once the application is complete, the license is issued within 4 to 7 working days. Under Florida law, initial review must happen within 30 days.",
+     "source_url": "https://floridasspeechaudiology.gov/speech-language-pathologist/",
+     "quote": "Once the application has been deemed complete, a license is issued within 4-7 working days.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the Florida Department of Health MQA Online Services Portal (create a new applicant account).",
+     "source_url": "https://mqa-vo.doh.state.fl.us/datamart/voservicesportal",
+     "quote": "NOTE: Not all mobile devices are fully compatible with the online system at this time.",
+     "verified": true
+    }
+   }
+  }
+ },
+ {
+  "state": "Texas",
+  "abbr": "TX",
+  "researched_on": "2026-10-22",
+  "professions": {
+   "pt": {
+    "board": {
+     "value": "Texas Board of Physical Therapy Examiners",
+     "source_url": "https://ptot.texas.gov/",
+     "quote": "is a State of Texas agency charged with protecting the health, safety, and welfare of the people of Texas by supporting the Board of PT Examiners and the Board of OT Examiners",
+     "verified": true
+    },
+    "education": {
+     "value": "Graduation from a CAPTE-accredited physical therapy program, with an official transcript sent to the Board directly by the school. Foreign-educated applicants submit an educational evaluation in place of the transcript.",
+     "source_url": "https://ptot.texas.gov/apply-by-exam/",
+     "quote": "This applies only to graduates of CAPTE-accredited programs",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "Pass the National Physical Therapy Examination (NPTE), administered by the Federation of State Boards of Physical Therapy (FSBPT). Texas uses FSBPT's Alternate Approval Pathway, so FSBPT decides exam eligibility. The board's pages do not give a numeric passing score.",
+     "source_url": "https://ptot.texas.gov/apply-by-exam/",
+     "quote": "The Federation of State Boards of Physical Therapy (FSBPT) has the final authority to determine who is eligible to sit for the National Physical Therapy Examination (NPTE)",
+     "verified": true
+    },
+    "state_exam": {
+     "value": "Required: the Texas Jurisprudence Assessment Module (TX JAM), taken through FSBPT before the license is issued, whether applying by exam or by endorsement. It has 75 questions and needs 60 correct (80%) to pass, and it is free for initial applicants.",
+     "source_url": "https://ptot.texas.gov/pt-jam/",
+     "quote": "Individuals applying for initial PT or PTA licensure in Texas will need to take the TX JAM as a licensure requirement.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "A criminal background check by fingerprinting (state DPS and FBI) is required before a license is issued.",
+     "source_url": "https://ptot.texas.gov/apply-by-exam/",
+     "quote": "A Criminal Background Check via Fingerprinting is required prior to issuance of a license.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$190 for a PT, covering the application and permanent license ($125 for a PTA). Set by 22 TAC 651.2 in the board's May 2026 rules compilation. The fee is non-refundable.",
+     "source_url": "https://ptot.texas.gov/wp-content/uploads/2026/05/PTrules_2026.05.pdf",
+     "quote": "(a) Application/Permanent License. (1) PT--$190. (2) PTA--$125. (b) Application to Retake the Examination. (1) PT--$25.",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "PTs licensed in another state apply by endorsement. They submit the online application and fee, a transcript, an NPTE score transfer from FSBPT, license verification showing at least one current, active, unencumbered license, the TX JAM and fingerprints. Endorsement applicants cannot get a temporary license.",
+     "source_url": "https://ptot.texas.gov/apply-by-endorsement/",
+     "quote": "At least one verification needs to show current, active licensure without any encumbrance.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "An optional temporary license is available to applicants by exam who have never taken the NPTE and have met every other requirement. It costs $80 for a PT and requires on-site supervision by a Texas-licensed PT. It lasts until the permanent license is issued or until the last day of the third month after it was issued, and it becomes void if the applicant fails the exam.",
+     "source_url": "https://ptot.texas.gov/pt-temporary-license/",
+     "quote": "A Temporary License is valid until issuance of the permanent license, or until the last day of the third month after the month the license is issued.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "PT licenses are renewed every two years, by the end of the licensee's birth month. Renewal can start three months before expiration.",
+     "source_url": "https://ptot.texas.gov/wp-content/uploads/2026/05/PTrules_2026.05.pdf",
+     "quote": "Licensees are required to renew their licenses every two years by the end of their birth month.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "PTs need 30 continuing competence units (CCUs) per two-year cycle. These must include the TX JAM (worth 2 CCUs) and an HHS-approved human trafficking prevention course.",
+     "source_url": "https://ptot.texas.gov/cc-ce/",
+     "quote": "for PTs, 30 units (CCUs) during each two-year renewal cycle, for PTAs, 20 units (CCUs). All licensees must complete the Jurisprudence Assessment Module (TX JAM) and an HHS-approved Human Trafficking Prevention Training course",
+     "verified": true
+    },
+    "compact": {
+     "value": "Texas is a member of the PT Compact (enacted by SB 317 in 2017), and compact privileges into and out of Texas have been issued since January 2, 2019. A Texas privilege costs $50 (plus a $45 commission fee), and the applicant must pass the TX JAM.",
+     "source_url": "https://ptot.texas.gov/compact/",
+     "quote": "Compact privileges for Texas licensees to practice in another member state and for licensees of other member states to be able to practice in Texas became available January 02, 2019.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the ECPTOTE Online Licensing System after creating an account; the board page linked here has the portal link.",
+     "source_url": "https://ptot.texas.gov/apply-for-a-license/",
+     "quote": "Create an Online Licensing System Account. You must create an online account in order to start a new application.",
+     "verified": true
+    }
+   },
+   "ot": {
+    "board": {
+     "value": "Texas Board of Occupational Therapy Examiners",
+     "source_url": "https://ptot.texas.gov/",
+     "quote": "is a State of Texas agency charged with protecting the health, safety, and welfare of the people of Texas by supporting the Board of PT Examiners and the Board of OT Examiners",
+     "verified": true
+    },
+    "education": {
+     "value": "Completion of the academic and supervised fieldwork requirements of an accredited occupational therapy program. The OT rules define an accredited program as one accredited or approved by ACOTE. Foreign-trained applicants must show substantially equivalent education.",
+     "source_url": "https://ptot.texas.gov/wp-content/uploads/2026/06/OT-Rules-June-2026.pdf",
+     "quote": "have completed academic and supervised field work requirements of an accredited educational program in occupational therapy",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "Pass the NBCOT certification exam, with the passing score report sent to the Board by NBCOT directly.",
+     "source_url": "https://ptot.texas.gov/ot-application/",
+     "quote": "This must be sent by NBCOT directly to the Board. Contact NBCOT to arrange that this be sent to the Board.",
+     "verified": true
+    },
+    "state_exam": {
+     "value": "Required: a 20-question, open-book online Texas Jurisprudence Exam (JP) on the OT Act and Rules. There is no fee and it can be retaken until passed.",
+     "source_url": "https://ptot.texas.gov/ot-application/",
+     "quote": "The Board requires a 20-question, open-book online Jurisprudence Exam (JP) based on the OT Rules and OT Practice Act",
+     "verified": true
+    },
+    "background_check": {
+     "value": "Fingerprinting for a state and national criminal history check is required before a license is issued, using the agency's service code.",
+     "source_url": "https://ptot.texas.gov/ot-application/",
+     "quote": "Please see the announcement on the homepage to access the fingerprinting instructions. Fingerprinting is a required item for license issuance.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$140 for an OT ($100 for an OTA), and it is non-refundable. A temporary license costs an extra $70 for an OT.",
+     "source_url": "https://ptot.texas.gov/wp-content/uploads/2026/09/OT-OTA-Initial-App-2026.09.pdf",
+     "quote": "The fee for an OT Application is $140.00; the fee for an OTA Application is $100.00.",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "OTs who passed NBCOT and hold a current license in another U.S. state or territory apply by endorsement. Applicants from the military or from a non-licensing jurisdiction can instead show two years of OT work just before applying. They submit the same items as exam applicants (application, fee, photo, fingerprints, NBCOT score report, JP exam), plus license verification for any license the Board cannot check online.",
+     "source_url": "https://ptot.texas.gov/ot-application/",
+     "quote": "The applicant must submit a verification of license for any of the occupational therapy licenses (past and current) that the Board cannot verify, including disciplinary action.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "A temporary license is available only to applicants by exam who are taking the NBCOT exam for the first time. It requires a separate application, a $70 fee for an OT, NBCOT eligibility documents and on-premises supervision by an OT with a regular license. It becomes void if the applicant fails the exam or does not take it, and it lasts no longer than 180 days.",
+     "source_url": "https://ptot.texas.gov/ot-temporary-license/",
+     "quote": "A temporary license is only available to an applicant for licensure by examination who is taking the NBCOT exam for the first time.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "OT licenses are renewed every two years, by the end of the licensee's birth month. Renewal can start up to three months before expiration.",
+     "source_url": "https://ptot.texas.gov/ot-license-renewal/",
+     "quote": "Licensees are required to renew their licenses every two years by the end of their birth month.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "24 contact hours of CE per two-year renewal period. These must include a human trafficking prevention course approved by the Texas Health and Human Services Commission (HHSC). The OT jurisprudence exam is also retaken at each renewal.",
+     "source_url": "https://ptot.texas.gov/continuing-education/",
+     "quote": "Texas OT and OTA licensees are required to complete 24 contact hours of continuing education each renewal period in order to maintain licensure",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the ECPTOTE Online Licensing System after creating an account. A paper application is also available.",
+     "source_url": "https://ptot.texas.gov/ot-application/",
+     "quote": "To apply online, you will need to create an account in the new Online Licensing System.",
+     "verified": true
+    }
+   },
+   "slp": {
+    "board": {
+     "value": "Texas Department of Licensing and Regulation (TDLR)",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "Texas Department of Licensing and Regulation Speech-Language Pathologists and Audiologists PO Box 12157 Austin, TX 78711",
+     "verified": true
+    },
+    "education": {
+     "value": "A master's degree or higher with a major in communicative sciences or disorders, from a program accredited by a nationally recognized accreditor approved by TDLR. Graduates of foreign programs need an evaluation from an ASHA-approved service. The clinical practicum must include 400 clock hours for degrees earned since 2005.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "which shows the applicant possesses a minimum of a master's degree with a major in one of the areas of communicative sciences or disorders",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "Pass the national Praxis exam in speech-language pathology, given by ETS. ASHA CCC holders are exempt from submitting Praxis scores. TDLR does not state a passing score.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "Applicants must pass both the national Praxis Exam as well as the Texas Jurisprudence Examination.",
+     "verified": true
+    },
+    "state_exam": {
+     "value": "Required: the Texas Speech-Language Pathologist and Audiologist Jurisprudence Examination. Proof of completion goes in with the application, and the certificate can be no more than 12 months old.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slpaexams.htm",
+     "quote": "All applicants for initial licensure must submit proof of completing the jurisprudence examination at the time they submit their Texas Speech-Language Pathologist and Audiologist License Application.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "All new applicants submit fingerprints for a national criminal history check. TDLR emails scheduling instructions after it receives the application.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "All new applicants must submit fingerprints for a national criminal history record review.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "$150 application fee, which includes the two-year initial license.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "submit the online application along with the $150 application fee (includes two-year initial license) and required documents.",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "TDLR has no separate endorsement route: SLPs licensed elsewhere apply for the standard license. TDLR may waive the internship and Praxis requirements for anyone who holds or has held the ASHA CCC. The jurisprudence exam, fingerprints and the $150 fee still apply.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "The department may waive the internship and written examination (Praxis) requirements for applicants who currently hold or have previously held the ASHA Certificate of Clinical Competence (CCC)",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "Clinical fellows need an Intern in Speech-Language Pathology license ($75, valid one year) to complete the 36-week, 1,260-hour supervised internship in Texas under a TDLR-approved supervisor. ASHA CF approval alone does not allow practice. Interns upgrade to a full license after finishing the internship and passing the Praxis.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-intern-apply.htm",
+     "quote": "In order to complete the required 36-week internship in Texas, an Intern in Speech-Language Pathology license is required.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "SLP licenses last two years (intern licenses one year). The renewal fee is $100, and licenses can be renewed starting 60 days before expiration.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slparenew.htm",
+     "quote": "All licenses are issued licenses for 2 years, except for Intern licenses, which are valid for one year.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "20 clock hours of CE per renewal period, including 2 hours of ethics, from ASHA, TSHA, AAA or TAA approved providers. An HHSC-approved human trafficking prevention course is also required to renew.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slpace.htm",
+     "quote": "Speech-language pathologists are required to obtain 20 clock hours of continuing education (2 continuing education units), with 2 clock hours (0.2 continuing education units) in ethics.",
+     "verified": true
+    },
+    "compact": {
+     "value": "Texas is not a member of the Audiology and Speech-Language Pathology Interstate Compact (ASLP-IC), so out-of-state SLPs need a full Texas license.",
+     "source_url": "https://www.asha.org/advocacy/state/texas-state-information/",
+     "quote": "ASLP-IC: Texas is not a member state of the Audiology",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through the TDLR Online Licensing System; the TDLR page linked here has the portal link.",
+     "source_url": "https://www.tdlr.texas.gov/slpa/slp-license-apply.htm",
+     "quote": "To apply for a new speech-language pathology license, submit the online application along with the $150 application fee",
+     "verified": true
+    }
+   }
+  }
+ },
+ {
+  "state": "California",
+  "abbr": "CA",
+  "researched_on": "2026-10-22",
+  "professions": {
+   "pt": {
+    "board": {
+     "value": "Physical Therapy Board of California",
+     "source_url": "https://www.ptbc.ca.gov/",
+     "quote": "To protect the people of California by the effective administration of the Physical Therapy Practice Act.",
+     "verified": true
+    },
+    "education": {
+     "value": "You must complete a physical therapist program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE).",
+     "source_url": "https://www.ptbc.ca.gov/licensees/military_resources.shtml",
+     "quote": "To qualify for Physical Therapist licensure, an individual must complete a physical therapist program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "You must pass the National Physical Therapy Examination (NPTE), administered through the Federation of State Boards of Physical Therapy (FSBPT). The PT exam has 225 questions over five hours and can be taken up to three times in 12 months.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/new_grad/exam.shtml",
+     "quote": "The PT NPTE is 225 questions, and you have five hours to complete it. You may take the NPTE three times in a 12-month period.",
+     "verified": true
+    },
+    "state_exam": {
+     "value": "California requires its law exam, the CAL-JAM (California Jurisprudence Assessment Module). It is taken online through FSBPT, costs $50, has 50 questions, and you pass by answering 80% correctly, with no limit on attempts.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/caljam.shtml",
+     "quote": "Takers are required to answer 80% of the questions correctly to pass the CAL-JAM. There is no limit on the number of attempts.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "All applicants must be fingerprinted for a DOJ and FBI background check. Use Live Scan if you will be in California during the process; out-of-state applicants who will not be in California use fingerprint hard cards ($49 processing fee).",
+     "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/fingerprint.shtml",
+     "quote": "If you will be in California at any time during the application process, or if you are a California resident, submit your fingerprints via a California Live Scan location.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "For a physical therapist, the application processing fee is $300 (nonrefundable) and the initial license fee is $150, for $450 total. Fingerprint hard cards add $49.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/fees.shtml",
+     "quote": "Application Processing Fee: $300 The application processing fee is nonrefundable. Initial License Fee (ILF): $150",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "PTs already licensed in another U.S. state apply by Endorsement through BreEZe. They must still pass the CAL-JAM, submit fingerprints and a passport-style photo, and pay the application and initial license fees.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/index.shtml",
+     "quote": "If you already hold a physical therapist or physical therapist assistant license in another U.S. physical therapy licensing jurisdiction, you will apply for licensure in California by way of Endorsement.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "California grants License Applicant Status (PTLA), which lets an applicant work under supervision before the full license is issued. You may work as a PTLA only after the PTBC sends a notice granting that status.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/ptla.shtml",
+     "quote": "You are not authorized to work as a physical therapist license applicant/physical therapist assistant license applicant (PTLA/PTALA) until you receive a notice from PTBC granting you license applicant status.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "A PT license must be renewed every two years. It expires on the last day of the licensee's birth month. The biennial renewal fee is $300.",
+     "source_url": "https://www.ptbc.ca.gov/licensees/license_renewal.shtml",
+     "quote": "A license to practice physical therapy must be renewed every two years. The expiration date is the last day of the licensee's birth month.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "PTs need 30 hours of continuing competency per two-year renewal, including 4 hours of basic life support (hands-on) and 2 hours of ethics, laws and regulations. A first renewal paid on time needs 15 hours.",
+     "source_url": "https://www.ptbc.ca.gov/licensees/license_renewal.shtml",
+     "quote": "The same expiration date will apply and another 30 hours of continuing competency activity will be required at the time of your next renewal.",
+     "verified": true
+    },
+    "compact": {
+     "value": "California is not a member of the PT Compact. The compact commission lists it among non-member states, so compact privileges cannot be used to practice in California.",
+     "source_url": "https://ptcompact.org/compact-map/",
+     "quote": "Non-Members (10) California Florida Hawaii Idaho Minnesota New Mexico New York",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "The PTBC acknowledges receipt of an application within 30 days. Once all deficiencies are resolved and exam scores are received, it generally issues the license within 45 days.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/index.shtml",
+     "quote": "Once all deficiencies in your application are satisfied and your scores are received, a license is generally issued within 45 days.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through DCA BreEZe; the board's Apply Now page linked here has the link.",
+     "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/apply.shtml",
+     "quote": "Continue below to create your BreEZe account and apply online.",
+     "verified": true
+    }
+   },
+   "ot": {
+    "board": {
+     "value": "California Board of Occupational Therapy",
+     "source_url": "https://www.bot.ca.gov/",
+     "quote": "Occupational Therapists and Occupational Therapy Assistants work with people experiencing different medical conditions or disabilities to develop, improve or restore functional daily living skills.",
+     "verified": true
+    },
+    "education": {
+     "value": "You need a degree from an occupational therapy program. For licensure the board requires an official sealed transcript from the program showing the degree and graduation date.",
+     "source_url": "https://www.bot.ca.gov/applicants/limited_permits.shtml",
+     "quote": "Official transcripts must be received in the original sealed envelope from the OT/OTA program and have the degree and graduation date posted.",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "California uses the NBCOT certification examination as its licensing exam. A permanent license is issued after you pass the NBCOT exam.",
+     "source_url": "https://www.bot.ca.gov/applicants/lp_faq.shtml",
+     "quote": "How do I get my permanent license after I pass the NBCOT exam?",
+     "verified": true
+    },
+    "background_check": {
+     "value": "Every applicant must pass a DOJ and FBI criminal background check. Use Live Scan in California, or the board's fingerprint cards (with a $49 processing fee) if you live out of state.",
+     "source_url": "https://www.bot.ca.gov/applicants/fingerprints.shtml",
+     "quote": "The Board requires a Department of Justice (DOJ) and Federal Bureau of Investigation (FBI) criminal history background check on all applicants.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "The application fee is $50. The initial license fee is separate. It is prorated based on your birth date and the month the license is issued, and the board states the amount in your approval letter.",
+     "source_url": "https://www.bot.ca.gov/applicants/app_faq.shtml",
+     "quote": "The application fee is $50.00 and must be submitted with the application. The application processing fee is not the same as the initial license fee",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "California has no separate endorsement license. Out-of-state OTs file the standard application. An OT with a valid license in another state who has passed the national exam may work in California for 60 calendar days after the board receives the application, in association with a California-licensed OT.",
+     "source_url": "https://www.bot.ca.gov/forms_pubs/gen_faqs.shtml",
+     "quote": "allows an OT or OTA who holds a valid license in another state, has taken and passed the national exam, and has not been previously denied a license in California, to work in California for 60 calendar days",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "Recent graduates can get a limited permit ($100) to work under supervision while waiting to take the NBCOT exam. You must apply to NBCOT within 4 months of finishing your education. The permit lasts up to 3 months and ends immediately if you fail the exam.",
+     "source_url": "https://www.bot.ca.gov/applicants/limited_permits.shtml",
+     "quote": "Limited permits are issued to recent graduates in order to allow them to work under supervision while waiting to take the national examination.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "Licenses renew every two years. They expire at midnight on the last day of your birth month, in odd or even years depending on your birth year.",
+     "source_url": "https://www.bot.ca.gov/licensees/renewal_info.shtml",
+     "quote": "The term of a license or certificate is two years. Licenses and certificates expire at midnight on the last day of your birth month in odd or even years depending on your birth year.",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "Each two-year renewal requires 24 professional development units (PDUs). Twelve of them must relate directly to delivering OT services, and up to 6 extra PDUs can carry over to the next period.",
+     "source_url": "https://www.bot.ca.gov/licensees/competency_faqs.shtml",
+     "quote": "You are required to complete 24 PDUs, which may be earned any time during your renewal period.",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "The board reviews initial license applications within 30 days of submission.",
+     "source_url": "https://www.bot.ca.gov/applicants/lp_faq.shtml",
+     "quote": "Initial License applications are reviewed within 30 days from the submission date.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Apply online through DCA BreEZe; the board page linked here has the link.",
+     "source_url": "https://www.bot.ca.gov/applicants/lp_faq.shtml",
+     "quote": "Submit the Initial License application for OT or OTA online via your BreEZe account.",
+     "verified": true
+    }
+   },
+   "slp": {
+    "board": {
+     "value": "Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board",
+     "source_url": "https://www.speechandhearing.ca.gov/",
+     "quote": "Welcome to the Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board",
+     "verified": true
+    },
+    "education": {
+     "value": "You need a master's degree or equivalent in speech-language pathology from an accredited educational institution, plus 300 hours of supervised clinical practicum in three different clinical settings.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/index.html",
+     "quote": "Hold a Master's degree or equivalent in speech-language pathology from an accredited educational institution.",
+     "verified": true
+    },
+    "national_exam": {
+     "value": "You must pass the ETS Praxis speech-language pathology exam with a minimum score of 162, taken within the last five years. Report your score to the board with code R8544.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/index.html",
+     "quote": "pass the national speech-language pathology exam administered by the Educational Testing Service (ETS) Praxis Series with a minimum score of 162.",
+     "verified": true
+    },
+    "background_check": {
+     "value": "All applicants must pass a DOJ and FBI background check. California residents must use Live Scan; applicants outside California submit FD-258 fingerprint hard cards with a $49 processing fee.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/fingerprinting_requirements.html",
+     "quote": "The Board requires both a Department of Justice (DOJ) and Federal Bureau of Investigation (FBI) criminal history background check on all applicants for licensure or registration.",
+     "verified": true
+    },
+    "application_fee": {
+     "value": "The SLP application and license fee is $150. Applicants who already paid the $35 RPE temporary license application fee pay the remaining $115. A 6-month temporary license for out-of-state licensees costs $30.",
+     "source_url": "https://www.speechandhearing.ca.gov/forms_pubs/pdf/fee_schedule.pdf",
+     "quote": "Applicants who already paid a $35 RPE Application Fee only need to pay the remaining $115 towards the full $150 Application Fee.",
+     "verified": true
+    },
+    "endorsement": {
+     "value": "SLPs licensed in another state apply under the 'Licensed in Another State' pathway, which offers both a temporary and a full license application. Holders of a current ASHA CCC must use the Equivalent Qualifications pathway instead.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/index.html",
+     "quote": "Must possess an active and current license from another state. If you also hold a current ASHA certification, you must use Option #2.",
+     "verified": true
+    },
+    "temporary_or_provisional": {
+     "value": "New graduates complete their Required Professional Experience (RPE) under an RPE temporary license: 36 weeks full-time or 72 weeks part-time. California also offers a one-time 6-month temporary license to SLPs who hold a current license in another state.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/index.html",
+     "quote": "Have completed 36 weeks of full-time or 72 weeks of part-time supervised Required Professional Experience (RPE) while holding an RPE temporary license.",
+     "verified": true
+    },
+    "renewal": {
+     "value": "SLP licenses renew every 2 years, on the last day of your birth month.",
+     "source_url": "https://www.speechandhearing.ca.gov/licensees/renew_license.html",
+     "quote": "Speech-Language Pathologist 2 Years Last day of birth month",
+     "verified": true
+    },
+    "continuing_education": {
+     "value": "SLPs need 24 hours of continuing professional development per two-year renewal (12 hours for a first renewal). No more than 12 hours may be self-study, and no more than 6 hours may be indirect patient/client care.",
+     "source_url": "https://www.speechandhearing.ca.gov/licensees/ce/slp_aud_da_ce.html",
+     "quote": "Speech-Language Pathologist or Audiologist 24 hours 12 hours 6 hours",
+     "verified": true
+    },
+    "compact": {
+     "value": "California is not among the states issuing ASLP-IC compact privileges. Registration is open only to practitioners licensed in Louisiana, Ohio, Tennessee and West Virginia.",
+     "source_url": "https://aslpcompact.com/",
+     "quote": "Registration for compact privileges to practice is open for licensed practitioners in Louisiana, Ohio, Tennessee, and West Virginia.",
+     "verified": true
+    },
+    "processing_time": {
+     "value": "The board asks applicants to allow at least four weeks from receipt for processing. Times may be longer in the peak season, about May through October.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/faqs/applicant.html",
+     "quote": "Please allow at least four weeks from the date received for processing.",
+     "verified": true
+    },
+    "apply_url": {
+     "value": "Applications are submitted through the 'Application Package' links (DCA online forms) on the board's Speech-Language Pathologist applicant page, one per licensure pathway.",
+     "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/index.html",
+     "quote": "Application Package for Licensed in Another State (Full License)",
+     "verified": true
+    }
+   }
+  }
+ }
+]

@@ -8,6 +8,7 @@ const COMPANY_LINKS = [
   { href: "/job-seekers/", label: "For Clinicians" },
   { href: "/jobs/", label: "Open Roles" },
   { href: "/salary/", label: "Therapy Salaries by State" },
+  { href: "/licensure/", label: "State License Guides" },
   { href: "/therapy-recruiters/", label: "Markets by State" },
   { href: "/licensure-compacts/", label: "Licensure Compacts" },
   { href: "/about/", label: "About Molly" },
