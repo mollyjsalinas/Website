@@ -4,6 +4,7 @@ import { POSTS } from "@/lib/posts";
 import { liveJobs } from "@/lib/jobs";
 import { SALARY_ROLES, salaryHref, salaryParams } from "@/lib/salary";
 import { licensureGuides, licensureHref } from "@/lib/licensure";
+import { careerParams, careerHref } from "@/lib/career-specialties";
 import { launchMarkets, metrosForState, metroHref, stateHref } from "@/lib/markets";
 
 // ⛔ Every path here ends in "/" (trailingSlash: true). The prebuild check
@@ -74,6 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...salaryParams().map((p) => ({
       url: `${SITE.url}/salary/${p.role}/${p.state}/`,
       lastModified: dataDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...careerParams().map((p) => ({
+      url: `${SITE.url}${careerHref(p.specialty, p.state)}`,
+      lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
