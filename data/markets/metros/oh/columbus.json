@@ -6,46 +6,45 @@
   "state_abbr": "OH",
   "state": "Ohio",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Ohio side of the Columbus metro area",
     "active_individual_providers": {
-      "pt": 1470,
-      "pta": 359,
-      "ot": 788,
-      "ota": 247,
-      "slp": 1315,
-      "aud": 179
+      "pt": 1528,
+      "pta": 357,
+      "ot": 808,
+      "ota": 254,
+      "slp": 1335,
+      "aud": 185
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 80,
+        "trailing_12mo_total": 73,
         "by_month": {
-          "2025-09": 13,
           "2025-10": 7,
           "2025-11": 5,
           "2025-12": 3,
           "2026-01": 3,
-          "2026-02": 8,
+          "2026-02": 9,
           "2026-03": 8,
           "2026-04": 2,
           "2026-05": 6,
           "2026-06": 8,
           "2026-07": 3,
-          "2026-08": 14
+          "2026-08": 15,
+          "2026-09": 4
         }
       },
       "pta": {
-        "trailing_12mo_total": 14,
+        "trailing_12mo_total": 19,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 3,
           "2025-11": 0,
           "2025-12": 2,
@@ -56,30 +55,30 @@
           "2026-05": 2,
           "2026-06": 2,
           "2026-07": 1,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 5
         }
       },
       "ot": {
-        "trailing_12mo_total": 40,
+        "trailing_12mo_total": 39,
         "by_month": {
-          "2025-09": 4,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 5,
           "2026-01": 2,
           "2026-02": 0,
           "2026-03": 4,
-          "2026-04": 5,
+          "2026-04": 6,
           "2026-05": 1,
           "2026-06": 6,
           "2026-07": 2,
-          "2026-08": 10
+          "2026-08": 10,
+          "2026-09": 2
         }
       },
       "ota": {
-        "trailing_12mo_total": 20,
+        "trailing_12mo_total": 26,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 0,
-          "2026-08": 12
+          "2026-08": 12,
+          "2026-09": 7
         }
       },
       "slp": {
-        "trailing_12mo_total": 67,
+        "trailing_12mo_total": 71,
         "by_month": {
-          "2025-09": 6,
           "2025-10": 3,
           "2025-11": 1,
           "2025-12": 3,
@@ -107,13 +106,13 @@
           "2026-05": 2,
           "2026-06": 3,
           "2026-07": 5,
-          "2026-08": 31
+          "2026-08": 31,
+          "2026-09": 10
         }
       },
       "aud": {
-        "trailing_12mo_total": 4,
+        "trailing_12mo_total": 2,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -124,7 +123,8 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Ohio side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 101,
-      "certified_beds": 8940,
-      "avg_overall_rating": 2.91,
+      "certified_beds": 8977,
+      "avg_overall_rating": 2.96,
       "for_profit_pct": 82.2
     },
     "home_health_agencies": {

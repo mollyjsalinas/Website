@@ -46,6 +46,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "./",
   },
+  // Favicons live in /public at fixed, unhashed URLs so Google's favicon
+  // crawler always finds the same file. The APT mark on white, square, with
+  // sizes in multiples of 48 per Google's favicon guidelines (Molly, 9/25).
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+      { url: "/icon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/icon-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
 };
 
 const MOLLY_ID = `${SITE.url}/#molly`;

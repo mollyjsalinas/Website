@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
 import { CtaBand, Breadcrumbs } from "@/components/Sections";
+import { SalaryLinks, StateOpenRoles } from "@/components/SalaryLinks";
 import { EmployerBlock } from "@/components/EmployerBlock";
 import { MollyByline, MOLLY_ID } from "@/components/MollyByline";
 import { WorkforceSection, PaySection, SectorSection, FacilitiesSection } from "@/components/DataSections";
@@ -118,12 +119,15 @@ export default async function MetroMarketPage({
           comp={c.compensation}
           national={parent?.compensation.national}
           extraNote={
-            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
-              Metro figures cover the whole {c.metro} statistical area.{" "}
-              <Link href={stateUrl} className="font-semibold text-teal-600 hover:text-teal-700">
-                See {c.state} statewide pay →
-              </Link>
-            </p>
+            <>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
+                Metro figures cover the whole {c.metro} statistical area.{" "}
+                <Link href={stateUrl} className="font-semibold text-teal-600 hover:text-teal-700">
+                  See {c.state} statewide pay →
+                </Link>
+              </p>
+              {parent && <SalaryLinks m={parent} />}
+            </>
           }
         />
       ) : (
@@ -165,6 +169,8 @@ export default async function MetroMarketPage({
           </p>
         </Container>
       </section>
+
+      <StateOpenRoles abbr={c.state_abbr} place={c.state} />
 
       <CtaBand
         title={`Hiring in ${c.city}?`}

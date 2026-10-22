@@ -6,46 +6,45 @@
   "state_abbr": "MN",
   "state": "Minnesota",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Minnesota side of the Minneapolis metro area",
     "active_individual_providers": {
-      "pt": 3436,
-      "pta": 435,
-      "ot": 2223,
-      "ota": 316,
-      "slp": 2200,
-      "aud": 325
+      "pt": 3515,
+      "pta": 439,
+      "ot": 2287,
+      "ota": 323,
+      "slp": 2301,
+      "aud": 345
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 145,
+        "trailing_12mo_total": 143,
         "by_month": {
-          "2025-09": 18,
           "2025-10": 9,
           "2025-11": 3,
           "2025-12": 6,
           "2026-01": 7,
           "2026-02": 6,
           "2026-03": 4,
-          "2026-04": 17,
+          "2026-04": 16,
           "2026-05": 27,
           "2026-06": 21,
-          "2026-07": 10,
-          "2026-08": 17
+          "2026-07": 11,
+          "2026-08": 17,
+          "2026-09": 16
         }
       },
       "pta": {
         "trailing_12mo_total": 11,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 1,
@@ -56,13 +55,13 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 2,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 2
         }
       },
       "ot": {
-        "trailing_12mo_total": 196,
+        "trailing_12mo_total": 205,
         "by_month": {
-          "2025-09": 13,
           "2025-10": 8,
           "2025-11": 4,
           "2025-12": 14,
@@ -73,13 +72,13 @@
           "2026-05": 40,
           "2026-06": 17,
           "2026-07": 6,
-          "2026-08": 11
+          "2026-08": 11,
+          "2026-09": 22
         }
       },
       "ota": {
-        "trailing_12mo_total": 35,
+        "trailing_12mo_total": 34,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 5,
           "2025-11": 0,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 3,
           "2026-06": 8,
           "2026-07": 2,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 594,
+        "trailing_12mo_total": 662,
         "by_month": {
-          "2025-09": 8,
           "2025-10": 6,
           "2025-11": 5,
           "2025-12": 8,
@@ -105,15 +104,15 @@
           "2026-03": 105,
           "2026-04": 133,
           "2026-05": 167,
-          "2026-06": 63,
+          "2026-06": 64,
           "2026-07": 11,
-          "2026-08": 30
+          "2026-08": 30,
+          "2026-09": 75
         }
       },
       "aud": {
-        "trailing_12mo_total": 15,
+        "trailing_12mo_total": 14,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 0,
@@ -124,7 +123,8 @@
           "2026-05": 3,
           "2026-06": 2,
           "2026-07": 2,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Minnesota side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 130,
-      "certified_beds": 11646,
-      "avg_overall_rating": 3.05,
+      "certified_beds": 11656,
+      "avg_overall_rating": 3.1,
       "for_profit_pct": 39.2
     },
     "home_health_agencies": {

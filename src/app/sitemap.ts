@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { SITE, CONTENT_UPDATED, PROFESSION_LIST, SETTING_LIST, COMPACT_LIST } from "@/lib/site";
 import { POSTS } from "@/lib/posts";
 import { liveJobs } from "@/lib/jobs";
+import { SALARY_ROLES, salaryHref, salaryParams } from "@/lib/salary";
+import { licensureGuides, licensureHref } from "@/lib/licensure";
 import { launchMarkets, metrosForState, metroHref, stateHref } from "@/lib/markets";
 
 // ⛔ Every path here ends in "/" (trailingSlash: true). The prebuild check
@@ -14,6 +16,8 @@ const STATIC_PATHS = [
   "/contact/",
   "/contact/hire/",
   "/jobs/",
+  "/salary/",
+  "/licensure/",
   "/blog/",
   "/therapy-recruiters/",
   "/licensure-compacts/",
@@ -60,6 +64,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: post.date > dataDate ? post.date : dataDate,
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    })),
+    ...SALARY_ROLES.map((r) => ({
+      url: `${SITE.url}${salaryHref(r)}`,
+      lastModified: dataDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...salaryParams().map((p) => ({
+      url: `${SITE.url}/salary/${p.role}/${p.state}/`,
+      lastModified: dataDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...licensureGuides().map((x) => ({
+      url: `${SITE.url}${licensureHref(x.g.abbr, x.prof)}`,
+      lastModified: x.g.researched_on > CONTENT_UPDATED ? x.g.researched_on : CONTENT_UPDATED,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
     ...liveJobs().map((job) => ({
       url: `${SITE.url}/jobs/${job.slug}/`,

@@ -8,6 +8,8 @@ const NAV = [
   { href: "/therapy-recruiters/", label: "Markets" },
   { href: "/licensure-compacts/", label: "Compacts" },
   { href: "/job-seekers/", label: "Clinicians" },
+  { href: "/jobs/", label: "Jobs" },
+  { href: "/salary/", label: "Salaries" },
   { href: "/about/", label: "About" },
   { href: "/blog/", label: "Insights" },
 ];
@@ -33,7 +35,7 @@ export function Header() {
           <Wordmark className="text-2xl" />
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-5 lg:flex" aria-label="Main">
           {NAV.map((item) => (
             <Link
               key={item.href}
@@ -53,7 +55,7 @@ export function Header() {
 
         <button
           type="button"
-          className="md:hidden"
+          className="lg:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
@@ -69,7 +71,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-mist bg-white px-5 py-4 md:hidden" aria-label="Mobile">
+        <nav className="border-t border-mist bg-white px-5 py-4 lg:hidden" aria-label="Mobile">
           <ul className="flex flex-col gap-3">
             {NAV.map((item) => (
               <li key={item.href}>

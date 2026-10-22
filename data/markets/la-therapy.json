@@ -2,38 +2,37 @@
   "market": "Louisiana",
   "market_abbr": "LA",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 4618189
   },
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 2519,
-      "pta": 312,
-      "ot": 1320,
-      "ota": 239,
-      "slp": 3306,
-      "aud": 243
+      "pt": 2561,
+      "pta": 309,
+      "ot": 1338,
+      "ota": 244,
+      "slp": 3332,
+      "aud": 277
     },
     "per_100k": {
-      "pt": 54.5,
-      "ot": 28.6,
-      "slp": 71.6,
-      "aud": 5.3
+      "pt": 55.5,
+      "ot": 29.0,
+      "slp": 72.1,
+      "aud": 6.0
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 127,
+        "trailing_12mo_total": 130,
         "by_month": {
-          "2025-09": 4,
           "2025-10": 3,
           "2025-11": 5,
           "2025-12": 2,
@@ -44,13 +43,13 @@
           "2026-05": 36,
           "2026-06": 23,
           "2026-07": 7,
-          "2026-08": 20
+          "2026-08": 20,
+          "2026-09": 7
         }
       },
       "pta": {
-        "trailing_12mo_total": 15,
+        "trailing_12mo_total": 13,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 0,
@@ -61,13 +60,13 @@
           "2026-05": 0,
           "2026-06": 4,
           "2026-07": 1,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 0
         }
       },
       "ot": {
-        "trailing_12mo_total": 71,
+        "trailing_12mo_total": 78,
         "by_month": {
-          "2025-09": 3,
           "2025-10": 8,
           "2025-11": 2,
           "2025-12": 5,
@@ -78,13 +77,13 @@
           "2026-05": 3,
           "2026-06": 8,
           "2026-07": 10,
-          "2026-08": 7
+          "2026-08": 7,
+          "2026-09": 10
         }
       },
       "ota": {
-        "trailing_12mo_total": 16,
+        "trailing_12mo_total": 18,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 1,
@@ -95,13 +94,13 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 3,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 3
         }
       },
       "slp": {
-        "trailing_12mo_total": 143,
+        "trailing_12mo_total": 145,
         "by_month": {
-          "2025-09": 16,
           "2025-10": 10,
           "2025-11": 3,
           "2025-12": 2,
@@ -112,13 +111,13 @@
           "2026-05": 12,
           "2026-06": 22,
           "2026-07": 13,
-          "2026-08": 29
+          "2026-08": 29,
+          "2026-09": 18
         }
       },
       "aud": {
-        "trailing_12mo_total": 6,
+        "trailing_12mo_total": 4,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -129,7 +128,8 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 0
         }
       }
     }
@@ -235,12 +235,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "nursing_homes": {
       "count": 265,
-      "certified_beds": 32291,
-      "avg_overall_rating": 2.52,
-      "for_profit_pct": 81.1
+      "certified_beds": 32239,
+      "avg_overall_rating": 2.55,
+      "for_profit_pct": 81.5
     },
     "home_health_agencies": {
       "count": 176,

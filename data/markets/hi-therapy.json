@@ -2,41 +2,40 @@
   "market": "Hawaii",
   "market_abbr": "HI",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 1432820
   },
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 1207,
-      "pta": 142,
-      "ot": 338,
-      "ota": 86,
-      "slp": 561,
-      "aud": 80
+      "pt": 1245,
+      "pta": 143,
+      "ot": 356,
+      "ota": 90,
+      "slp": 572,
+      "aud": 87
     },
     "per_100k": {
-      "pt": 84.2,
-      "ot": 23.6,
-      "slp": 39.2,
-      "aud": 5.6
+      "pt": 86.9,
+      "ot": 24.8,
+      "slp": 39.9,
+      "aud": 6.1
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 54,
+        "trailing_12mo_total": 59,
         "by_month": {
-          "2025-09": 6,
           "2025-10": 2,
           "2025-11": 6,
-          "2025-12": 6,
+          "2025-12": 7,
           "2026-01": 3,
           "2026-02": 9,
           "2026-03": 3,
@@ -44,13 +43,13 @@
           "2026-05": 3,
           "2026-06": 6,
           "2026-07": 5,
-          "2026-08": 4
+          "2026-08": 4,
+          "2026-09": 10
         }
       },
       "pta": {
         "trailing_12mo_total": 18,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 2,
           "2025-12": 0,
@@ -61,13 +60,13 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 2,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 0
         }
       },
       "ot": {
         "trailing_12mo_total": 24,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 1,
@@ -78,13 +77,13 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 4,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 1
         }
       },
       "ota": {
-        "trailing_12mo_total": 6,
+        "trailing_12mo_total": 7,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -95,15 +94,15 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 21,
+        "trailing_12mo_total": 24,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
-          "2025-11": 1,
+          "2025-11": 2,
           "2025-12": 1,
           "2026-01": 2,
           "2026-02": 0,
@@ -112,13 +111,13 @@
           "2026-05": 1,
           "2026-06": 3,
           "2026-07": 4,
-          "2026-08": 3
+          "2026-08": 3,
+          "2026-09": 4
         }
       },
       "aud": {
-        "trailing_12mo_total": 3,
+        "trailing_12mo_total": 2,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -129,7 +128,8 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 0
         }
       }
     }
@@ -235,12 +235,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "nursing_homes": {
       "count": 43,
       "certified_beds": 4248,
-      "avg_overall_rating": 3.56,
-      "for_profit_pct": 60.5
+      "avg_overall_rating": 3.71,
+      "for_profit_pct": 58.1
     },
     "home_health_agencies": {
       "count": 18,

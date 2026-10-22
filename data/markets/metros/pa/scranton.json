@@ -6,29 +6,28 @@
   "state_abbr": "PA",
   "state": "Pennsylvania",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Pennsylvania side of the Scranton metro area",
     "active_individual_providers": {
-      "pt": 537,
-      "pta": 190,
-      "ot": 375,
-      "ota": 75,
-      "slp": 343,
+      "pt": 542,
+      "pta": 192,
+      "ot": 388,
+      "ota": 76,
+      "slp": 344,
       "aud": 43
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 29,
+        "trailing_12mo_total": 19,
         "by_month": {
-          "2025-09": 11,
           "2025-10": 1,
           "2025-11": 2,
           "2025-12": 0,
@@ -39,13 +38,13 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 4
+          "2026-08": 4,
+          "2026-09": 1
         }
       },
       "pta": {
-        "trailing_12mo_total": 19,
+        "trailing_12mo_total": 15,
         "by_month": {
-          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 1,
@@ -56,30 +55,30 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 39,
+        "trailing_12mo_total": 29,
         "by_month": {
-          "2025-09": 11,
           "2025-10": 8,
           "2025-11": 3,
           "2025-12": 2,
-          "2026-01": 4,
+          "2026-01": 5,
           "2026-02": 0,
           "2026-03": 1,
           "2026-04": 0,
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 6
+          "2026-08": 6,
+          "2026-09": 0
         }
       },
       "ota": {
-        "trailing_12mo_total": 8,
+        "trailing_12mo_total": 6,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 4,
           "2025-11": 0,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 20,
+        "trailing_12mo_total": 19,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 2,
           "2025-12": 1,
@@ -107,13 +106,13 @@
           "2026-05": 0,
           "2026-06": 3,
           "2026-07": 4,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 1
         }
       },
       "aud": {
         "trailing_12mo_total": 0,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -124,7 +123,8 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       }
     }
@@ -191,12 +191,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Pennsylvania side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 40,
       "certified_beds": 4614,
-      "avg_overall_rating": 2.45,
+      "avg_overall_rating": 2.52,
       "for_profit_pct": 70.0
     },
     "home_health_agencies": {

@@ -73,6 +73,15 @@ export default function JobSeekersPage() {
             <Link href="/blog/what-therapists-earn-by-state/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
               PT, OT and SLP pay by state
             </Link>
+            <Link href="/salary/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
+              Salaries by role, state and metro
+            </Link>
+            <Link href="/licensure/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
+              State license guides
+            </Link>
+            <Link href="/jobs/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
+              Open roles
+            </Link>
             <Link href="/licensure-compacts/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
               Licensure compacts
             </Link>

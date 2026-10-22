@@ -6,46 +6,45 @@
   "state_abbr": "WI",
   "state": "Wisconsin",
   "desk": "therapy",
-  "snapshot_date": "2026-09-15",
+  "snapshot_date": "2026-10-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Wisconsin side of the Milwaukee metro area",
     "active_individual_providers": {
-      "pt": 2063,
-      "pta": 570,
-      "ot": 1158,
-      "ota": 278,
-      "slp": 1174,
-      "aud": 156
+      "pt": 2106,
+      "pta": 569,
+      "ot": 1180,
+      "ota": 281,
+      "slp": 1201,
+      "aud": 159
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, September 2026 file",
+    "source": "NPPES provider enumeration dates, October 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 76,
+        "trailing_12mo_total": 75,
         "by_month": {
-          "2025-09": 10,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 3,
           "2026-01": 2,
-          "2026-02": 6,
+          "2026-02": 7,
           "2026-03": 2,
           "2026-04": 1,
           "2026-05": 13,
           "2026-06": 18,
           "2026-07": 7,
-          "2026-08": 11
+          "2026-08": 12,
+          "2026-09": 7
         }
       },
       "pta": {
         "trailing_12mo_total": 14,
         "by_month": {
-          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 2,
           "2025-12": 0,
@@ -56,13 +55,13 @@
           "2026-05": 1,
           "2026-06": 2,
           "2026-07": 1,
-          "2026-08": 2
+          "2026-08": 2,
+          "2026-09": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 65,
+        "trailing_12mo_total": 71,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 2,
@@ -73,13 +72,13 @@
           "2026-05": 17,
           "2026-06": 10,
           "2026-07": 4,
-          "2026-08": 16
+          "2026-08": 16,
+          "2026-09": 8
         }
       },
       "ota": {
-        "trailing_12mo_total": 6,
+        "trailing_12mo_total": 5,
         "by_month": {
-          "2025-09": 2,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 0,
@@ -90,13 +89,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 1
+          "2026-08": 1,
+          "2026-09": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 328,
+        "trailing_12mo_total": 366,
         "by_month": {
-          "2025-09": 4,
           "2025-10": 2,
           "2025-11": 0,
           "2025-12": 1,
@@ -107,13 +106,13 @@
           "2026-05": 122,
           "2026-06": 59,
           "2026-07": 11,
-          "2026-08": 105
+          "2026-08": 105,
+          "2026-09": 42
         }
       },
       "aud": {
         "trailing_12mo_total": 2,
         "by_month": {
-          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -124,7 +123,8 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0
+          "2026-08": 0,
+          "2026-09": 0
         }
       }
     }
@@ -196,7 +196,7 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
     "scope": "Wisconsin side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 57,

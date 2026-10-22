@@ -25,7 +25,11 @@ export default function JobsIndexPage() {
         secondary={{ href: "/contact/hire/", label: "Post a role with us" }}
       >
         Most of the searches we run are confidential and never appear here. The roles below are
-        the ones an employer has asked us to list publicly.
+        the ones an employer has asked us to list publicly. Checking an offer?{" "}
+        <Link href="/salary/" className="font-semibold underline">
+          See therapy salaries by state
+        </Link>
+        .
       </Hero>
 
       <section className="py-20">
