@@ -1,7 +1,10 @@
 // BLS OEWS May 2025 metropolitan estimates. Cross-industry, all ownerships (NAICS 000000; OWN_CODE 1235).
 import type { AdvancedPracticeSalary } from "@/lib/advanced-practice-salary";
 
-export const ADVANCED_PRACTICE_METRO_SALARIES: Record<string, Partial<Record<"np" | "pa", AdvancedPracticeSalary>>> = {
+// BLS suppresses employment for some metros (null) while still publishing wages.
+export type AdvancedPracticeMetroSalary = Omit<AdvancedPracticeSalary, "employment"> & { employment: number | null };
+
+export const ADVANCED_PRACTICE_METRO_SALARIES: Record<string, Partial<Record<"np" | "pa", AdvancedPracticeMetroSalary>>> = {
   "10580": {
     "pa": {
       "employment": 770,
@@ -2281,4 +2284,4 @@ export const ADVANCED_PRACTICE_METRO_SALARIES: Record<string, Partial<Record<"np
   }
 };
 
-export function advancedPracticeMetroSalary(careerSlug: string, cbsa: string): AdvancedPracticeSalary | undefined { const role = careerSlug === "nurse-practitioner" ? "np" : careerSlug === "physician-assistant" ? "pa" : undefined; return role ? ADVANCED_PRACTICE_METRO_SALARIES[cbsa]?.[role] : undefined; }
+export function advancedPracticeMetroSalary(careerSlug: string, cbsa: string): AdvancedPracticeMetroSalary | undefined { const role = careerSlug === "nurse-practitioner" ? "np" : careerSlug === "physician-assistant" ? "pa" : undefined; return role ? ADVANCED_PRACTICE_METRO_SALARIES[cbsa]?.[role] : undefined; }
