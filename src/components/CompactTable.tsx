@@ -132,11 +132,11 @@ export function CompactPage({ compactKey }: { compactKey: CompactKey }) {
                 Where a privilege is not available, or you want a license of your own, these guides walk through
                 each board&apos;s requirements with sources.
               </SectionHeading>
-              <ul className="mt-6 space-y-2">
+              <ul className="mt-6 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
                 {guides.map((x) => (
                   <li key={`${x.g.abbr}-${x.prof}`}>
-                    <Link href={licensureHref(x.g.abbr, x.prof)} className="font-semibold text-teal-600 hover:text-teal-700">
-                      {x.g.state} {LIC_PROFESSIONS[x.prof].discipline} license →
+                    <Link href={licensureHref(x.g.abbr, x.prof)} className="text-teal-600 hover:text-teal-700">
+                      {x.g.state} {LIC_PROFESSIONS[x.prof].discipline} license
                     </Link>
                   </li>
                 ))}

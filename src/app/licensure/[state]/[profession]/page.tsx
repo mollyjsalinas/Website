@@ -106,7 +106,6 @@ export default async function LicensurePage({ params }: { params: Promise<{ stat
   const jobs = jobsFor(prof, g.abbr);
   const compact = COMPACTS[P.compact];
   const others = licensureGuides().filter((o) => o.g.abbr === g.abbr && o.prof !== prof);
-  const elsewhere = licensureGuides().filter((o) => o.prof === prof && o.g.abbr !== g.abbr);
   const url = `${SITE.url}${licensureHref(g.abbr, prof)}`;
   const section = (keys: FactKey[]) => keys.filter((k) => facts[k]);
 
@@ -221,8 +220,7 @@ export default async function LicensurePage({ params }: { params: Promise<{ stat
               </li>
             ))}
           </ol>
-          {(others.length > 0 || elsewhere.length > 0) && (
-            <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
               {others.length > 0 && (
                 <div>
                   <h2 className="font-heading text-lg font-semibold text-navy-600">Other {g.state} licenses</h2>
@@ -237,22 +235,15 @@ export default async function LicensurePage({ params }: { params: Promise<{ stat
                   </ul>
                 </div>
               )}
-              {elsewhere.length > 0 && (
-                <div>
-                  <h2 className="font-heading text-lg font-semibold text-navy-600">{cap(P.discipline)} licenses in other states</h2>
-                  <ul className="mt-3 space-y-2">
-                    {elsewhere.map((o) => (
-                      <li key={o.g.abbr}>
-                        <Link href={licensureHref(o.g.abbr, o.prof)} className="text-teal-600 hover:text-teal-700">
-                          {o.g.state} {P.discipline} license
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          )}
+              <div>
+                <h2 className="font-heading text-lg font-semibold text-navy-600">{cap(P.discipline)} licenses in other states</h2>
+                <p className="mt-3">
+                  <Link href="/licensure/" className="text-teal-600 hover:text-teal-700">
+                    State-by-state license guides →
+                  </Link>
+                </p>
+              </div>
+          </div>
         </Container>
       </section>
 
