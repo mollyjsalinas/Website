@@ -1,6 +1,9 @@
 import { launchMarkets, marketBySlug } from "@/lib/markets";
 
 export const CAREER_SPECIALTIES = [
+  { slug: "physical-therapist", label: "Physical Therapist", plural: "Physical Therapists", intro: "patient-centered rehabilitation", salary: "physical-therapist" },
+  { slug: "occupational-therapist", label: "Occupational Therapist", plural: "Occupational Therapists", intro: "patient-centered rehabilitation", salary: "occupational-therapist" },
+  { slug: "speech-language-pathologist", label: "Speech-Language Pathologist", plural: "Speech-Language Pathologists", intro: "communication and swallowing care", salary: "speech-language-pathologist" },
   { slug: "certified-hand-therapist", label: "Certified Hand Therapist", plural: "Certified Hand Therapists", intro: "hand and upper-extremity rehabilitation", salary: "occupational-therapist" },
   { slug: "pelvic-health-therapist", label: "Pelvic Health Therapist", plural: "Pelvic Health Therapists", intro: "pelvic health rehabilitation", salary: "physical-therapist" },
   { slug: "audiologist", label: "Audiologist", plural: "Audiologists", intro: "diagnostic, dispensing, pediatric, and medical audiology", salary: "audiologist" },
