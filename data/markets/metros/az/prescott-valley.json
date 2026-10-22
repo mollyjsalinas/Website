@@ -6,14 +6,14 @@
   "state_abbr": "AZ",
   "state": "Arizona",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Arizona side of the Prescott Valley metro area",
     "active_individual_providers": {
-      "pt": 135,
+      "pt": 134,
       "pta": 34,
       "ot": 57,
       "ota": 13,
@@ -22,12 +22,13 @@
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
         "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 0,
@@ -38,13 +39,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "pta": {
         "trailing_12mo_total": 0,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -55,13 +56,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "ot": {
         "trailing_12mo_total": 2,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -72,13 +73,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "ota": {
         "trailing_12mo_total": 0,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "slp": {
         "trailing_12mo_total": 3,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -106,13 +107,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "aud": {
         "trailing_12mo_total": 0,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -180,13 +180,13 @@
     "hospitals_naics_6221": null
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Arizona side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 7,
       "certified_beds": 556,
       "avg_overall_rating": 2.29,
-      "for_profit_pct": 100.0
+      "for_profit_pct": 85.7
     },
     "home_health_agencies": {
       "count": 9,

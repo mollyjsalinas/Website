@@ -83,10 +83,9 @@ export function ContactForm() {
           <option>Occupational therapist</option>
           <option>Occupational therapy assistant</option>
           <option>Speech-language pathologist</option>
-          <option>Speech-language pathology assistant</option>
           <option>Audiologist</option>
           <option>Rehab leadership</option>
-          <option>Nurse practitioner or physician assistant</option>
+          <option>Physician or nurse practitioner</option>
           <option>Other</option>
         </select>
       </div>

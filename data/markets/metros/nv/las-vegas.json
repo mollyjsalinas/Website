@@ -6,29 +6,30 @@
   "state_abbr": "NV",
   "state": "Nevada",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Nevada side of the Las Vegas metro area",
     "active_individual_providers": {
-      "pt": 1428,
-      "pta": 313,
-      "ot": 606,
-      "ota": 183,
-      "slp": 583,
-      "aud": 98
+      "pt": 1390,
+      "pta": 312,
+      "ot": 579,
+      "ota": 178,
+      "slp": 577,
+      "aud": 90
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 87,
+        "trailing_12mo_total": 82,
         "by_month": {
-          "2025-10": 3,
+          "2025-09": 4,
+          "2025-10": 2,
           "2025-11": 8,
           "2025-12": 4,
           "2026-01": 2,
@@ -38,13 +39,13 @@
           "2026-05": 4,
           "2026-06": 16,
           "2026-07": 17,
-          "2026-08": 11,
-          "2026-09": 9
+          "2026-08": 12
         }
       },
       "pta": {
-        "trailing_12mo_total": 48,
+        "trailing_12mo_total": 49,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 1,
@@ -55,14 +56,14 @@
           "2026-05": 4,
           "2026-06": 5,
           "2026-07": 3,
-          "2026-08": 4,
-          "2026-09": 4
+          "2026-08": 4
         }
       },
       "ot": {
-        "trailing_12mo_total": 40,
+        "trailing_12mo_total": 44,
         "by_month": {
-          "2025-10": 7,
+          "2025-09": 9,
+          "2025-10": 8,
           "2025-11": 3,
           "2025-12": 1,
           "2026-01": 3,
@@ -72,13 +73,13 @@
           "2026-05": 3,
           "2026-06": 0,
           "2026-07": 7,
-          "2026-08": 4,
-          "2026-09": 6
+          "2026-08": 4
         }
       },
       "ota": {
-        "trailing_12mo_total": 17,
+        "trailing_12mo_total": 18,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 2,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 2,
-          "2026-08": 1,
-          "2026-09": 1
+          "2026-08": 1
         }
       },
       "slp": {
         "trailing_12mo_total": 43,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 5,
@@ -106,13 +107,13 @@
           "2026-05": 6,
           "2026-06": 7,
           "2026-07": 8,
-          "2026-08": 3,
-          "2026-09": 2
+          "2026-08": 3
         }
       },
       "aud": {
         "trailing_12mo_total": 3,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -191,7 +191,7 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Nevada side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 42,

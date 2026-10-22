@@ -6,28 +6,29 @@
   "state_abbr": "NC",
   "state": "North Carolina",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "North Carolina side of the Charlotte metro area",
     "active_individual_providers": {
-      "pt": 1985,
-      "pta": 369,
-      "ot": 1229,
-      "ota": 335,
-      "slp": 1516,
-      "aud": 163
+      "pt": 1934,
+      "pta": 370,
+      "ot": 1193,
+      "ota": 330,
+      "slp": 1518,
+      "aud": 149
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 113,
+        "trailing_12mo_total": 110,
         "by_month": {
+          "2025-09": 12,
           "2025-10": 5,
           "2025-11": 10,
           "2025-12": 9,
@@ -38,13 +39,13 @@
           "2026-05": 11,
           "2026-06": 15,
           "2026-07": 3,
-          "2026-08": 9,
-          "2026-09": 15
+          "2026-08": 9
         }
       },
       "pta": {
-        "trailing_12mo_total": 30,
+        "trailing_12mo_total": 31,
         "by_month": {
+          "2025-09": 4,
           "2025-10": 4,
           "2025-11": 2,
           "2025-12": 1,
@@ -55,30 +56,30 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 1,
-          "2026-08": 3,
-          "2026-09": 3
+          "2026-08": 3
         }
       },
       "ot": {
-        "trailing_12mo_total": 100,
+        "trailing_12mo_total": 99,
         "by_month": {
-          "2025-10": 5,
+          "2025-09": 6,
+          "2025-10": 4,
           "2025-11": 4,
           "2025-12": 6,
           "2026-01": 3,
           "2026-02": 4,
-          "2026-03": 6,
+          "2026-03": 7,
           "2026-04": 35,
           "2026-05": 8,
           "2026-06": 2,
           "2026-07": 13,
-          "2026-08": 8,
-          "2026-09": 6
+          "2026-08": 7
         }
       },
       "ota": {
-        "trailing_12mo_total": 20,
+        "trailing_12mo_total": 21,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 4,
           "2025-11": 1,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 3,
-          "2026-08": 2,
-          "2026-09": 1
+          "2026-08": 2
         }
       },
       "slp": {
-        "trailing_12mo_total": 183,
+        "trailing_12mo_total": 180,
         "by_month": {
+          "2025-09": 4,
           "2025-10": 5,
           "2025-11": 5,
           "2025-12": 4,
@@ -106,13 +107,13 @@
           "2026-05": 40,
           "2026-06": 8,
           "2026-07": 12,
-          "2026-08": 8,
-          "2026-09": 7
+          "2026-08": 8
         }
       },
       "aud": {
         "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -190,7 +190,7 @@
     "hospitals_naics_6221": null
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "North Carolina side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 72,

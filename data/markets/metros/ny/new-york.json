@@ -6,63 +6,64 @@
   "state_abbr": "NY",
   "state": "New York",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "New York side of the New York metro area",
     "active_individual_providers": {
-      "pt": 15070,
-      "pta": 1278,
-      "ot": 8848,
-      "ota": 1380,
-      "slp": 17380,
-      "aud": 1034
+      "pt": 14888,
+      "pta": 1343,
+      "ot": 8746,
+      "ota": 1360,
+      "slp": 17383,
+      "aud": 998
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 708,
+        "trailing_12mo_total": 701,
         "by_month": {
-          "2025-10": 63,
+          "2025-09": 89,
+          "2025-10": 62,
           "2025-11": 71,
-          "2025-12": 54,
-          "2026-01": 39,
+          "2025-12": 53,
+          "2026-01": 38,
           "2026-02": 45,
           "2026-03": 42,
           "2026-04": 24,
-          "2026-05": 54,
+          "2026-05": 53,
           "2026-06": 71,
           "2026-07": 59,
-          "2026-08": 94,
-          "2026-09": 92
+          "2026-08": 94
         }
       },
       "pta": {
-        "trailing_12mo_total": 149,
+        "trailing_12mo_total": 145,
         "by_month": {
-          "2025-10": 15,
+          "2025-09": 7,
+          "2025-10": 16,
           "2025-11": 9,
-          "2025-12": 9,
-          "2026-01": 15,
+          "2025-12": 10,
+          "2026-01": 16,
           "2026-02": 8,
-          "2026-03": 17,
+          "2026-03": 16,
           "2026-04": 7,
-          "2026-05": 10,
+          "2026-05": 11,
           "2026-06": 13,
           "2026-07": 13,
-          "2026-08": 19,
-          "2026-09": 14
+          "2026-08": 19
         }
       },
       "ot": {
-        "trailing_12mo_total": 373,
+        "trailing_12mo_total": 378,
         "by_month": {
-          "2025-10": 42,
+          "2025-09": 33,
+          "2025-10": 43,
           "2025-11": 28,
           "2025-12": 25,
           "2026-01": 36,
@@ -70,15 +71,15 @@
           "2026-03": 30,
           "2026-04": 40,
           "2026-05": 34,
-          "2026-06": 26,
-          "2026-07": 24,
-          "2026-08": 33,
-          "2026-09": 28
+          "2026-06": 25,
+          "2026-07": 25,
+          "2026-08": 32
         }
       },
       "ota": {
-        "trailing_12mo_total": 57,
+        "trailing_12mo_total": 60,
         "by_month": {
+          "2025-09": 11,
           "2025-10": 4,
           "2025-11": 3,
           "2025-12": 5,
@@ -89,30 +90,30 @@
           "2026-05": 3,
           "2026-06": 3,
           "2026-07": 5,
-          "2026-08": 5,
-          "2026-09": 8
+          "2026-08": 5
         }
       },
       "slp": {
-        "trailing_12mo_total": 676,
+        "trailing_12mo_total": 666,
         "by_month": {
-          "2025-10": 64,
+          "2025-09": 95,
+          "2025-10": 65,
           "2025-11": 32,
-          "2025-12": 32,
+          "2025-12": 36,
           "2026-01": 32,
-          "2026-02": 41,
+          "2026-02": 40,
           "2026-03": 25,
-          "2026-04": 42,
-          "2026-05": 51,
-          "2026-06": 73,
+          "2026-04": 47,
+          "2026-05": 52,
+          "2026-06": 74,
           "2026-07": 69,
-          "2026-08": 99,
-          "2026-09": 116
+          "2026-08": 99
         }
       },
       "aud": {
-        "trailing_12mo_total": 28,
+        "trailing_12mo_total": 30,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 5,
           "2026-06": 7,
           "2026-07": 7,
-          "2026-08": 3,
-          "2026-09": 0
+          "2026-08": 3
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "New York side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 296,
       "certified_beds": 67845,
-      "avg_overall_rating": 3.45,
+      "avg_overall_rating": 3.44,
       "for_profit_pct": 77.7
     },
     "home_health_agencies": {

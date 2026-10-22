@@ -6,31 +6,32 @@
   "state_abbr": "MA",
   "state": "Massachusetts",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Massachusetts side of the Boston metro area",
     "active_individual_providers": {
-      "pt": 5207,
-      "pta": 649,
-      "ot": 2423,
+      "pt": 5152,
+      "pta": 653,
+      "ot": 2376,
       "ota": 395,
-      "slp": 2882,
-      "aud": 446
+      "slp": 2860,
+      "aud": 435
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 293,
+        "trailing_12mo_total": 286,
         "by_month": {
+          "2025-09": 31,
           "2025-10": 16,
-          "2025-11": 37,
-          "2025-12": 13,
+          "2025-11": 36,
+          "2025-12": 12,
           "2026-01": 8,
           "2026-02": 27,
           "2026-03": 19,
@@ -38,31 +39,31 @@
           "2026-05": 19,
           "2026-06": 14,
           "2026-07": 15,
-          "2026-08": 81,
-          "2026-09": 36
+          "2026-08": 81
         }
       },
       "pta": {
-        "trailing_12mo_total": 15,
+        "trailing_12mo_total": 19,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 3,
           "2025-11": 1,
           "2025-12": 1,
           "2026-01": 3,
-          "2026-02": 0,
+          "2026-02": 1,
           "2026-03": 1,
           "2026-04": 0,
           "2026-05": 1,
           "2026-06": 3,
           "2026-07": 0,
-          "2026-08": 2,
-          "2026-09": 0
+          "2026-08": 2
         }
       },
       "ot": {
-        "trailing_12mo_total": 127,
+        "trailing_12mo_total": 125,
         "by_month": {
-          "2025-10": 13,
+          "2025-09": 15,
+          "2025-10": 12,
           "2025-11": 14,
           "2025-12": 8,
           "2026-01": 7,
@@ -72,13 +73,13 @@
           "2026-05": 12,
           "2026-06": 8,
           "2026-07": 7,
-          "2026-08": 14,
-          "2026-09": 15
+          "2026-08": 13
         }
       },
       "ota": {
-        "trailing_12mo_total": 13,
+        "trailing_12mo_total": 15,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 2,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 165,
+        "trailing_12mo_total": 161,
         "by_month": {
+          "2025-09": 22,
           "2025-10": 6,
           "2025-11": 8,
           "2025-12": 6,
@@ -106,13 +107,13 @@
           "2026-05": 15,
           "2026-06": 15,
           "2026-07": 21,
-          "2026-08": 15,
-          "2026-09": 26
+          "2026-08": 15
         }
       },
       "aud": {
-        "trailing_12mo_total": 10,
+        "trailing_12mo_total": 11,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 1,
           "2026-06": 7,
           "2026-07": 1,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       }
     }
@@ -196,13 +196,13 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Massachusetts side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 196,
-      "certified_beds": 23428,
+      "certified_beds": 23469,
       "avg_overall_rating": 3.18,
-      "for_profit_pct": 75.0
+      "for_profit_pct": 74.0
     },
     "home_health_agencies": {
       "count": 188,

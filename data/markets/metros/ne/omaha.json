@@ -6,28 +6,29 @@
   "state_abbr": "NE",
   "state": "Nebraska",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Nebraska side of the Omaha metro area",
     "active_individual_providers": {
-      "pt": 1062,
+      "pt": 1043,
       "pta": 307,
-      "ot": 685,
-      "ota": 94,
-      "slp": 879,
-      "aud": 117
+      "ot": 678,
+      "ota": 92,
+      "slp": 870,
+      "aud": 110
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 61,
+        "trailing_12mo_total": 58,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 0,
           "2025-11": 3,
           "2025-12": 1,
@@ -38,14 +39,14 @@
           "2026-05": 5,
           "2026-06": 18,
           "2026-07": 10,
-          "2026-08": 6,
-          "2026-09": 4
+          "2026-08": 5
         }
       },
       "pta": {
-        "trailing_12mo_total": 7,
+        "trailing_12mo_total": 8,
         "by_month": {
-          "2025-10": 1,
+          "2025-09": 2,
+          "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
           "2026-01": 0,
@@ -55,13 +56,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 30,
+        "trailing_12mo_total": 31,
         "by_month": {
+          "2025-09": 4,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 4,
@@ -72,13 +73,13 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 4,
-          "2026-08": 6,
-          "2026-09": 3
+          "2026-08": 6
         }
       },
       "ota": {
         "trailing_12mo_total": 1,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 26,
+        "trailing_12mo_total": 25,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 2,
           "2025-11": 5,
           "2025-12": 1,
@@ -106,13 +107,13 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 2,
-          "2026-08": 7,
-          "2026-09": 4
+          "2026-08": 7
         }
       },
       "aud": {
         "trailing_12mo_total": 2,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Nebraska side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 36,
       "certified_beds": 4009,
-      "avg_overall_rating": 2.44,
+      "avg_overall_rating": 2.63,
       "for_profit_pct": 63.9
     },
     "home_health_agencies": {

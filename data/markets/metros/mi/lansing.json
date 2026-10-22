@@ -6,28 +6,29 @@
   "state_abbr": "MI",
   "state": "Michigan",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Michigan side of the Lansing metro area",
     "active_individual_providers": {
-      "pt": 446,
+      "pt": 434,
       "pta": 143,
-      "ot": 292,
+      "ot": 277,
       "ota": 47,
-      "slp": 214,
+      "slp": 196,
       "aud": 29
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 18,
+        "trailing_12mo_total": 15,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 1,
           "2025-11": 2,
           "2025-12": 1,
@@ -38,13 +39,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 2,
-          "2026-09": 8
+          "2026-08": 2
         }
       },
       "pta": {
-        "trailing_12mo_total": 12,
+        "trailing_12mo_total": 10,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 2,
@@ -55,13 +56,13 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 1,
-          "2026-08": 2,
-          "2026-09": 2
+          "2026-08": 2
         }
       },
       "ot": {
-        "trailing_12mo_total": 14,
+        "trailing_12mo_total": 11,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 1,
@@ -72,13 +73,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 5,
-          "2026-09": 4
+          "2026-08": 5
         }
       },
       "ota": {
-        "trailing_12mo_total": 2,
+        "trailing_12mo_total": 1,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 1
+          "2026-08": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 36,
+        "trailing_12mo_total": 8,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -106,13 +107,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 6,
-          "2026-09": 28
+          "2026-08": 6
         }
       },
       "aud": {
         "trailing_12mo_total": 0,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -180,12 +180,12 @@
     "hospitals_naics_6221": null
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Michigan side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 19,
       "certified_beds": 2191,
-      "avg_overall_rating": 3.74,
+      "avg_overall_rating": 3.68,
       "for_profit_pct": 68.4
     },
     "home_health_agencies": {

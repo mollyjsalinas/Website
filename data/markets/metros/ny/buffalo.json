@@ -6,28 +6,29 @@
   "state_abbr": "NY",
   "state": "New York",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "New York side of the Buffalo metro area",
     "active_individual_providers": {
-      "pt": 1297,
-      "pta": 186,
-      "ot": 864,
-      "ota": 296,
-      "slp": 1424,
-      "aud": 125
+      "pt": 1280,
+      "pta": 188,
+      "ot": 851,
+      "ota": 294,
+      "slp": 1432,
+      "aud": 119
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 51,
+        "trailing_12mo_total": 41,
         "by_month": {
+          "2025-09": 7,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 1,
@@ -38,13 +39,13 @@
           "2026-05": 2,
           "2026-06": 2,
           "2026-07": 5,
-          "2026-08": 11,
-          "2026-09": 17
+          "2026-08": 11
         }
       },
       "pta": {
         "trailing_12mo_total": 7,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 1,
@@ -55,13 +56,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 2,
-          "2026-09": 0
+          "2026-08": 2
         }
       },
       "ot": {
         "trailing_12mo_total": 23,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 2,
@@ -72,13 +73,13 @@
           "2026-05": 4,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 3,
-          "2026-09": 3
+          "2026-08": 3
         }
       },
       "ota": {
-        "trailing_12mo_total": 2,
+        "trailing_12mo_total": 3,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 45,
+        "trailing_12mo_total": 46,
         "by_month": {
+          "2025-09": 9,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 1,
@@ -106,13 +107,13 @@
           "2026-05": 8,
           "2026-06": 12,
           "2026-07": 4,
-          "2026-08": 5,
-          "2026-09": 8
+          "2026-08": 5
         }
       },
       "aud": {
-        "trailing_12mo_total": 3,
+        "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "New York side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 43,
       "certified_beds": 6699,
-      "avg_overall_rating": 3.02,
+      "avg_overall_rating": 3.0,
       "for_profit_pct": 69.8
     },
     "home_health_agencies": {

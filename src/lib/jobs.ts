@@ -24,6 +24,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Certified Hand Therapist (OT or PT)",
+    slug: "certified-hand-therapist-salem-or",
+    profession: "ot",
+    setting: "outpatient-rehab",
+    city: "Salem",
+    state: "OR",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 60, max: 68, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient hand therapy practice in Salem, Oregon that is seeking a Certified Hand Therapist (CHT). This full-time, Monday–Friday role is open to an Occupational Therapist or Physical Therapist with CHT certification who wants to provide individualized, one-on-one care for patients with upper-extremity conditions.\n\nYou will evaluate and treat patients, build personalized treatment plans, collaborate with referring providers and fellow healthcare professionals, and contribute to a small, supportive clinical team. The practice offers a patient-centered environment, a strong referral base, and room for professional growth and future leadership.\n\nCompensation is $60–$68 per hour ($124,000–$141,440 annually, based on a full-time schedule), plus a sign-on bonus. Benefits include medical, dental and vision coverage; a monthly employer health-insurance contribution; 120 hours of annual paid time off; paid holidays; a 401(k) with up to a 4% employer match; a $2,500 continuing-education allowance; license-renewal support; and wellness benefits.",
+  },
+  {
     title: "Senior Physical Therapist",
     slug: "senior-physical-therapist-woodbridge-va",
     profession: "pt",

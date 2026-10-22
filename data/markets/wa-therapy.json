@@ -2,40 +2,41 @@
   "market": "Washington",
   "market_abbr": "WA",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "population": {
     "source": "Census Vintage 2025 state estimates",
     "total": 8001020
   },
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers with an in-state practice address, by primary taxonomy code; deactivated NPIs excluded.",
     "active_individual_providers": {
-      "pt": 7596,
-      "pta": 1411,
-      "ot": 3129,
-      "ota": 836,
-      "slp": 4121,
-      "aud": 611
+      "pt": 7445,
+      "pta": 1402,
+      "ot": 3031,
+      "ota": 812,
+      "slp": 4096,
+      "aud": 536
     },
     "per_100k": {
-      "pt": 94.9,
-      "ot": 39.1,
-      "slp": 51.5,
-      "aud": 7.6
+      "pt": 93.1,
+      "ot": 37.9,
+      "slp": 51.2,
+      "aud": 6.7
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); a leading indicator of workforce entry, not total hiring.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 322,
+        "trailing_12mo_total": 313,
         "by_month": {
+          "2025-09": 33,
           "2025-10": 38,
           "2025-11": 23,
-          "2025-12": 17,
+          "2025-12": 16,
           "2026-01": 17,
           "2026-02": 15,
           "2026-03": 20,
@@ -43,66 +44,66 @@
           "2026-05": 21,
           "2026-06": 38,
           "2026-07": 24,
-          "2026-08": 49,
-          "2026-09": 41
+          "2026-08": 49
         }
       },
       "pta": {
-        "trailing_12mo_total": 42,
+        "trailing_12mo_total": 43,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 5,
           "2025-11": 4,
           "2025-12": 1,
           "2026-01": 2,
-          "2026-02": 3,
+          "2026-02": 2,
           "2026-03": 2,
           "2026-04": 4,
           "2026-05": 5,
           "2026-06": 4,
           "2026-07": 4,
-          "2026-08": 5,
-          "2026-09": 3
+          "2026-08": 5
         }
       },
       "ot": {
-        "trailing_12mo_total": 102,
+        "trailing_12mo_total": 97,
         "by_month": {
+          "2025-09": 9,
           "2025-10": 11,
           "2025-11": 7,
           "2025-12": 4,
           "2026-01": 8,
-          "2026-02": 11,
+          "2026-02": 10,
           "2026-03": 9,
           "2026-04": 12,
           "2026-05": 6,
           "2026-06": 5,
           "2026-07": 11,
-          "2026-08": 5,
-          "2026-09": 13
+          "2026-08": 5
         }
       },
       "ota": {
-        "trailing_12mo_total": 35,
+        "trailing_12mo_total": 33,
         "by_month": {
+          "2025-09": 6,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 1,
           "2026-01": 1,
           "2026-02": 4,
           "2026-03": 4,
-          "2026-04": 3,
+          "2026-04": 4,
           "2026-05": 3,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 3,
-          "2026-09": 9
+          "2026-08": 3
         }
       },
       "slp": {
-        "trailing_12mo_total": 169,
+        "trailing_12mo_total": 167,
         "by_month": {
+          "2025-09": 19,
           "2025-10": 19,
-          "2025-11": 10,
+          "2025-11": 11,
           "2025-12": 16,
           "2026-01": 12,
           "2026-02": 12,
@@ -111,25 +112,24 @@
           "2026-05": 8,
           "2026-06": 19,
           "2026-07": 14,
-          "2026-08": 23,
-          "2026-09": 22
+          "2026-08": 23
         }
       },
       "aud": {
-        "trailing_12mo_total": 25,
+        "trailing_12mo_total": 17,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
-          "2025-11": 5,
+          "2025-11": 3,
           "2025-12": 1,
           "2026-01": 0,
           "2026-02": 1,
-          "2026-03": 3,
+          "2026-03": 2,
           "2026-04": 0,
           "2026-05": 0,
-          "2026-06": 3,
+          "2026-06": 2,
           "2026-07": 4,
-          "2026-08": 5,
-          "2026-09": 3
+          "2026-08": 4
         }
       }
     }
@@ -204,30 +204,42 @@
     "therapy_offices_naics_62134": {
       "employment": 10557,
       "establishments": 978,
-      "avg_weekly_wage": 1212
+      "avg_weekly_wage": 1212,
+      "employment_yoy_pct": 2.18,
+      "establishments_yoy_pct": 1.98,
+      "avg_weekly_wage_yoy_pct": 4.12
     },
     "home_health_naics_6216": {
       "employment": 16762,
       "establishments": 560,
-      "avg_weekly_wage": 1030
+      "avg_weekly_wage": 1030,
+      "employment_yoy_pct": 15.4,
+      "establishments_yoy_pct": 12.45,
+      "avg_weekly_wage_yoy_pct": 0.78
     },
     "nursing_facilities_naics_6231": {
       "employment": 22108,
       "establishments": 268,
-      "avg_weekly_wage": 1205
+      "avg_weekly_wage": 1205,
+      "employment_yoy_pct": 5.1,
+      "establishments_yoy_pct": -1.83,
+      "avg_weekly_wage_yoy_pct": 3.79
     },
     "hospitals_naics_6221": {
       "employment": 93400,
       "establishments": 153,
-      "avg_weekly_wage": 2093
+      "avg_weekly_wage": 2093,
+      "employment_yoy_pct": 0.91,
+      "establishments_yoy_pct": 0.0,
+      "avg_weekly_wage_yoy_pct": 3.82
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "nursing_homes": {
       "count": 193,
       "certified_beds": 18781,
-      "avg_overall_rating": 3.25,
+      "avg_overall_rating": 3.21,
       "for_profit_pct": 79.3
     },
     "home_health_agencies": {

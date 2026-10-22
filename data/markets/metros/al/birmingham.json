@@ -6,28 +6,29 @@
   "state_abbr": "AL",
   "state": "Alabama",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Alabama side of the Birmingham metro area",
     "active_individual_providers": {
-      "pt": 1052,
-      "pta": 134,
-      "ot": 419,
+      "pt": 1038,
+      "pta": 133,
+      "ot": 411,
       "ota": 59,
-      "slp": 586,
-      "aud": 124
+      "slp": 583,
+      "aud": 122
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 49,
+        "trailing_12mo_total": 48,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 3,
           "2025-11": 3,
           "2025-12": 4,
@@ -38,13 +39,13 @@
           "2026-05": 8,
           "2026-06": 6,
           "2026-07": 2,
-          "2026-08": 7,
-          "2026-09": 1
+          "2026-08": 7
         }
       },
       "pta": {
         "trailing_12mo_total": 11,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 0,
@@ -55,13 +56,13 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 25,
+        "trailing_12mo_total": 22,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 2,
           "2025-11": 1,
           "2025-12": 1,
@@ -72,13 +73,13 @@
           "2026-05": 4,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 3,
-          "2026-09": 4
+          "2026-08": 3
         }
       },
       "ota": {
-        "trailing_12mo_total": 1,
+        "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       },
       "slp": {
-        "trailing_12mo_total": 39,
+        "trailing_12mo_total": 41,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 1,
@@ -106,13 +107,13 @@
           "2026-05": 5,
           "2026-06": 4,
           "2026-07": 4,
-          "2026-08": 3,
-          "2026-09": 3
+          "2026-08": 3
         }
       },
       "aud": {
         "trailing_12mo_total": 2,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -167,30 +167,36 @@
     "source": "BLS QCEW county files, private ownership, Q4 2025",
     "scope": "Alabama-side counties of the metro with disclosed data; wages employment-weighted",
     "therapy_offices_naics_62134": {
-      "employment": 731,
-      "establishments": 65,
-      "avg_weekly_wage": 1098,
-      "counties_disclosed": 2,
+      "employment": 2547,
+      "establishments": 235,
+      "avg_weekly_wage": 985,
+      "counties_disclosed": 5,
       "counties_total": 6
     },
     "home_health_naics_6216": {
-      "employment": 289,
-      "establishments": 23,
-      "avg_weekly_wage": 1357,
-      "counties_disclosed": 1,
+      "employment": 2561,
+      "establishments": 127,
+      "avg_weekly_wage": 1136,
+      "counties_disclosed": 5,
       "counties_total": 6
     },
     "nursing_facilities_naics_6231": {
-      "employment": 568,
-      "establishments": 6,
-      "avg_weekly_wage": 827,
-      "counties_disclosed": 1,
+      "employment": 4880,
+      "establishments": 51,
+      "avg_weekly_wage": 830,
+      "counties_disclosed": 3,
       "counties_total": 6
     },
-    "hospitals_naics_6221": null
+    "hospitals_naics_6221": {
+      "employment": 10975,
+      "establishments": 26,
+      "avg_weekly_wage": 1554,
+      "counties_disclosed": 1,
+      "counties_total": 6
+    }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Alabama side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 45,

@@ -6,28 +6,29 @@
   "state_abbr": "CA",
   "state": "California",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "California side of the Riverside metro area",
     "active_individual_providers": {
-      "pt": 1722,
-      "pta": 370,
-      "ot": 693,
-      "ota": 251,
-      "slp": 1277,
-      "aud": 106
+      "pt": 1697,
+      "pta": 374,
+      "ot": 659,
+      "ota": 248,
+      "slp": 1255,
+      "aud": 98
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 125,
+        "trailing_12mo_total": 130,
         "by_month": {
+          "2025-09": 16,
           "2025-10": 13,
           "2025-11": 12,
           "2025-12": 16,
@@ -35,16 +36,16 @@
           "2026-02": 12,
           "2026-03": 11,
           "2026-04": 4,
-          "2026-05": 9,
+          "2026-05": 8,
           "2026-06": 7,
           "2026-07": 2,
-          "2026-08": 18,
-          "2026-09": 10
+          "2026-08": 18
         }
       },
       "pta": {
-        "trailing_12mo_total": 35,
+        "trailing_12mo_total": 33,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 4,
           "2025-11": 2,
           "2025-12": 2,
@@ -55,13 +56,13 @@
           "2026-05": 2,
           "2026-06": 4,
           "2026-07": 4,
-          "2026-08": 4,
-          "2026-09": 4
+          "2026-08": 4
         }
       },
       "ot": {
         "trailing_12mo_total": 99,
         "by_month": {
+          "2025-09": 7,
           "2025-10": 10,
           "2025-11": 3,
           "2025-12": 3,
@@ -72,13 +73,13 @@
           "2026-05": 8,
           "2026-06": 10,
           "2026-07": 11,
-          "2026-08": 15,
-          "2026-09": 7
+          "2026-08": 15
         }
       },
       "ota": {
-        "trailing_12mo_total": 31,
+        "trailing_12mo_total": 29,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 1,
           "2025-11": 3,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 2,
-          "2026-09": 4
+          "2026-08": 2
         }
       },
       "slp": {
-        "trailing_12mo_total": 367,
+        "trailing_12mo_total": 350,
         "by_month": {
+          "2025-09": 6,
           "2025-10": 6,
           "2025-11": 3,
           "2025-12": 28,
@@ -106,13 +107,13 @@
           "2026-05": 78,
           "2026-06": 45,
           "2026-07": 17,
-          "2026-08": 49,
-          "2026-09": 23
+          "2026-08": 49
         }
       },
       "aud": {
-        "trailing_12mo_total": 3,
+        "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -166,18 +166,42 @@
   "sector_employment": {
     "source": "BLS QCEW county files, private ownership, Q4 2025",
     "scope": "California-side counties of the metro with disclosed data; wages employment-weighted",
-    "therapy_offices_naics_62134": null,
-    "home_health_naics_6216": null,
-    "nursing_facilities_naics_6231": null,
-    "hospitals_naics_6221": null
+    "therapy_offices_naics_62134": {
+      "employment": 4966,
+      "establishments": 436,
+      "avg_weekly_wage": 982,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "home_health_naics_6216": {
+      "employment": 11932,
+      "establishments": 646,
+      "avg_weekly_wage": 896,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "nursing_facilities_naics_6231": {
+      "employment": 13402,
+      "establishments": 192,
+      "avg_weekly_wage": 1031,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    },
+    "hospitals_naics_6221": {
+      "employment": 51707,
+      "establishments": 54,
+      "avg_weekly_wage": 1765,
+      "counties_disclosed": 2,
+      "counties_total": 2
+    }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "California side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 109,
       "certified_beds": 10119,
-      "avg_overall_rating": 3.54,
+      "avg_overall_rating": 3.51,
       "for_profit_pct": 92.7
     },
     "home_health_agencies": {

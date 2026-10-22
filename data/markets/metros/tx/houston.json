@@ -6,28 +6,29 @@
   "state_abbr": "TX",
   "state": "Texas",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Texas side of the Houston metro area",
     "active_individual_providers": {
-      "pt": 2943,
-      "pta": 1063,
-      "ot": 1664,
-      "ota": 903,
-      "slp": 3624,
-      "aud": 385
+      "pt": 2869,
+      "pta": 1073,
+      "ot": 1626,
+      "ota": 891,
+      "slp": 3613,
+      "aud": 334
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 138,
+        "trailing_12mo_total": 154,
         "by_month": {
+          "2025-09": 24,
           "2025-10": 7,
           "2025-11": 10,
           "2025-12": 14,
@@ -38,13 +39,13 @@
           "2026-05": 11,
           "2026-06": 16,
           "2026-07": 9,
-          "2026-08": 25,
-          "2026-09": 8
+          "2026-08": 25
         }
       },
       "pta": {
-        "trailing_12mo_total": 64,
+        "trailing_12mo_total": 63,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 6,
           "2025-11": 7,
           "2025-12": 1,
@@ -55,16 +56,16 @@
           "2026-05": 4,
           "2026-06": 5,
           "2026-07": 12,
-          "2026-08": 11,
-          "2026-09": 6
+          "2026-08": 11
         }
       },
       "ot": {
-        "trailing_12mo_total": 61,
+        "trailing_12mo_total": 68,
         "by_month": {
+          "2025-09": 10,
           "2025-10": 15,
-          "2025-11": 4,
-          "2025-12": 4,
+          "2025-11": 3,
+          "2025-12": 3,
           "2026-01": 7,
           "2026-02": 3,
           "2026-03": 6,
@@ -72,13 +73,13 @@
           "2026-05": 2,
           "2026-06": 6,
           "2026-07": 4,
-          "2026-08": 5,
-          "2026-09": 1
+          "2026-08": 5
         }
       },
       "ota": {
-        "trailing_12mo_total": 54,
+        "trailing_12mo_total": 49,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 7,
           "2025-11": 3,
           "2025-12": 6,
@@ -89,13 +90,13 @@
           "2026-05": 0,
           "2026-06": 7,
           "2026-07": 4,
-          "2026-08": 7,
-          "2026-09": 6
+          "2026-08": 7
         }
       },
       "slp": {
         "trailing_12mo_total": 142,
         "by_month": {
+          "2025-09": 20,
           "2025-10": 12,
           "2025-11": 8,
           "2025-12": 8,
@@ -106,16 +107,16 @@
           "2026-05": 6,
           "2026-06": 21,
           "2026-07": 15,
-          "2026-08": 18,
-          "2026-09": 20
+          "2026-08": 18
         }
       },
       "aud": {
-        "trailing_12mo_total": 14,
+        "trailing_12mo_total": 13,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
-          "2025-12": 3,
+          "2025-12": 2,
           "2026-01": 0,
           "2026-02": 0,
           "2026-03": 1,
@@ -123,8 +124,7 @@
           "2026-05": 3,
           "2026-06": 4,
           "2026-07": 2,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       }
     }
@@ -196,13 +196,13 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Texas side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 158,
       "certified_beds": 18781,
-      "avg_overall_rating": 2.65,
-      "for_profit_pct": 74.7
+      "avg_overall_rating": 2.64,
+      "for_profit_pct": 75.3
     },
     "home_health_agencies": {
       "count": 474,

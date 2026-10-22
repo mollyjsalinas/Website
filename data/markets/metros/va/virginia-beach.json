@@ -6,28 +6,29 @@
   "state_abbr": "VA",
   "state": "Virginia",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Virginia side of the Virginia Beach metro area",
     "active_individual_providers": {
-      "pt": 1247,
-      "pta": 440,
-      "ot": 601,
-      "ota": 307,
-      "slp": 1095,
-      "aud": 118
+      "pt": 1223,
+      "pta": 438,
+      "ot": 589,
+      "ota": 301,
+      "slp": 1093,
+      "aud": 111
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 58,
+        "trailing_12mo_total": 59,
         "by_month": {
+          "2025-09": 7,
           "2025-10": 2,
           "2025-11": 3,
           "2025-12": 4,
@@ -36,18 +37,18 @@
           "2026-03": 5,
           "2026-04": 5,
           "2026-05": 5,
-          "2026-06": 11,
+          "2026-06": 10,
           "2026-07": 4,
-          "2026-08": 10,
-          "2026-09": 4
+          "2026-08": 9
         }
       },
       "pta": {
-        "trailing_12mo_total": 19,
+        "trailing_12mo_total": 20,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 2,
-          "2025-12": 1,
+          "2025-12": 2,
           "2026-01": 3,
           "2026-02": 1,
           "2026-03": 2,
@@ -55,13 +56,13 @@
           "2026-05": 2,
           "2026-06": 2,
           "2026-07": 2,
-          "2026-08": 0,
-          "2026-09": 1
+          "2026-08": 0
         }
       },
       "ot": {
-        "trailing_12mo_total": 22,
+        "trailing_12mo_total": 23,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 2,
@@ -72,13 +73,13 @@
           "2026-05": 0,
           "2026-06": 0,
           "2026-07": 1,
-          "2026-08": 3,
-          "2026-09": 1
+          "2026-08": 3
         }
       },
       "ota": {
-        "trailing_12mo_total": 15,
+        "trailing_12mo_total": 14,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 2,
           "2026-06": 0,
           "2026-07": 2,
-          "2026-08": 3,
-          "2026-09": 1
+          "2026-08": 3
         }
       },
       "slp": {
-        "trailing_12mo_total": 40,
+        "trailing_12mo_total": 44,
         "by_month": {
+          "2025-09": 7,
           "2025-10": 4,
           "2025-11": 2,
           "2025-12": 2,
@@ -106,13 +107,13 @@
           "2026-05": 9,
           "2026-06": 4,
           "2026-07": 4,
-          "2026-08": 4,
-          "2026-09": 3
+          "2026-08": 4
         }
       },
       "aud": {
-        "trailing_12mo_total": 3,
+        "trailing_12mo_total": 4,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 1,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Virginia side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 58,
       "certified_beds": 6346,
-      "avg_overall_rating": 2.68,
+      "avg_overall_rating": 2.65,
       "for_profit_pct": 74.1
     },
     "home_health_agencies": {

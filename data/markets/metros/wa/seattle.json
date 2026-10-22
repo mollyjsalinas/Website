@@ -6,31 +6,32 @@
   "state_abbr": "WA",
   "state": "Washington",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Washington side of the Seattle metro area",
     "active_individual_providers": {
-      "pt": 4596,
-      "pta": 720,
-      "ot": 1968,
-      "ota": 503,
-      "slp": 2177,
-      "aud": 384
+      "pt": 4487,
+      "pta": 712,
+      "ot": 1908,
+      "ota": 491,
+      "slp": 2159,
+      "aud": 345
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 209,
+        "trailing_12mo_total": 203,
         "by_month": {
+          "2025-09": 21,
           "2025-10": 29,
           "2025-11": 17,
-          "2025-12": 13,
+          "2025-12": 12,
           "2026-01": 7,
           "2026-02": 11,
           "2026-03": 8,
@@ -38,67 +39,67 @@
           "2026-05": 11,
           "2026-06": 30,
           "2026-07": 15,
-          "2026-08": 32,
-          "2026-09": 26
+          "2026-08": 32
         }
       },
       "pta": {
-        "trailing_12mo_total": 25,
+        "trailing_12mo_total": 26,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 2,
           "2025-11": 3,
           "2025-12": 1,
           "2026-01": 1,
-          "2026-02": 3,
+          "2026-02": 2,
           "2026-03": 2,
           "2026-04": 1,
           "2026-05": 1,
           "2026-06": 2,
           "2026-07": 2,
-          "2026-08": 4,
-          "2026-09": 3
+          "2026-08": 4
         }
       },
       "ot": {
-        "trailing_12mo_total": 69,
+        "trailing_12mo_total": 66,
         "by_month": {
+          "2025-09": 6,
           "2025-10": 6,
           "2025-11": 3,
           "2025-12": 3,
           "2026-01": 4,
-          "2026-02": 8,
+          "2026-02": 7,
           "2026-03": 6,
           "2026-04": 8,
           "2026-05": 4,
           "2026-06": 5,
           "2026-07": 10,
-          "2026-08": 4,
-          "2026-09": 8
+          "2026-08": 4
         }
       },
       "ota": {
-        "trailing_12mo_total": 18,
+        "trailing_12mo_total": 21,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 0,
           "2025-12": 0,
           "2026-01": 1,
           "2026-02": 3,
           "2026-03": 3,
-          "2026-04": 2,
+          "2026-04": 3,
           "2026-05": 2,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 1,
-          "2026-09": 3
+          "2026-08": 1
         }
       },
       "slp": {
-        "trailing_12mo_total": 81,
+        "trailing_12mo_total": 83,
         "by_month": {
+          "2025-09": 12,
           "2025-10": 9,
-          "2025-11": 5,
-          "2025-12": 6,
+          "2025-11": 6,
+          "2025-12": 5,
           "2026-01": 4,
           "2026-02": 7,
           "2026-03": 4,
@@ -106,13 +107,13 @@
           "2026-05": 3,
           "2026-06": 8,
           "2026-07": 10,
-          "2026-08": 11,
-          "2026-09": 10
+          "2026-08": 11
         }
       },
       "aud": {
-        "trailing_12mo_total": 16,
+        "trailing_12mo_total": 13,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 1,
           "2025-12": 1,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 2,
           "2026-07": 3,
-          "2026-08": 3,
-          "2026-09": 3
+          "2026-08": 3
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Washington side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 85,
       "certified_beds": 9037,
-      "avg_overall_rating": 3.08,
+      "avg_overall_rating": 3.06,
       "for_profit_pct": 74.1
     },
     "home_health_agencies": {

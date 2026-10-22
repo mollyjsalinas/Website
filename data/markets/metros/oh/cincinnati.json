@@ -6,28 +6,29 @@
   "state_abbr": "OH",
   "state": "Ohio",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Ohio side of the Cincinnati metro area",
     "active_individual_providers": {
-      "pt": 1229,
-      "pta": 262,
-      "ot": 749,
-      "ota": 243,
-      "slp": 1425,
-      "aud": 172
+      "pt": 1212,
+      "pta": 261,
+      "ot": 741,
+      "ota": 239,
+      "slp": 1419,
+      "aud": 167
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 51,
+        "trailing_12mo_total": 50,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 0,
           "2025-11": 4,
           "2025-12": 2,
@@ -38,13 +39,13 @@
           "2026-05": 11,
           "2026-06": 4,
           "2026-07": 9,
-          "2026-08": 4,
-          "2026-09": 4
+          "2026-08": 4
         }
       },
       "pta": {
         "trailing_12mo_total": 8,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 0,
@@ -55,13 +56,13 @@
           "2026-05": 1,
           "2026-06": 0,
           "2026-07": 0,
-          "2026-08": 2,
-          "2026-09": 0
+          "2026-08": 2
         }
       },
       "ot": {
-        "trailing_12mo_total": 39,
+        "trailing_12mo_total": 43,
         "by_month": {
+          "2025-09": 8,
           "2025-10": 5,
           "2025-11": 0,
           "2025-12": 0,
@@ -72,13 +73,13 @@
           "2026-05": 1,
           "2026-06": 5,
           "2026-07": 5,
-          "2026-08": 7,
-          "2026-09": 4
+          "2026-08": 7
         }
       },
       "ota": {
         "trailing_12mo_total": 19,
         "by_month": {
+          "2025-09": 3,
           "2025-10": 0,
           "2025-11": 2,
           "2025-12": 0,
@@ -89,13 +90,13 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 1,
-          "2026-08": 7,
-          "2026-09": 3
+          "2026-08": 7
         }
       },
       "slp": {
-        "trailing_12mo_total": 62,
+        "trailing_12mo_total": 68,
         "by_month": {
+          "2025-09": 9,
           "2025-10": 5,
           "2025-11": 2,
           "2025-12": 3,
@@ -106,13 +107,13 @@
           "2026-05": 3,
           "2026-06": 1,
           "2026-07": 6,
-          "2026-08": 29,
-          "2026-09": 3
+          "2026-08": 29
         }
       },
       "aud": {
         "trailing_12mo_total": 5,
         "by_month": {
+          "2025-09": 0,
           "2025-10": 0,
           "2025-11": 0,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 2,
           "2026-06": 1,
           "2026-07": 0,
-          "2026-08": 0,
-          "2026-09": 0
+          "2026-08": 0
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Ohio side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 128,
       "certified_beds": 11806,
-      "avg_overall_rating": 3.38,
+      "avg_overall_rating": 3.39,
       "for_profit_pct": 81.2
     },
     "home_health_agencies": {

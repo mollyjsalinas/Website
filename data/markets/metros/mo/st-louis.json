@@ -6,28 +6,29 @@
   "state_abbr": "MO",
   "state": "Missouri",
   "desk": "therapy",
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-09-15",
   "fixture": false,
   "supply": {
-    "source": "NPPES monthly file, October 2026 (CMS, public domain)",
+    "source": "NPPES monthly file, September 2026 (CMS, public domain)",
     "note": "Individual (Type 1) providers by primary taxonomy code, practice-address ZIP mapped to county and CBSA; deactivated NPIs excluded.",
     "scope": "Missouri side of the St. Louis metro area",
     "active_individual_providers": {
-      "pt": 2230,
-      "pta": 367,
-      "ot": 1477,
+      "pt": 2203,
+      "pta": 371,
+      "ot": 1445,
       "ota": 408,
-      "slp": 2322,
-      "aud": 249
+      "slp": 2314,
+      "aud": 234
     }
   },
   "new_provider_inflow": {
-    "source": "NPPES provider enumeration dates, October 2026 file",
+    "source": "NPPES provider enumeration dates, September 2026 file",
     "note": "Newly enumerated NPIs by month (trailing 12 full months); same state-side metro slice as supply.",
     "trailing_12_months": {
       "pt": {
-        "trailing_12mo_total": 91,
+        "trailing_12mo_total": 96,
         "by_month": {
+          "2025-09": 10,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 6,
@@ -38,13 +39,13 @@
           "2026-05": 13,
           "2026-06": 20,
           "2026-07": 5,
-          "2026-08": 8,
-          "2026-09": 5
+          "2026-08": 8
         }
       },
       "pta": {
-        "trailing_12mo_total": 13,
+        "trailing_12mo_total": 15,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 3,
           "2025-11": 0,
           "2025-12": 2,
@@ -55,13 +56,13 @@
           "2026-05": 0,
           "2026-06": 1,
           "2026-07": 3,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       },
       "ot": {
-        "trailing_12mo_total": 63,
+        "trailing_12mo_total": 59,
         "by_month": {
+          "2025-09": 5,
           "2025-10": 3,
           "2025-11": 2,
           "2025-12": 5,
@@ -70,15 +71,15 @@
           "2026-03": 5,
           "2026-04": 3,
           "2026-05": 7,
-          "2026-06": 6,
+          "2026-06": 5,
           "2026-07": 6,
-          "2026-08": 8,
-          "2026-09": 8
+          "2026-08": 8
         }
       },
       "ota": {
-        "trailing_12mo_total": 17,
+        "trailing_12mo_total": 19,
         "by_month": {
+          "2025-09": 2,
           "2025-10": 2,
           "2025-11": 2,
           "2025-12": 1,
@@ -89,15 +90,15 @@
           "2026-05": 1,
           "2026-06": 1,
           "2026-07": 3,
-          "2026-08": 3,
-          "2026-09": 0
+          "2026-08": 3
         }
       },
       "slp": {
-        "trailing_12mo_total": 68,
+        "trailing_12mo_total": 73,
         "by_month": {
+          "2025-09": 16,
           "2025-10": 4,
-          "2025-11": 4,
+          "2025-11": 3,
           "2025-12": 0,
           "2026-01": 1,
           "2026-02": 3,
@@ -106,13 +107,13 @@
           "2026-05": 3,
           "2026-06": 13,
           "2026-07": 9,
-          "2026-08": 18,
-          "2026-09": 10
+          "2026-08": 18
         }
       },
       "aud": {
-        "trailing_12mo_total": 7,
+        "trailing_12mo_total": 8,
         "by_month": {
+          "2025-09": 1,
           "2025-10": 1,
           "2025-11": 1,
           "2025-12": 0,
@@ -123,8 +124,7 @@
           "2026-05": 0,
           "2026-06": 3,
           "2026-07": 0,
-          "2026-08": 1,
-          "2026-09": 0
+          "2026-08": 1
         }
       }
     }
@@ -196,12 +196,12 @@
     }
   },
   "facilities": {
-    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-10-15",
+    "source": "CMS Provider Data Catalog (nursing homes 4pq5-n9py, home health 6jpm-sxkc), pulled 2026-09-15",
     "scope": "Missouri side of the metro (facility ZIP mapped to CBSA)",
     "nursing_homes": {
       "count": 120,
       "certified_beds": 15026,
-      "avg_overall_rating": 2.22,
+      "avg_overall_rating": 2.21,
       "for_profit_pct": 85.0
     },
     "home_health_agencies": {
