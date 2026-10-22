@@ -25,6 +25,45 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Physical Therapist — Outpatient Orthopedics",
+    slug: "physical-therapist-outpatient-orthopedics-salt-lake-city-ut",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Salt Lake City",
+    state: "UT",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 95000, max: 115000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient rehabilitation practice in Salt Lake City, UT that is seeking a Physical Therapist. The practice specializes in individualized orthopedic and work-injury rehabilitation, with a strong emphasis on hands-on care, clinical collaboration, and meaningful patient outcomes rather than high-volume productivity.\n\nYou will evaluate and treat a broad range of acute and chronic musculoskeletal conditions using manual therapy, therapeutic exercise, strengthening, and functional rehabilitation. Patient care is exclusively one-on-one: treatment sessions are 60 minutes, evaluations typically range from 30–90 minutes, and there is no double-booking or overlap. You will collaborate with medical providers and other clinical team members, educate patients on recovery and injury prevention, and supervise or partner with PTAs when appropriate.\n\nFull-time and part-time options are available. The standard schedule is Monday–Thursday, creating a four-day workweek with Fridays and weekends off. Part-time schedules can be highly flexible—even as little as one day per week—making this a strong fit whether you are seeking a primary role or additional income.\n\nFull-time compensation is $95,000–$115,000 annually, based on experience. Part-time pay is $45–$60 per hour. The role includes annual compensation increases, additional bonus opportunities, a 401(k) with up to a 4% employer match, separate holiday benefits, negotiable PTO for full-time clinicians, and potential continuing-education reimbursement. Compensation remains consistent when patients cancel or do not attend.\n\nCandidates need active PT licensure in Utah, or eligibility for licensure. New graduates and experienced therapists are encouraged to apply. The ideal clinician has strong assessment and treatment-planning skills, communicates clearly, enjoys hands-on outpatient care, and thrives in a collaborative, patient-centered environment.",
+  },
+  {
+    title: "Physical Therapist — Outpatient Orthopedics",
+    slug: "physical-therapist-outpatient-orthopedics-st-george-ut",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "St. George",
+    state: "UT",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 95000, max: 115000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient rehabilitation practice in St. George, UT that is seeking a Physical Therapist. The practice specializes in individualized orthopedic and work-injury rehabilitation, with a strong emphasis on hands-on care, clinical collaboration, and meaningful patient outcomes rather than high-volume productivity.\n\nYou will evaluate and treat a broad range of acute and chronic musculoskeletal conditions using manual therapy, therapeutic exercise, strengthening, and functional rehabilitation. Patient care is exclusively one-on-one: treatment sessions are 60 minutes, evaluations typically range from 30–90 minutes, and there is no double-booking or overlap. You will collaborate with medical providers and other clinical team members, educate patients on recovery and injury prevention, and supervise or partner with PTAs when appropriate.\n\nFull-time and part-time options are available. The standard schedule is Monday–Thursday, creating a four-day workweek with Fridays and weekends off. Part-time schedules can be highly flexible—even as little as one day per week—making this a strong fit whether you are seeking a primary role or additional income.\n\nFull-time compensation is $95,000–$115,000 annually, based on experience. Part-time pay is $45–$60 per hour. The role includes annual compensation increases, additional bonus opportunities, a 401(k) with up to a 4% employer match, separate holiday benefits, negotiable PTO for full-time clinicians, and potential continuing-education reimbursement. Compensation remains consistent when patients cancel or do not attend.\n\nCandidates need active PT licensure in Utah, or eligibility for licensure. New graduates and experienced therapists are encouraged to apply. The ideal clinician has strong assessment and treatment-planning skills, communicates clearly, enjoys hands-on outpatient care, and thrives in a collaborative, patient-centered environment.",
+  },
+  {
+    title: "Physical Therapist — Outpatient Orthopedics",
+    slug: "physical-therapist-outpatient-orthopedics-reno-nv",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Reno",
+    state: "NV",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 95000, max: 115000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient rehabilitation practice in Reno, NV that is seeking a Physical Therapist. This is an upcoming clinic opportunity for a clinician interested in helping establish PT services in a growing market. The practice specializes in individualized orthopedic and work-injury rehabilitation, with a strong emphasis on hands-on care, clinical collaboration, and meaningful patient outcomes rather than high-volume productivity.\n\nYou will evaluate and treat a broad range of acute and chronic musculoskeletal conditions using manual therapy, therapeutic exercise, strengthening, and functional rehabilitation. Patient care is exclusively one-on-one: treatment sessions are 60 minutes, evaluations typically range from 30–90 minutes, and there is no double-booking or overlap. You will collaborate with medical providers and other clinical team members, educate patients on recovery and injury prevention, and supervise or partner with PTAs when appropriate.\n\nFull-time and part-time options are available. The standard schedule is Monday–Thursday, creating a four-day workweek with Fridays and weekends off. Part-time schedules can be highly flexible—even as little as one day per week—making this a strong fit whether you are seeking a primary role or additional income.\n\nFull-time compensation is $95,000–$115,000 annually, based on experience. Part-time pay is $45–$60 per hour. The role includes annual compensation increases, additional bonus opportunities, a 401(k) with up to a 4% employer match, separate holiday benefits, negotiable PTO for full-time clinicians, and potential continuing-education reimbursement. Compensation remains consistent when patients cancel or do not attend.\n\nCandidates need active PT licensure in Nevada, or eligibility for licensure. New graduates and experienced therapists are encouraged to apply. The ideal clinician has strong assessment and treatment-planning skills, communicates clearly, enjoys hands-on outpatient care, and thrives in a collaborative, patient-centered environment.",
+  },
+  {
     title: "Pediatric Occupational Therapist",
     slug: "pediatric-occupational-therapist-kansas-city-ks",
     profession: "ot",
