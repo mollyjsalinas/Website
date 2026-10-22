@@ -25,6 +25,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Physical Therapist — Outpatient Orthopedics",
+    slug: "physical-therapist-outpatient-orthopedics-mountlake-terrace-wa",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Mountlake Terrace",
+    state: "WA",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 88000, max: 110000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential outpatient orthopedic practice in the North Seattle area that is seeking a Physical Therapist. This opportunity is designed for a clinician who wants exceptional patient care, clinical autonomy, and a sustainable workweek without double-booking or high-volume productivity pressure. Full-time is preferred, with part-time consideration for the right candidate.\n\nYou will evaluate and treat primarily active adult patients with musculoskeletal injuries and orthopedic conditions. Your work will include individualized treatment planning, manual therapy, therapeutic exercise, strength training, functional movement, patient education, and progress monitoring. Visits are one-on-one, including 45-minute evaluations and treatment sessions, so you can focus fully on each patient and their functional goals.\n\nThe preferred schedule is four 10-hour days, with a consistent weekday off; alternative eight-hour shifts may be considered. Each 10-hour day includes a full hour of paid administrative and documentation time, and dedicated administrative staff manage scheduling, insurance verification, and authorizations.\n\nCompensation is $88,000–$110,000 annually based on experience, plus a $2,000 sign-on bonus and quarterly productivity-bonus opportunities of up to $6,000 annually. Benefits include medical, dental, and vision insurance; a 401(k) with up to a 3.5% employer match; paid vacation and sick leave; employer-paid license renewal; unlimited director-approved continuing education; a professional education platform subscription; and financial support for approved specialty certifications, including a bonus for certifications earned during employment.\n\nNew graduates will receive a gradual caseload ramp-up, weekly mentorship, monthly group mentoring, and guidance from experienced clinicians. Experienced PTs will have the autonomy to practice independently, opportunities to mentor others, support for advanced training, and potential pathways into clinic leadership. Candidates need a DPT or master's degree in Physical Therapy and current Washington licensure, or eligibility for licensure. Dry-needling experience is welcome but not required.",
+  },
+  {
     title: "Remote Speech-Language Pathologist",
     slug: "remote-speech-language-pathologist-texas",
     profession: "slp",
