@@ -5,7 +5,7 @@ import { liveJobs } from "@/lib/jobs";
 import { SALARY_ROLES, salaryHref, salaryParams } from "@/lib/salary";
 import { licensureGuides, licensureHref } from "@/lib/licensure";
 import { CAREER_SPECIALTIES, careerParams, careerHref } from "@/lib/career-specialties";
-import { launchMarkets, metrosForState, metroHref, stateHref } from "@/lib/markets";
+import { allMetros, launchMarkets, metrosForState, metroHref, stateHref } from "@/lib/markets";
 
 // ⛔ Every path here ends in "/" (trailingSlash: true). The prebuild check
 // fails the build on an unslashed entry; an unslashed sitemap URL is a 308.
@@ -90,6 +90,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+    ...CAREER_SPECIALTIES.flatMap((role) => allMetros().map((metro) => ({
+      url: `${SITE.url}/career/${role.slug}/${metro.state.toLowerCase().replace(/\\s+/g, "-")}/${metro.city_slug}/`,
+      lastModified: CONTENT_UPDATED,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))),
     ...licensureGuides().map((x) => ({
       url: `${SITE.url}${licensureHref(x.g.abbr, x.prof)}`,
       lastModified: x.g.researched_on > CONTENT_UPDATED ? x.g.researched_on : CONTENT_UPDATED,
