@@ -15,6 +15,30 @@ export type Post = {
 // and add it here.
 export const POSTS: Post[] = [
   {
+    slug: "nurse-practitioner-salary-guide",
+    title: "Nurse Practitioner Salary by State: How to Benchmark Your Next Role",
+    description: "BLS nurse practitioner wage estimates for every state, plus practical questions to ask before comparing a new opportunity.",
+    date: "2026-10-22",
+    author: "Molly Salinas",
+    readingMinutes: 4,
+    related: [
+      { href: "/salary/nurse-practitioner/", label: "Nurse practitioner salary by state" },
+      { href: "/job-seekers/", label: "Start a confidential candidate conversation" },
+    ],
+  },
+  {
+    slug: "physician-assistant-salary-guide",
+    title: "Physician Assistant Salary by State: How to Compare Opportunities",
+    description: "BLS physician assistant wage estimates for every state, with a practical framework for comparing compensation and role fit.",
+    date: "2026-10-22",
+    author: "Molly Salinas",
+    readingMinutes: 4,
+    related: [
+      { href: "/salary/physician-assistant/", label: "Physician assistant salary by state" },
+      { href: "/job-seekers/", label: "Start a confidential candidate conversation" },
+    ],
+  },
+  {
     slug: "what-therapists-earn-by-state",
     title: "What Physical, Occupational and Speech Therapists Earn in Every State",
     description:
