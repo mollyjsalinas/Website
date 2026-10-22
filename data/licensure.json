@@ -98,7 +98,7 @@
      "verified": true
     },
     "education": {
-     "value": "Graduation from an occupational therapy program accredited through the American Occupational Therapy Association (s. 468.209, F.S. names its Accreditation Council for Occupational Therapy Education), plus 24 weeks of supervised fieldwork.",
+     "value": "Graduation from an occupational therapy program accredited through the American Occupational Therapy Association, plus 24 weeks of supervised fieldwork.",
      "source_url": "https://floridasoccupationaltherapy.gov/occupational-therapist/",
      "quote": "Have graduated from an accredited occupational therapy program accredited by the American Occupational Therapy Association",
      "verified": true
@@ -202,7 +202,7 @@
      "verified": true
     },
     "temporary_or_provisional": {
-     "value": "Applicants who cannot yet document nine months of supervised professional employment experience and a passing Praxis score (for example, clinical fellows) must hold a provisional license before starting that experience. The provisional license costs $180.",
+     "value": "Applicants who cannot yet document nine months of supervised professional employment experience and a passing Praxis score (for example, clinical fellows) must hold a provisional license before starting that experience.",
      "source_url": "https://www.flsenate.gov/Laws/Statutes/2026/468.1155",
      "quote": "A provisional license shall be required of all applicants for a license in speech-language pathology who cannot document a minimum of 9 months of supervised professional employment experience and a passing score on the national examination.",
      "verified": true
@@ -500,7 +500,7 @@
      "verified": true
     },
     "application_fee": {
-     "value": "For a physical therapist, the application processing fee is $300 (nonrefundable) and the initial license fee is $150, for $450 total. Fingerprint hard cards add $49.",
+     "value": "For a physical therapist, the application processing fee is $300 (nonrefundable) and the initial license fee is $150. Fingerprint hard cards add $49.",
      "source_url": "https://www.ptbc.ca.gov/applicants/endorsement/fees.shtml",
      "quote": "Application Processing Fee: $300 The application processing fee is nonrefundable. Initial License Fee (ILF): $150",
      "verified": true
@@ -586,7 +586,7 @@
      "verified": true
     },
     "temporary_or_provisional": {
-     "value": "Recent graduates can get a limited permit ($100) to work under supervision while waiting to take the NBCOT exam. You must apply to NBCOT within 4 months of finishing your education. The permit lasts up to 3 months and ends immediately if you fail the exam.",
+     "value": "Recent graduates can get a limited permit to work under supervision while waiting to take the NBCOT exam. Applicants must apply to NBCOT within 4 months of finishing their education. The permit lasts up to 3 months and ends immediately if the applicant fails the exam.",
      "source_url": "https://www.bot.ca.gov/applicants/limited_permits.shtml",
      "quote": "Limited permits are issued to recent graduates in order to allow them to work under supervision while waiting to take the national examination.",
      "verified": true
@@ -636,7 +636,7 @@
      "verified": true
     },
     "background_check": {
-     "value": "All applicants must pass a DOJ and FBI background check. California residents must use Live Scan; applicants outside California submit FD-258 fingerprint hard cards with a $49 processing fee.",
+     "value": "All applicants must pass a DOJ and FBI background check. California residents must use Live Scan; applicants outside California submit FD-258 fingerprint hard cards.",
      "source_url": "https://www.speechandhearing.ca.gov/applicants/slp/fingerprinting_requirements.html",
      "quote": "The Board requires both a Department of Justice (DOJ) and Federal Bureau of Investigation (FBI) criminal history background check on all applicants for licensure or registration.",
      "verified": true

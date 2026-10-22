@@ -2,7 +2,8 @@
 
 Each research file <ST>.json holds facts as {value, source_url, quote}. For every
 fact this fetches source_url (PDFs via pdftotext) and confirms the quote appears
-verbatim after whitespace/quote/dash normalisation. Writes <ST>.verified.json with
+verbatim after whitespace/quote/dash normalisation, and that every number
+in the value (fees, hours, years) also appears on that page. Writes <ST>.verified.json with
 only the facts whose quote was found, and prints each drop. Run on Linux:
     python3 scripts/check-licensure-quotes.py FL TX CA   (from the research folder)"""
 import html, json, re, subprocess, sys, unicodedata
@@ -44,6 +45,12 @@ for st in sys.argv[1:]:
             # board/apply_url facts are links: the page loading is the check
             if not ok and k in ("board", "apply_url") and len(page) > 500:
                 ok = True
+            # every number the value states (fees, hours, years) must be on the page too
+            missing = [x for x in re.findall(r"\d[\d,]*(?:\.\d+)?", f.get("value") or "")
+                       if x.replace(",", "") not in page.replace(",", "")]
+            if ok and missing:
+                ok = False
+                print(f"  NUMBERS {st} {prof}.{k}: {missing} not on page")
             f["verified"] = ok
             if ok:
                 kept += 1
