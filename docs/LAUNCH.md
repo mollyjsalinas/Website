@@ -21,6 +21,9 @@ In order. Each step has a check that proves it, not a "should work".
 - [ ] Environment variables (Production): `RESEND_API_KEY`, `CONTACT_TO_EMAIL`,
       `HIRE_TO_EMAIL`, `CONTACT_FROM_EMAIL`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`. Do NOT set
       `ALLOW_FIXTURES` or `MARKETS_PUBLISH_ALL` in production.
+- [ ] Optional Google job-indexing integration: set `GOOGLE_INDEXING_SERVICE_ACCOUNT_JSON` and
+      `INDEXING_API_TRIGGER_SECRET` as Production Secrets. The former is the complete Google
+      service-account JSON; never commit either value or expose it with a `NEXT_PUBLIC_` prefix.
 - [ ] Deploy once on the `*.vercel.app` URL and click through: home, /employers/, one state,
       one metro, /licensure-compacts/pt-compact/, /jobs/, /blog/, /sitemap.xml, /robots.txt.
 - [ ] Submit the hire form and the contact form on the preview URL; confirm both emails arrive
@@ -84,3 +87,6 @@ In order. Each step has a check that proves it, not a "should work".
   `snapshot_date` from the files.
 - Copy changes: bump `CONTENT_UPDATED` in `src/lib/site.ts` so the sitemap `lastmod` moves.
 - New open role: add it to `src/lib/jobs.ts`; the page, index and sitemap follow.
+- To notify Google about one live role after deployment, make a server-to-server `POST` to
+  `/api/internal/index-job/?slug=<job-slug>` with `Authorization: Bearer <INDEXING_API_TRIGGER_SECRET>`.
+  The endpoint accepts only live registry jobs and submits `URL_UPDATED` through Google's Indexing API.
