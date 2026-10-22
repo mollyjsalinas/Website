@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ role: str
   const nat = nationalWage(r);
   return {
     title: `${titleCase(L.label)} Salary by State`,
-    description: `What ${L.plural.toLowerCase()} earn in all 50 states and DC: BLS mean and median wages, ranked. National mean ${usd(nat?.annual_mean_wage)}.`,
+    description: nat ? `What ${L.plural.toLowerCase()} earn in all 50 states and DC: BLS mean and median wages, ranked. National mean ${usd(nat.annual_mean_wage)}.` : `What ${L.plural.toLowerCase()} earn in all 50 states and DC: BLS mean and median wages, ranked by state.`,
     alternates: { canonical: salaryHref(r) },
   };
 }
@@ -46,10 +46,8 @@ export default async function SalaryRolePage({ params }: { params: Promise<{ rol
             {L.label} salary by state
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy-100">
-            {L.plural} in the US earn a mean of {usd(nat?.annual_mean_wage)} a year (median{" "}
-            {usd(nat?.annual_median_wage)}, {n(nat?.employment)} employed). The highest-paying states
-            by mean are {top.join(", ")}. Pick a state for metro pay, the local workforce and
-            licensing.
+            {nat ? <>{L.plural} in the US earn a mean of {usd(nat.annual_mean_wage)} a year (median{" "}{usd(nat.annual_median_wage)}, {n(nat.employment)} employed). </> : <>BLS publishes state-level estimates for {L.plural.toLowerCase()}. </>}The highest-paying states
+            by mean are {top.join(", ")}. Pick a state for the full wage estimate and a confidential career conversation.
           </p>
         </Container>
       </section>
@@ -85,7 +83,7 @@ export default async function SalaryRolePage({ params }: { params: Promise<{ rol
             </table>
           </div>
           <SourceLine>
-            Source: {ranked[0]?.m.compensation.source ?? "BLS OEWS"}. Estimates for employed clinicians,
+            Source: BLS Occupational Employment and Wage Statistics (OEWS), May 2025 state estimates. Estimates for employed clinicians,
             not offers. States where BLS suppresses the estimate are left out.
           </SourceLine>
         </Container>
