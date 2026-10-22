@@ -24,6 +24,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Physical Therapist — Orthopedic & Injury Rehabilitation",
+    slug: "physical-therapist-orthopedic-injury-rehabilitation-colorado",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Thornton & Fort Collins",
+    state: "CO",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-22",
+    salary: { min: 130000, max: 150000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a confidential, quality-focused outpatient rehabilitation practice in Colorado that is seeking a full-time Physical Therapist. This is a multi-site opportunity serving the Thornton and Fort Collins areas for a clinician who wants to pair high-level compensation with individualized, hands-on patient care.\n\nYou will treat patients with orthopedic and injury-related conditions, including spine and neck injuries, shoulder concerns, joint and soft-tissue injuries, pain, mobility limitations, and other musculoskeletal needs. Care may include manual therapy, therapeutic exercise, strengthening and stabilization, mobility and range-of-motion restoration, dry needling, shockwave therapy, and blood-flow-restriction therapy.\n\nThe practice is built around a one-on-one, patient-first care model: evaluations are approximately 60 minutes and follow-up visits are typically 30–40 minutes. You will have the clinical autonomy and pace to build strong patient relationships, deliver thoughtful treatment plans, and focus on meaningful functional outcomes rather than high-volume scheduling.\n\nCandidates need a DPT or master’s degree in Physical Therapy and current Colorado PT licensure, or eligibility for licensure. The ideal clinician is confident practicing independently, communicates clearly, and brings orthopedic, sports medicine, or injury-rehabilitation experience. Familiarity with dry needling, shockwave therapy, or BFR is especially valued.\n\nCompensation is $130,000–$150,000 annually, plus a full benefits package. This is an excellent next step for a PT looking for a polished outpatient setting, advanced treatment options, and the space to deliver personal, high-quality care.",
+  },
+  {
     title: "Certified Hand Therapist (OT or PT)",
     slug: "certified-hand-therapist-salem-or",
     profession: "ot",
