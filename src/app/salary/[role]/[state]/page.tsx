@@ -5,7 +5,7 @@ import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
 import { SectionHeading, StatTile, SourceLine, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { compactSentence } from "@/components/DataSections";
-import { SITE, COMPACTS, CONTENT_UPDATED, type RoleKey } from "@/lib/site";
+import { SITE, COMPACTS, CONTENT_UPDATED, type RoleKey, type CompactKey } from "@/lib/site";
 import { marketDisplay, metrosForState, metroHref, stateHref, supplyAsOf } from "@/lib/markets";
 import {
   SALARY_ROLES,
