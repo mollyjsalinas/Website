@@ -5,7 +5,7 @@ import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
 import { SectionHeading, StatTile, SourceLine, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { compactSentence } from "@/components/DataSections";
-import { SITE, COMPACTS, CONTENT_UPDATED } from "@/lib/site";
+import { SITE, COMPACTS, CONTENT_UPDATED, type RoleKey } from "@/lib/site";
 import { marketDisplay, metrosForState, metroHref, stateHref, supplyAsOf } from "@/lib/markets";
 import {
   SALARY_ROLES,
@@ -52,21 +52,23 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
   if (!p) notFound();
   const { r, m, d, rank, of } = p;
   const L = roleLabel(r);
+  const isAdvanced = r.key === "np" || r.key === "pa";
+  const therapyKey = r.key as RoleKey;
   const disp = marketDisplay(m);
   const nat = nationalWage(r);
   const vsNat =
     nat?.annual_mean_wage != null ? ((d.annual_mean_wage! - nat.annual_mean_wage) / nat.annual_mean_wage) * 100 : null;
   const hourly = d.annual_mean_wage! / 2080;
-  const supply = m.supply.active_individual_providers[r.key];
-  const per100k = (m.supply.per_100k as Partial<Record<string, number>>)[r.key];
-  const inflow = m.new_provider_inflow.trailing_12_months[r.key]?.trailing_12mo_total;
+  const supply = m.supply.active_individual_providers[therapyKey];
+  const per100k = (m.supply.per_100k as Partial<Record<string, number>>)[therapyKey];
+  const inflow = m.new_provider_inflow.trailing_12_months[therapyKey]?.trailing_12mo_total;
   const metros = metrosForState(m.market_abbr)
-    .map((c) => ({ c, w: c.compensation?.[r.key] }))
+    .map((c) => ({ c, w: c.compensation?.[therapyKey] }))
     .filter((x) => x.w?.annual_mean_wage != null)
     .sort((a, b) => b.w!.annual_mean_wage! - a.w!.annual_mean_wage!);
   const jobs = jobsFor(r.profession, m.market_abbr);
   const otherRoles = SALARY_ROLES.filter((o) => o.key !== r.key && stateWage(m, o));
-  const compact = COMPACTS[r.compact];
+  const compact = r.compact ? COMPACTS[r.compact] : undefined;
   const url = `${SITE.url}${salaryHref(r, m)}`;
   const modified = m.snapshot_date > CONTENT_UPDATED ? m.snapshot_date : CONTENT_UPDATED;
 
@@ -160,7 +162,7 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
         </section>
       )}
 
-      <section className="py-20">
+      {!isAdvanced && compact && (<section className="py-20">
         <Container>
           <SectionHeading eyebrow="The market" title={`How many ${L.plural.toLowerCase()} work in ${m.market}`}>
             {n(supply)} {L.plural.toLowerCase()} hold an active individual NPI with a practice address
@@ -173,7 +175,7 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
           <SourceLine>Source: {m.supply.source}, as of {supplyAsOf(m)}.</SourceLine>
           <div className="mt-10 max-w-3xl rounded-lg border border-mist bg-white p-6">
             <h2 className="font-heading text-xl font-semibold text-navy-600">Licensed in another state?</h2>
-            <p className="mt-2 leading-relaxed text-body">{compactSentence(m.market, r.compact, m.compacts[r.compact])}</p>
+            <p className="mt-2 leading-relaxed text-body">{compactSentence(m.market, r.compact as CompactKey, m.compacts[r.compact as CompactKey])}</p>
             <Link
               href={`/licensure-compacts/${compact.slug}/`}
               className="mt-3 inline-block font-semibold text-teal-600 hover:text-teal-700"
@@ -190,7 +192,7 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
             )}
           </div>
         </Container>
-      </section>
+      </section>)}
 
       <section className="bg-mist-light py-20">
         <Container>
