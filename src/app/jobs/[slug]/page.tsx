@@ -90,8 +90,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           employmentType: j.employmentType.length === 1 ? j.employmentType[0] : j.employmentType,
           hiringOrganization: {
             "@type": "Organization",
-            name: "Confidential employer, represented by APT Recruiting",
-            sameAs: `${SITE.url}/`,
+            name: "confidential",
           },
           jobLocation: {
             "@type": "Place",
