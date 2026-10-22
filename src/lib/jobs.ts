@@ -25,6 +25,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Speech-Language Pathologist / Clinical Fellow",
+    slug: "speech-language-pathologist-clinical-fellow-batesville-ar",
+    profession: "slp",
+    setting: "outpatient-rehab",
+    city: "Batesville",
+    state: "AR",
+    employmentType: ["FULL_TIME", "PART_TIME", "PER_DIEM", "CONTRACTOR"],
+    datePosted: "2026-10-22",
+    salary: { min: 45, max: 69, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a confidential pediatric early-intervention and developmental day-treatment program in Batesville, Arkansas that is seeking Speech-Language Pathologists and Clinical Fellows. This distinctive setting combines individualized therapy with a preschool-style environment, giving clinicians the opportunity to support children throughout meaningful daily routines instead of relying solely on traditional appointment-based care.\n\nYou will provide evidence-based pediatric speech-language services for children with developmental delays and complex communication needs. Clinical work may include receptive and expressive language, articulation and speech-sound disorders, AAC, feeding therapy, functional communication, and social participation. Treatment is primarily one-on-one and can be integrated into classroom activities and natural daily environments, helping skills carry over beyond the therapy room.\n\nThe care model is relationship-centered and neuroaffirming, with an emphasis on sensory integration, understanding the reasons behind behavior, and adapting the environment to support each child. You will collaborate with caregivers, educators, nurses, and fellow rehabilitation professionals while retaining the clinical reasoning and flexibility to tailor interventions to individual needs.\n\nCompensation is $45–$69 per billable-hour equivalent, based on pediatric experience, selected weekly billable-hours target, and annual work schedule. Additional evaluation pay, productivity bonuses, a potential sign-on bonus, and individualized relocation assistance may be available. Eligible full-time clinicians receive employer-subsidized medical coverage, optional dental and vision insurance, elective life and disability benefits, professional liability coverage, license-renewal reimbursement, and continuing-education support.\n\nThe weekday schedule is flexible, with full-time, part-time, PRN, and contract options available and no weekend requirement. Clinicians have input into their daily hours, billable-hours target, and annual work schedule, with possible condensed-workweek arrangements. Salaried clinicians maintain established pay during patient absences, subject to agreed productivity expectations.\n\nCandidates need a master's degree in Speech-Language Pathology or Communication Sciences and Disorders and active Arkansas licensure, or eligibility for licensure. Pediatric experience is preferred, particularly with developmental disabilities, autism, feeding, AAC, or early intervention. New graduates and Clinical Fellows are welcome: experienced SLPs provide supervision, mentorship, and clinical support. This is an excellent fit for a compassionate, collaborative clinician who wants to grow in pediatric practice while making a tangible difference for children and families.",
+  },
+  {
     title: "Pediatric Speech-Language Pathologist",
     slug: "pediatric-speech-language-pathologist-pelham-al",
     profession: "slp",
