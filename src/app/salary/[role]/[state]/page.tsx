@@ -21,6 +21,8 @@ import {
 } from "@/lib/salary";
 import { n, usd, longDate } from "@/lib/format";
 import { hasLicensureGuide, licensureHref, type LicProfKey } from "@/lib/licensure";
+import { careerRolesForSalary, careerHref } from "@/lib/career-specialties";
+import { stateSlug } from "@/lib/markets";
 
 export async function generateStaticParams() {
   return salaryParams();
@@ -238,6 +240,13 @@ export default async function SalaryStatePage({ params }: { params: Promise<{ ro
                     The {m.market} therapy workforce
                   </Link>
                 </li>
+                {careerRolesForSalary(r.slug).map((x) => (
+                  <li key={x.slug}>
+                    <Link href={careerHref(x.slug, stateSlug(m.market))} className="text-teal-600 hover:text-teal-700">
+                      {x.label} jobs in {m.market}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

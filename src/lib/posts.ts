@@ -23,6 +23,7 @@ export const POSTS: Post[] = [
     readingMinutes: 4,
     related: [
       { href: "/salary/nurse-practitioner/", label: "Nurse practitioner salary by state" },
+      { href: "/career/nurse-practitioner/", label: "Nurse practitioner jobs and careers nationwide" },
       { href: "/job-seekers/", label: "Start a confidential candidate conversation" },
     ],
   },
@@ -35,6 +36,7 @@ export const POSTS: Post[] = [
     readingMinutes: 4,
     related: [
       { href: "/salary/physician-assistant/", label: "Physician assistant salary by state" },
+      { href: "/career/physician-assistant/", label: "Physician assistant jobs and careers nationwide" },
       { href: "/job-seekers/", label: "Start a confidential candidate conversation" },
     ],
   },
@@ -50,6 +52,9 @@ export const POSTS: Post[] = [
       { href: "/therapy-recruiters/", label: "Therapy recruiters by state and metro" },
       { href: "/employers/", label: "Hire PT, OT and SLP through APT Recruiting" },
       { href: "/licensure-compacts/", label: "PT, OT and ASLP licensure compacts by state" },
+      { href: "/career/physical-therapist/", label: "Physical therapist jobs and careers nationwide" },
+      { href: "/career/occupational-therapist/", label: "Occupational therapist jobs and careers nationwide" },
+      { href: "/career/speech-language-pathologist/", label: "Speech-language pathologist jobs and careers nationwide" },
     ],
   },
   {
@@ -95,6 +100,12 @@ export const POSTS: Post[] = [
     ],
   },
 ];
+
+// Posts whose related list links to any of these pages (the reverse side of
+// `related`, rendered on the target page).
+export function postsLinkingTo(hrefs: string[]): Post[] {
+  return POSTS.filter((p) => p.related.some((r) => hrefs.includes(r.href)));
+}
 
 export function postBySlug(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);

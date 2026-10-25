@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { RelatedPosts } from "@/components/CareerLinks";
 import { Hero, SectionHeading, CtaBand, Placeholder, Breadcrumbs } from "@/components/Sections";
 import { EmployerBlock } from "@/components/EmployerBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -133,6 +134,8 @@ export default function EmployersPage() {
       </section>
 
       <EmployerBlock />
+
+      <RelatedPosts hrefs={["/employers/"]} />
 
       <CtaBand
         title="Tell us about the seat."

@@ -9,6 +9,7 @@ import { MollyByline, MOLLY_ID } from "@/components/MollyByline";
 import { MarketLinkGrid } from "@/components/MarketDirectory";
 import { StateMetroMap } from "@/components/StateMetroMap";
 import { SalaryLinks, StateOpenRoles } from "@/components/SalaryLinks";
+import { CareerLinks } from "@/components/CareerLinks";
 import {
   WorkforceSection,
   PaySection,
@@ -108,7 +109,7 @@ export default async function StateMarketPage({
         source={m.supply.source}
       />
 
-      <PaySection place={disp} comp={m.compensation} national={m.compensation.national} extraNote={<SalaryLinks m={m} />} />
+      <PaySection place={disp} comp={m.compensation} national={m.compensation.national} extraNote={<><SalaryLinks m={m} /><CareerLinks m={m} /></>} />
 
       <StateOpenRoles abbr={m.market_abbr} place={disp} />
 

@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { CandidateAlertForm } from "@/components/CandidateAlertForm";
 import { Hero, SectionHeading, FaqSection, Breadcrumbs } from "@/components/Sections";
 import { SITE, candidateFaqs, PROFESSION_LIST } from "@/lib/site";
+import { CAREER_SPECIALTIES, careerHubHref } from "@/lib/career-specialties";
 
 export const metadata: Metadata = {
   title: "Therapy, NP & PA Jobs: Work With a Healthcare Recruiter",
@@ -84,6 +85,9 @@ export default function JobSeekersPage() {
             <Link href="/licensure-compacts/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
               Licensure compacts
             </Link>
+            <Link href="/blog/" className="rounded-md border border-mist bg-white px-5 py-2.5 font-semibold text-navy-600 hover:border-teal-400">
+              Insights: pay, workforce and licensure
+            </Link>
           </div>
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
             {PROFESSION_LIST.map((p) => (
@@ -97,7 +101,11 @@ export default function JobSeekersPage() {
         </Container>
       </section>
 
-      <section className="py-20"><Container><SectionHeading eyebrow="Explore by specialty" title="Candidate career and salary guides by state">Use current BLS state wage estimates to benchmark your next move, then start a confidential conversation about the setting and schedule you want.</SectionHeading><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/salary/nurse-practitioner/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Nurse Practitioner salaries by state →</Link><Link href="/salary/physician-assistant/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Physician Assistant salaries by state →</Link><Link href="/career/certified-hand-therapist/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Certified Hand Therapist careers →</Link><Link href="/career/pelvic-health-therapist/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Pelvic Health Therapist careers →</Link><Link href="/salary/audiologist/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Audiologist salaries by state →</Link></div></Container></section>\n\n      <section className="bg-mist-light py-20"><Container className="max-w-3xl"><SectionHeading eyebrow="Stay in the loop" title="Get confidential candidate updates">Choose your discipline and preferred market. We will keep your information private and contact you about searches that fit.</SectionHeading><div className="mt-8"><CandidateAlertForm /></div></Container></section>\n\n      <FaqSection faqs={candidateFaqs} title="Questions clinicians ask us" />
+      <section className="py-20"><Container><SectionHeading eyebrow="Explore by specialty" title="Candidate career and salary guides by state">Use current BLS state wage estimates to benchmark your next move, then start a confidential conversation about the setting and schedule you want.</SectionHeading><div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{CAREER_SPECIALTIES.map((x) => <Link key={x.slug} href={careerHubHref(x.slug)} className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">{x.label} careers →</Link>)}<Link href="/salary/nurse-practitioner/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Nurse Practitioner salaries by state →</Link><Link href="/salary/physician-assistant/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Physician Assistant salaries by state →</Link><Link href="/salary/audiologist/" className="rounded-lg border border-mist bg-white p-5 font-semibold text-teal-600 hover:border-teal-400">Audiologist salaries by state →</Link></div></Container></section>
+
+      <section className="bg-mist-light py-20"><Container className="max-w-3xl"><SectionHeading eyebrow="Stay in the loop" title="Get confidential candidate updates">Choose your discipline and preferred market. We will keep your information private and contact you about searches that fit.</SectionHeading><div className="mt-8"><CandidateAlertForm /></div></Container></section>
+
+      <FaqSection faqs={candidateFaqs} title="Questions clinicians ask us" />
 
       <section id="contact" className="scroll-mt-24 bg-lavender/40 py-20">
         <Container>

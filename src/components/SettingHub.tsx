@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { RelatedPosts } from "@/components/CareerLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, SectionHeading, StatTile, SourceLine, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { EmployerBlock } from "@/components/EmployerBlock";
@@ -110,6 +111,8 @@ export function SettingHub({ s }: { s: Setting }) {
       <EmployerBlock />
 
       {hasData && <MollyByline place="national" reviewedOn={reviewedOn} />}
+
+      <RelatedPosts hrefs={[`/${s.slug}/`]} />
 
       <CtaBand title={`Hiring for a ${s.shortLabel.toLowerCase()} setting?`} body="Tell us the discipline, the caseload and the market. A licensed clinician reads every brief." />
 
