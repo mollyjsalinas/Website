@@ -5,6 +5,7 @@ import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
 import { CtaBand, Breadcrumbs } from "@/components/Sections";
 import { SalaryLinks, StateOpenRoles } from "@/components/SalaryLinks";
+import { CareerLinks } from "@/components/CareerLinks";
 import { EmployerBlock } from "@/components/EmployerBlock";
 import { MollyByline, MOLLY_ID } from "@/components/MollyByline";
 import { WorkforceSection, PaySection, SectorSection, FacilitiesSection } from "@/components/DataSections";
@@ -127,6 +128,7 @@ export default async function MetroMarketPage({
                 </Link>
               </p>
               {parent && <SalaryLinks m={parent} />}
+              <CareerLinks c={c} />
             </>
           }
         />
@@ -139,6 +141,7 @@ export default async function MetroMarketPage({
                 See {c.state} statewide pay for PTs, OTs, SLPs and audiologists →
               </Link>
             </p>
+            <CareerLinks c={c} />
           </Container>
         </section>
       )}

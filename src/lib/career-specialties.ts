@@ -1,4 +1,4 @@
-import { launchMarkets, marketBySlug } from "@/lib/markets";
+import { launchMarkets, marketBySlug, stateSlug, type MetroSnapshot } from "@/lib/markets";
 
 export const CAREER_SPECIALTIES = [
   { slug: "physical-therapist", label: "Physical Therapist", plural: "Physical Therapists", intro: "patient-centered rehabilitation", salary: "physical-therapist" },
@@ -15,6 +15,10 @@ export function careerSpecialtyBySlug(slug: string) {
   return CAREER_SPECIALTIES.find((x) => x.slug === slug);
 }
 export function careerHref(slug: string, state: string) { return `/career/${slug}/${state}/`; }
+export function careerHubHref(slug: string) { return `/career/${slug}/`; }
+export function careerCityHref(slug: string, c: Pick<MetroSnapshot, "state" | "city_slug">) { return `/career/${slug}/${stateSlug(c.state)}/${c.city_slug}/`; }
+// Career specialties whose pay benchmark is this salary role (PT also covers pelvic health, OT covers hand therapy).
+export function careerRolesForSalary(salarySlug: string) { return CAREER_SPECIALTIES.filter((x) => x.salary === salarySlug); }
 export function careerParams() {
   return CAREER_SPECIALTIES.flatMap((x) => launchMarkets().map((m) => ({ specialty: x.slug, state: m.market.toLowerCase().replace(/\s+/g, "-") })));
 }

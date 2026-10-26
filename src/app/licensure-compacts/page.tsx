@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { RelatedPosts } from "@/components/CareerLinks";
 import { Hero, SectionHeading, SourceLine, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { compactCounts } from "@/components/CompactTable";
 import { SITE, COMPACT_LIST } from "@/lib/site";
@@ -95,6 +96,8 @@ export default function LicensureCompactsIndex() {
           </div>
         </Container>
       </section>
+
+      <RelatedPosts hrefs={["/licensure-compacts/"]} />
 
       <CtaBand title="Hiring a therapist from out of state?" body="We will tell you on the first call whether a compact shortens the path, and plan around the licensing time if it does not." />
 

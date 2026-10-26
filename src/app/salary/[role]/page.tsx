@@ -6,6 +6,8 @@ import { SectionHeading, SourceLine, CtaBand, Breadcrumbs } from "@/components/S
 import { SITE } from "@/lib/site";
 import { SALARY_ROLES, salaryRoleBySlug, salaryHref, nationalWage, rankedStates, roleLabel, jobsFor, titleCase } from "@/lib/salary";
 import { n, usd } from "@/lib/format";
+import { careerRolesForSalary, careerHubHref } from "@/lib/career-specialties";
+import { RelatedPosts } from "@/components/CareerLinks";
 
 export async function generateStaticParams() {
   return SALARY_ROLES.map((r) => ({ role: r.slug }));
@@ -111,8 +113,21 @@ export default async function SalaryRolePage({ params }: { params: Promise<{ rol
               </li>
             ))}
           </ul>
+          {careerRolesForSalary(r.slug).length > 0 && (
+            <ul className="mt-6 grid gap-2 sm:grid-cols-2">
+              {careerRolesForSalary(r.slug).map((x) => (
+                <li key={x.slug}>
+                  <Link href={careerHubHref(x.slug)} className="font-semibold text-teal-600 hover:text-teal-700">
+                    {x.label} jobs and careers nationwide
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </Container>
       </section>
+
+      <RelatedPosts hrefs={[salaryHref(r)]} />
 
       <CtaBand
         title="Know what you are worth? Find out what is open."

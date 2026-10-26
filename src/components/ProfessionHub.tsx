@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { RelatedPosts } from "@/components/CareerLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, SectionHeading, StatTile, SourceLine, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { EmployerBlock } from "@/components/EmployerBlock";
@@ -114,6 +115,8 @@ export function ProfessionHub({ p }: { p: Profession }) {
       <EmployerBlock />
 
       <MollyByline place="national" reviewedOn={reviewedOn} />
+
+      <RelatedPosts hrefs={[`/${p.slug}/`]} />
 
       <CtaBand title={`Need a ${p.label.toLowerCase()}?`} body="Tell us the setting, the caseload and the market. A licensed clinician reads every brief." />
 

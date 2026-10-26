@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { RelatedPosts } from "@/components/CareerLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero, SectionHeading, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { UsMap, type MapState } from "@/components/UsMap";
@@ -117,6 +118,8 @@ export default function TherapyRecruitersDirectory() {
           </div>
         </Container>
       </section>
+
+      <RelatedPosts hrefs={["/therapy-recruiters/"]} />
 
       <CtaBand />
 

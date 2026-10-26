@@ -4,7 +4,7 @@ import { POSTS } from "@/lib/posts";
 import { liveJobs } from "@/lib/jobs";
 import { SALARY_ROLES, salaryHref, salaryParams } from "@/lib/salary";
 import { licensureGuides, licensureHref } from "@/lib/licensure";
-import { CAREER_SPECIALTIES, careerParams, careerHref } from "@/lib/career-specialties";
+import { CAREER_SPECIALTIES, careerParams, careerHref, careerCityHref } from "@/lib/career-specialties";
 import { allMetros, launchMarkets, metrosForState, metroHref, stateHref } from "@/lib/markets";
 
 // ⛔ Every path here ends in "/" (trailingSlash: true). The prebuild check
@@ -91,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
     ...CAREER_SPECIALTIES.flatMap((role) => allMetros().map((metro) => ({
-      url: `${SITE.url}/career/${role.slug}/${metro.state.toLowerCase().replace(/\\s+/g, "-")}/${metro.city_slug}/`,
+      url: `${SITE.url}${careerCityHref(role.slug, metro)}`,
       lastModified: CONTENT_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
