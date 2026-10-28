@@ -27,7 +27,8 @@ function clean(value: FormDataEntryValue | null, max: number): string {
 
 export async function POST(req: Request) {
   const apiKey = process.env.RESEND_API_KEY;
-  const candidateTo = process.env.CONTACT_TO_EMAIL ?? "molly@aptrecruiting.com";
+  // Candidate and job-application submissions always go directly to Molly.
+  const candidateTo = "molly@aptrecruiting.com";
   // Hiring inquiries can go to their own inbox (a hire@ mailbox, once one
   // exists). Falls back to the candidate inbox until HIRE_TO_EMAIL is set on
   // Vercel, so an employer's message is never sent to a mailbox that does not
@@ -98,7 +99,7 @@ export async function POST(req: Request) {
     // ⛔ The sender must be on a domain verified in the SAME Resend account as
     // RESEND_API_KEY, or Resend refuses the send (the 502 branch below).
     // aptrecruiting.com has to be verified in Resend for this to work.
-    // Replies go to the visitor; the inbox that RECEIVES is molly@ (CONTACT_TO_EMAIL).
+    // Replies go to the visitor; candidate submissions always go to Molly.
     from: process.env.CONTACT_FROM_EMAIL ?? "APT Recruiting Website <info@aptrecruiting.com>",
     to: (isHire ? hireTo : candidateTo).split(",").map((t) => t.trim()),
     replyTo: email,
