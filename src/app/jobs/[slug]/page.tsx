@@ -74,6 +74,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                 {location} · {j.employmentType.map((t) => t.replace("_", "-").toLowerCase()).join(" or ")} · posted{" "}
                 {longDate(j.datePosted)}
               </p>
+              <p className="mt-2 font-semibold text-teal-600">Active opening · accepting qualified candidates</p>
               {j.salary && (
                 <p className="mt-2 text-body">
                   ${j.salary.min.toLocaleString("en-US")} to ${j.salary.max.toLocaleString("en-US")} per{" "}

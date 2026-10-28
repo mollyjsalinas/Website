@@ -24,8 +24,8 @@ export default function JobsIndexPage() {
         primary={{ href: "/job-seekers/", label: "Send us your resume" }}
         secondary={{ href: "/contact/hire/", label: "Post a role with us" }}
       >
-        Most of the searches we run are confidential and never appear here. The roles below are
-        the ones an employer has asked us to list publicly. Checking an offer?{" "}
+        Every role below is active and accepting qualified candidates. Most of the searches we run
+        are confidential and never appear here. Checking an offer?{" "}
         <Link href="/salary/" className="font-semibold underline">
           See therapy salaries by state
         </Link>
