@@ -1,4 +1,4 @@
-import type { ProfessionKey, SettingKey } from "@/lib/site";
+import { PROFESSIONS, SETTINGS, type ProfessionKey, type SettingKey } from "@/lib/site";
 
 // Live openings, from Molly's questionnaire reply (2026-09-17). Each entry becomes
 // /jobs/<slug>/ with JobPosting JSON-LD, and the /jobs/ index and sitemap read
@@ -10,8 +10,10 @@ export type EmploymentType = "FULL_TIME" | "PART_TIME" | "CONTRACTOR" | "PER_DIE
 export type Job = {
   title: string;
   slug: string;
-  profession: ProfessionKey;
-  setting: SettingKey;
+  profession?: ProfessionKey;
+  professionLabel?: string;
+  setting?: SettingKey;
+  settingLabel?: string;
   city: string;
   state: string; // two-letter abbreviation
   employmentType: EmploymentType[];
@@ -24,6 +26,32 @@ export type Job = {
 };
 
 export const JOBS: Job[] = [
+  {
+    title: "Physical Therapist (DPT) — Outpatient Orthopedics & Sports Medicine",
+    slug: "physical-therapist-dpt-pasadena-ca",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Pasadena",
+    state: "CA",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-27",
+    salary: { min: 93600, max: 114400, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing an established outpatient physical therapy clinic in Pasadena, California that is seeking a full-time Doctor of Physical Therapy (DPT). This is a strong fit for a Physical Therapist who values mentorship, professional development, and quality patient care in a collaborative setting. New graduates are encouraged to apply, as are experienced PTs seeking continued clinical growth.\n\nYou will treat a diverse outpatient caseload of orthopedic conditions, sports injuries, and pre- and post-operative rehabilitation patients. The clinic serves recreational athletes, student athletes, and other orthopedic patients, giving you the opportunity to deliver thoughtful, individualized care across a broad range of needs.\n\nThis full-time, 40-hour-per-week role offers flexible scheduling. The clinic is open Monday through Saturday, with options designed to accommodate your scheduling preferences. Each Physical Therapist is assigned a full-time aide to support patient care, and you will work alongside experienced DPTs in a collaborative, learning-focused environment with an established residency program.\n\nCompensation is approximately $93,600–$114,400 annually, based on experience. Benefits include hourly pay that is not tied to productivity or visit volume, medical, dental, and vision insurance options, a 401(k) with up to a 5% employer match, two weeks of PTO plus one week of sick leave, approximately six paid holidays, license-renewal support, and $1,000 annually toward continuing education and specialty certifications. The clinic uses WebPT with Comprehend AI-assisted documentation to help streamline notes.\n\nCandidates need a Doctor of Physical Therapy degree and an active California PT license, or eligibility for California licensure. Strong communication and patient-care skills, a passion for orthopedic rehabilitation and teamwork, and a commitment to continued learning are essential.",
+  },
+  {
+    title: "Pulmonary & Critical Care Physician (MD/DO)",
+    slug: "pulmonary-critical-care-physician-dothan-al",
+    professionLabel: "Pulmonary & Critical Care Physician",
+    settingLabel: "Inpatient & outpatient specialty care",
+    city: "Dothan",
+    state: "AL",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-27",
+    salary: { min: 350000, max: 700000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing an established and expanding regional healthcare system in Dothan, Alabama that is seeking a Board-Certified or Board-Eligible Pulmonary & Critical Care Physician (MD/DO). This full-time opportunity combines high-acuity inpatient critical care medicine with outpatient pulmonary services, supported by advanced hospital resources, a strong referral network, and a collaborative medical team.\n\nYou will provide comprehensive pulmonary and critical care services, including ICU management and consultations, diagnosis and treatment of complex pulmonary conditions, outpatient evaluations and follow-up care, bronchoscopy and other pulmonary and critical care procedures, and individualized, evidence-based treatment plans for acute and chronic respiratory conditions. The role also offers opportunities to contribute to quality-improvement and patient-safety initiatives and to support resident and medical-student mentorship.\n\nThe position offers annual compensation of $350,000–$700,000, depending on experience, training, and compensation structure, with additional RVU-based productivity incentives. Qualified candidates may receive a sign-on bonus, relocation assistance, covered interview expenses, and potential student-loan repayment. The comprehensive benefits package includes medical, dental, and vision insurance, employer retirement contributions, malpractice coverage with tail coverage, paid time off, CME support, and opportunities for leadership, mentorship, and academic involvement.\n\nCandidates need an MD or DO degree from an accredited medical school, Board Certification or Board Eligibility in Pulmonary Disease and Critical Care Medicine, and eligibility for Alabama medical licensure. Strong clinical judgment, procedural competency, excellent communication, multidisciplinary collaboration, and a commitment to compassionate, patient-centered, evidence-based care are essential. Dothan offers the affordability, family-friendly community, outdoor recreation, and regional access of southeast Alabama's Wiregrass area.",
+  },
   {
     title: "Physical Therapist — Outpatient Orthopedics",
     slug: "physical-therapist-outpatient-orthopedics-salt-lake-city-ut",
@@ -319,4 +347,12 @@ export function liveJobs(today: string = new Date().toISOString().slice(0, 10)):
 
 export function jobBySlug(slug: string): Job | undefined {
   return liveJobs().find((j) => j.slug === slug);
+}
+
+export function jobProfessionLabel(job: Job): string {
+  return job.profession ? PROFESSIONS[job.profession].label : job.professionLabel ?? "Healthcare professional";
+}
+
+export function jobSettingLabel(job: Job): string {
+  return job.setting ? SETTINGS[job.setting].label : job.settingLabel ?? "Healthcare";
 }

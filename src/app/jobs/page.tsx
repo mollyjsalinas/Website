@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Hero, SectionHeading, CtaBand, Breadcrumbs } from "@/components/Sections";
-import { SITE, PROFESSIONS, SETTINGS } from "@/lib/site";
-import { liveJobs } from "@/lib/jobs";
+import { SITE } from "@/lib/site";
+import { liveJobs, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
 
 export const metadata: Metadata = {
-  title: "Open PT, OT, SLP & Audiology Jobs",
+  title: "Open Healthcare Jobs",
   description:
-    "Current physical therapy, occupational therapy, speech-language pathology and audiology openings represented by APT Recruiting. Confidential, free to therapists.",
+    "Current healthcare openings represented by APT Recruiting, including physical therapy, occupational therapy, speech-language pathology, audiology and physician roles. Confidential and free to candidates.",
   alternates: { canonical: "/jobs/" },
 };
 
@@ -20,7 +20,7 @@ export default function JobsIndexPage() {
     <>
       <Hero
         eyebrow="Open roles"
-        title="PT, OT, SLP and audiology jobs."
+        title="Healthcare jobs for clinicians."
         primary={{ href: "/job-seekers/", label: "Send us your resume" }}
         secondary={{ href: "/contact/hire/", label: "Post a role with us" }}
       >
@@ -54,7 +54,7 @@ export default function JobsIndexPage() {
               {jobs.map((j) => (
                 <article key={j.slug} className="rounded-lg border border-mist bg-white p-6 shadow-sm">
                   <p className="text-sm text-body">
-                    {PROFESSIONS[j.profession].label} · {SETTINGS[j.setting].shortLabel} · posted {longDate(j.datePosted)}
+                    {jobProfessionLabel(j)} · {jobSettingLabel(j)} · posted {longDate(j.datePosted)}
                   </p>
                   <h2 className="mt-1 font-heading text-xl font-semibold text-navy-600">
                     <Link href={`/jobs/${j.slug}/`} className="hover:text-teal-600">

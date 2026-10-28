@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading, Breadcrumbs } from "@/components/Sections";
 import { SITE, PROFESSIONS, SETTINGS } from "@/lib/site";
-import { liveJobs, jobBySlug } from "@/lib/jobs";
+import { liveJobs, jobBySlug, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
 import { marketByAbbr, metrosForState, metroHref, stateHref } from "@/lib/markets";
 import { SALARY_ROLES, salaryHref, roleLabel, stateWage } from "@/lib/salary";
@@ -32,12 +32,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const j = jobBySlug(slug);
   if (!j) return {};
   const location = j.remote ? `Remote · ${j.state}` : `${j.city}, ${j.state}`;
+  const setting = jobSettingLabel(j);
   return {
     title: `${j.title} in ${location}`,
     description: [
       `${j.title} opening in ${location}`,
       j.salary ? `paying ${payLine(j.salary)}` : "",
-      `${SETTINGS[j.setting].label.toLowerCase()}. Confidential and free to clinicians; apply through APT Recruiting.`,
+      `${setting.toLowerCase()}. Confidential and free to candidates; apply through APT Recruiting.`,
     ]
       .filter(Boolean)
       .join(", "),
@@ -53,9 +54,11 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
   const location = j.remote ? `Remote · ${j.state}` : `${j.city}, ${j.state}`;
   const url = `${SITE.url}/jobs/${j.slug}/`;
   const paragraphs = j.description.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  const profession = jobProfessionLabel(j);
+  const setting = jobSettingLabel(j);
   const market = marketByAbbr(j.state);
   const metro = metrosForState(j.state).find((c) => c.city.toLowerCase() === j.city.toLowerCase());
-  const salaryRoles = market ? SALARY_ROLES.filter((r) => r.key === j.profession && stateWage(market, r)) : [];
+  const salaryRoles = market && j.profession ? SALARY_ROLES.filter((r) => r.key === j.profession && stateWage(market, r)) : [];
 
   return (
     <>
@@ -64,7 +67,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
             <article>
               <p className="text-sm font-semibold tracking-widest text-teal-600 uppercase">
-                {PROFESSIONS[j.profession].label} · {SETTINGS[j.setting].label}
+                {profession} · {setting}
               </p>
               <h1 className="mt-2 font-heading text-4xl font-semibold text-navy-600">{j.title}</h1>
               <p className="mt-2 text-lg text-body">
@@ -83,10 +86,16 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
                 ))}
               </div>
               <p className="mt-8 text-sm text-body">
-                Represented by APT Recruiting. The employer pays our fee; the therapist never does.{" "}
-                <Link href={`/${PROFESSIONS[j.profession].slug}/`} className="font-semibold text-teal-600 hover:text-teal-700">
-                  More {PROFESSIONS[j.profession].short} roles →
-                </Link>
+                Represented by APT Recruiting. The employer pays our fee; candidates never do.{" "}
+                {j.profession ? (
+                  <Link href={`/${PROFESSIONS[j.profession].slug}/`} className="font-semibold text-teal-600 hover:text-teal-700">
+                    More {PROFESSIONS[j.profession].short} roles →
+                  </Link>
+                ) : (
+                  <Link href="/jobs/" className="font-semibold text-teal-600 hover:text-teal-700">
+                    View all open roles →
+                  </Link>
+                )}
               </p>
               {market && (
                 <div className="mt-8 rounded-lg border border-mist bg-white p-6">
