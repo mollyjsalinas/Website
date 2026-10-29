@@ -27,6 +27,32 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Audiologist (Au.D.) — ENT Practice",
+    slug: "audiologist-ent-practice-tampa-bay-fl",
+    profession: "aud",
+    settingLabel: "ENT practice",
+    city: "Tampa Bay Area",
+    state: "FL",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-10-29",
+    salary: { min: 80000, max: 95000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing an established, growing ENT practice in the Tampa Bay area that is seeking an Audiologist (Au.D.) to join its experienced, collaborative team. This opportunity is open to both new graduates and experienced Audiologists seeking competitive compensation, clinical flexibility, and a healthy work-life balance. Full-time and part-time schedules are available.\n\nYou will provide comprehensive audiologic evaluations and diagnostic testing, along with hearing-aid evaluations, consultations, fittings, and follow-up care based on your clinical interests. You will work closely with ENT physicians, advanced practice providers, and other clinicians to coordinate individualized, high-quality hearing healthcare. Audiologists who prefer to focus primarily on diagnostics are encouraged to apply.\n\nBase salary is $80,000–$95,000 annually, based on experience, plus monthly hearing-aid dispensing commission potential of approximately $1,500–$5,000 or more. Benefits include comprehensive health insurance, a 401(k) employer contribution of approximately 9.6% after one year, three weeks of paid vacation plus federal holidays, three additional CME days and an educational stipend. The typical schedule is Monday through Friday, 8:30 a.m.–5:00 p.m., with no weekends, holidays, or on-call responsibilities.\n\nThe role is based in the Tampa Bay area, with clinic assignments guided by the candidate's location and preferences. Some travel between nearby clinic locations may be needed, but there is no travel between offices during the workday. Candidates need a Doctor of Audiology degree or equivalent qualifying degree, Florida audiology licensure or eligibility, strong diagnostic skills, and a patient-centered, collaborative approach.",
+  },
+  {
+    title: "Physical Therapist — Concierge Healthcare & Sports Performance",
+    slug: "physical-therapist-concierge-healthcare-northbrook-il",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Northbrook",
+    state: "IL",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-10-29",
+    salary: { min: 85000, max: 95000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a growing concierge-style healthcare practice in Northbrook, Illinois that is seeking a full-time Physical Therapist. This is a distinctive outpatient opportunity for a PT who enjoys orthopedic rehabilitation, fitness, sports performance, preventive medicine, and helping patients build lifelong health. The practice provides personalized, white-glove service in a collaborative, interdisciplinary setting and is launching a new Northbrook location.\n\nYour work will be split between executive health and performance assessments and one-on-one outpatient physical therapy. As the movement and exercise specialist on an interdisciplinary team, you will assess strength, mobility, cardiovascular fitness, body composition, and exercise needs to support wellness and injury prevention. You will also provide individualized orthopedic rehabilitation, manual therapy, exercise prescription, and return-to-activity programming for motivated, health-conscious patients. The clinic includes private treatment rooms and a fully equipped fitness space.\n\nCompensation is $85,000–$95,000 annually, negotiable based on experience, with performance-bonus potential. Benefits include 20 days of PTO plus paid holidays; medical, dental, vision, life, short- and long-term disability insurance; a 401(k) with up to a 3% employer match; $500 annually toward continuing education and specialty certifications; and paid license renewals. Sessions are dedicated 60-minute visits in a low-volume, cash-pay setting.\n\nThis is a full-time, approximately 40-hour-per-week Monday–Friday position. Onboarding and training are expected to begin at a Chicago-area location in January 2027, followed by a transition to the new Northbrook clinic beginning in March 2027. Candidates need a master's or doctoral degree in Physical Therapy; strong orthopedic assessment, manual therapy, and exercise-prescription skills; experience with musculoskeletal and postoperative conditions; and confidence working independently. Sports medicine, return-to-sport, running rehabilitation, strength and conditioning, OCS, CSCS, COMT, dry needling, or blood-flow-restriction training are valued but not required.",
+  },
+  {
     title: "Physical Therapist (DPT) — Outpatient Orthopedics & Sports Medicine",
     slug: "physical-therapist-dpt-pasadena-ca",
     profession: "pt",
