@@ -5,7 +5,7 @@ import { Container } from "@/components/Container";
 import { JsonLd } from "@/components/JsonLd";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading, Breadcrumbs } from "@/components/Sections";
-import { SITE, PROFESSIONS, SETTINGS } from "@/lib/site";
+import { SITE, PROFESSIONS } from "@/lib/site";
 import { liveJobs, jobBySlug, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
 import { marketByAbbr, metrosForState, metroHref, stateHref } from "@/lib/markets";
