@@ -27,6 +27,19 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Physical Therapist or Physical Therapist Assistant — Outpatient Rehabilitation",
+    slug: "physical-therapist-physical-therapist-assistant-ellicott-city-md",
+    professionLabel: "Physical Therapist or Physical Therapist Assistant",
+    setting: "outpatient-rehab",
+    city: "Ellicott City",
+    state: "MD",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-11-03",
+    salary: { min: 35, max: 50, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing an established, independently owned outpatient physical therapy practice in Ellicott City, Maryland that is seeking a Physical Therapist (PT/DPT) or Physical Therapist Assistant (PTA). This opportunity is ideal for a clinician who values personalized care, hands-on treatment, clinical collaboration, and room to grow. Both full-time and part-time schedules are available.\n\nThe practice has served its community for more than 15 years and operates two locations in Ellicott City. You will join a close-knit team of approximately 10 PTs and PTAs and work with a diverse patient population across the lifespan. Orthopedic rehabilitation makes up at least half of the caseload, with additional opportunities in sports and athletic rehabilitation, neurologic rehabilitation, pediatric therapy, vestibular and balance disorders, TMJ dysfunction, women's health, and general musculoskeletal care.\n\nYou will provide individualized evaluations and evidence-based rehabilitation, deliver hands-on treatment and therapeutic exercise, collaborate with experienced therapists and clinical support staff, and work with a dedicated therapy aide. The typical schedule is approximately two patient visits per hour, with 60-minute evaluations. The practice uses WebPT for documentation and provides an additional 30 minutes of documentation time when needed; front-desk staff support scheduling and administrative work so clinicians can focus on patient care.\n\nCompensation is $40–$50 per hour for Physical Therapists and $35–$40 per hour for Physical Therapist Assistants, based on experience. The role includes a sign-on bonus, performance-based bonus opportunities, annual raises, 12–18 days of PTO for eligible employees plus paid holidays, health-insurance premium contributions, a 401(k) with up to a 3% employer match, $1,500 annually toward continuing education, and licensure-renewal assistance.\n\nSchedules range from approximately 20–40 hours per week, depending on the position and clinician preference; four 10-hour shifts may be considered. The practice has approximately one Saturday shift per month, with no Sundays, on-call responsibility, or holiday coverage. Candidates need Maryland PT or PTA licensure, or eligibility for licensure. New graduates are welcome and can receive an assigned mentor, approximately one hour of dedicated weekly mentoring, and ongoing clinical guidance. Experienced clinicians are encouraged to pursue specialty training, mentorship, and future clinical leadership.",
+  },
+  {
     title: "Audiologist (Au.D.) — ENT Practice",
     slug: "audiologist-ent-practice-tampa-bay-fl",
     profession: "aud",
