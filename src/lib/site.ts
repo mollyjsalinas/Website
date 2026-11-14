@@ -17,9 +17,9 @@ export const SITE = {
   // Employer-side inbox. Hiring inquiries route here (see /api/contact). Molly
   // asked for no separate employer mailbox (9/17), so it is the same address.
   hireEmail: "molly@aptrecruiting.com",
-  phone: "(409) 225-1441",
-  phoneHref: "tel:+14092251441",
-  telephone: "+1-409-225-1441",
+  phone: "(512) 790-4012",
+  phoneHref: "tel:+15127904012",
+  telephone: "+1-512-790-4012",
   // ⛔ City and state only. Molly gave a street address for the privacy policy,
   // but it is a home address and is deliberately not published anywhere in this
   // repo; email and phone are the contact route on /privacy-policy/.
