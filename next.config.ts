@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: { agentUpgrade: "security" },
   // Pin the workspace root to this project. On the dev laptop a stray
   // package-lock.json one directory up made Next guess the wrong root.
   turbopack: { root: process.cwd() },
