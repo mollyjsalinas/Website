@@ -53,6 +53,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/nurse-practitioner-recruiters/" className="hover:text-teal-200">
+                  Nurse practitioner recruiters
+                </Link>
+              </li>
+              <li>
+                <Link href="/physician-assistant-recruiters/" className="hover:text-teal-200">
+                  Physician assistant recruiters
+                </Link>
+              </li>
             </ul>
           </nav>
 
