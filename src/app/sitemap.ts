@@ -12,6 +12,8 @@ import { allMetros, launchMarkets, metrosForState, metroHref, stateHref } from "
 const STATIC_PATHS = [
   "/",
   "/employers/",
+  "/nurse-practitioner-recruiters/",
+  "/physician-assistant-recruiters/",
   "/job-seekers/",
   "/about/",
   "/contact/",
