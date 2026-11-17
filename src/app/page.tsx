@@ -10,9 +10,9 @@ import { nationalTotals, topStatesByRoles, stateHref } from "@/lib/markets";
 import { n } from "@/lib/format";
 
 export const metadata: Metadata = {
-  title: "Physical Therapy, OT & SLP Recruiters | APT Recruiting",
+  title: "Healthcare Recruiters for Therapists, NPs & PAs | APT Recruiting",
   description:
-    "APT Recruiting places physical therapists, occupational therapists, speech-language pathologists and audiologists with hospitals, SNFs, home health, outpatient and school employers nationwide. Founded and run by a licensed SLP.",
+    "APT Recruiting places nurse practitioners, physician assistants, physical therapists, occupational therapists, speech-language pathologists and audiologists nationwide. Hire clinical professionals for hospitals, practices and outpatient care.",
   alternates: { canonical: "/" },
 };
 
@@ -48,7 +48,7 @@ export default function HomePage() {
       <section className="bg-navy-600 text-white" style={HERO_TEXTURE}>
         <Container className="py-24 sm:py-32">
           <p className="text-sm font-semibold tracking-widest text-teal-300 uppercase">
-            Rehab therapy recruiting, nationwide
+            Healthcare recruiting, nationwide
           </p>
           <h1 className="mt-4 max-w-3xl font-heading text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
             Healthcare Recruiting for Rehabilitation Therapy, Audiology &amp;{" "}
@@ -73,7 +73,7 @@ export default function HomePage() {
               href="/job-seekers/"
               className="rounded-md border border-navy-200 px-6 py-3 text-center text-base font-semibold text-white transition-colors hover:border-teal-300 hover:text-teal-200"
             >
-              I&apos;m a therapist
+              I&apos;m a clinician
             </Link>
           </div>
           <p className="mt-8 text-sm text-navy-200">{SITE.tagline}</p>
@@ -82,12 +82,12 @@ export default function HomePage() {
 
       <section className="py-20">
         <Container>
-          <SectionHeading eyebrow="Who we place" title="Four therapy professions. One recruiter who has done the clinical work.">
+          <SectionHeading eyebrow="Who we place" title="Therapy and advanced-practice recruiting, led by a clinician.">
             Physical therapists, occupational therapists, speech-language pathologists and
-            audiologists, with PTAs and COTAs alongside them. We also place physicians, nurse
-            practitioners, medical directors and administrators for the same organizations.
+            audiologists, plus nurse practitioners and physician assistants. We recruit for the
+            clinical setting, schedule, compensation and patient population that define a lasting fit.
           </SectionHeading>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {PROFESSION_LIST.map((p) => (
               <FeaturedCard
                 key={p.key}
@@ -97,6 +97,18 @@ export default function HomePage() {
                 cta={`${p.short} recruiting →`}
               />
             ))}
+            <FeaturedCard
+              href="/nurse-practitioner-recruiters/"
+              title="Nurse practitioner recruiters"
+              sub="NP recruiting for hospitals, primary care, urgent care and specialty practices."
+              cta="NP recruiting →"
+            />
+            <FeaturedCard
+              href="/physician-assistant-recruiters/"
+              title="Physician assistant recruiters"
+              sub="PA recruiting for hospitals, surgical teams, urgent care and specialty practices."
+              cta="PA recruiting →"
+            />
           </div>
         </Container>
       </section>
@@ -221,7 +233,7 @@ export default function HomePage() {
       <CtaBand
         title="Ready to fill the seat?"
         body="Tell us the discipline, the setting and the market. Molly reads every brief herself."
-        secondaryLabel="I'm a therapist"
+        secondaryLabel="I'm a clinician"
         secondaryHref="/job-seekers/"
       />
 
