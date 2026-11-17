@@ -27,6 +27,32 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Physical Therapist — Outpatient Sports Medicine",
+    slug: "physical-therapist-outpatient-sports-medicine-medford-or",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Medford",
+    state: "OR",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-11-16",
+    salary: { min: 45, max: 55, unit: "HOUR" },
+    description:
+      "APT Recruiting is representing a well-established, family-owned outpatient sports medicine and rehabilitation practice in Medford, Oregon that is seeking a Physical Therapist. This 32–40-hour, weekday opportunity is a strong fit for a PT who values clinical independence, a supportive team, and genuine work-life balance. New graduates and experienced clinicians are encouraged to apply.\n\nAs the primary Physical Therapist at the Medford location, you will guide individualized patient care while collaborating with an experienced PT Clinical Director and a multidisciplinary team. The practice integrates physical therapy, chiropractic care, massage therapy, and therapeutic exercise in a modern rehabilitation gym with free weights, resistance machines, and therapeutic exercise tools.\n\nCare is primarily one-on-one, with 60-minute evaluations and 30-minute follow-up appointments. You will deliver patient-centered treatment, build meaningful patient relationships, and help patients recover function through thoughtful, hands-on outpatient rehabilitation. You will also have opportunities to collaborate with Physical Therapists at nearby clinic locations.\n\nCompensation is $45–$55 per hour, based on experience. You will continue earning your hourly rate during patient cancellations. Benefits include employer coverage of approximately 80% of employee health, dental, and vision insurance premiums with three plan options; a retirement plan with up to a 3% employer match; tenure-based PTO, sick leave, and paid holidays; approximately $1,000 annually for continuing education; and employer-paid malpractice insurance.\n\nCandidates need a degree in Physical Therapy from an accredited program and an active Oregon PT license, or eligibility for Oregon licensure. Strong communication, clinical reasoning, and patient-care skills are essential, along with the ability to work independently while collaborating with other healthcare professionals.",
+  },
+  {
+    title: "Physical Therapist or Physical Therapist Assistant — Outpatient Orthopedics & Sports Medicine",
+    slug: "physical-therapist-physical-therapist-assistant-rowlett-tx",
+    professionLabel: "Physical Therapist or Physical Therapist Assistant",
+    setting: "outpatient-rehab",
+    city: "Rowlett",
+    state: "TX",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-11-16",
+    salary: { min: 78000, max: 90000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a busy, well-established outpatient orthopedic and sports rehabilitation clinic in Rowlett, Texas that is seeking a full-time Physical Therapist or Physical Therapist Assistant. This is an excellent opportunity for a clinician who enjoys sports medicine, manual therapy, strength training, and helping patients return to peak physical performance.\n\nYou will treat a diverse orthopedic and sports medicine caseload, including competitive athletes, patients recovering from sports injuries, shoulder and knee injuries, postoperative orthopedic conditions, spine-related conditions, chronic pain, and patients preparing for or recovering from bariatric surgery. Treatment combines manual therapy, therapeutic exercise, progressive strengthening, and modalities using established, evidence-informed clinical protocols.\n\nThe practice offers a highly active, gym-style treatment environment with extensive exercise and strengthening equipment. Its owner is a former competitive bodybuilder with deep expertise in exercise equipment, biomechanics, and rehabilitation programming. Treatment sessions are typically about one hour, and the role includes direct hands-on clinical mentorship and guidance from the experienced practice owner.\n\nCompensation is $90,000 annually for Physical Therapists and $78,000 annually for Physical Therapist Assistants. Benefits include 100% employer-paid Blue Cross Blue Shield PPO medical insurance, three weeks of PTO consisting of two weeks of vacation plus five sick or personal days, CEU reimbursement, paid license renewals, and potential support for specialty certifications. Performance-based bonuses may be available depending on quarterly profitability.\n\nThe current schedule includes three longer days and two half-days. Candidates need current Texas PT or PTA licensure, or eligibility for Texas licensure. Previous outpatient orthopedic or sports rehabilitation experience is preferred. Strong manual therapy, therapeutic exercise, gym-equipment, communication, and teamwork skills are important for success in this role.",
+  },
+  {
     title: "Physical Therapist or Physical Therapist Assistant — Outpatient Rehabilitation",
     slug: "physical-therapist-physical-therapist-assistant-ellicott-city-md",
     professionLabel: "Physical Therapist or Physical Therapist Assistant",
