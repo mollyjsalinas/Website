@@ -8,9 +8,9 @@ import { JsonLd } from "@/components/JsonLd";
 import { SITE, EMPLOYER_TERMS, PROFESSION_LIST, SETTING_LIST } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hire PT, OT & SLP Staff: Therapy Recruiting for Employers",
+  title: "Healthcare Recruiters for Employers: NPs, PAs & Therapy Staff",
   description:
-    "Physical therapy staffing, OT and SLP recruiting for hospitals, SNFs, home health, outpatient clinics and schools. Screened by a licensed speech-language pathologist. Tell us about the role.",
+    "Recruit nurse practitioners, physician assistants and therapy professionals for hospitals, practices, outpatient care and more. A clinician-led healthcare recruiting firm for direct-hire searches nationwide.",
   alternates: { canonical: "/employers/" },
 };
 
@@ -47,13 +47,14 @@ export default function EmployersPage() {
     <>
       <Hero
         eyebrow="For employers"
-        title="Physical therapy staffing, OT and SLP recruiting, on your terms."
+        title="Nurse practitioner, physician assistant and therapy recruiting, on your terms."
         primary={{ href: "/contact/hire/", label: "Tell us about the role" }}
         secondary={{ href: "/therapy-recruiters/", label: "See your market's therapy workforce" }}
       >
-        Hospitals, skilled nursing facilities, home health agencies, outpatient clinics and school
-        districts hire through APT Recruiting when a PT, OT, SLP or audiology seat has stayed open
-        too long. Every candidate is screened by a licensed speech-language pathologist.
+        Hospitals, medical groups, urgent care centers, specialty practices, skilled nursing
+        facilities, home health agencies, outpatient clinics and school districts hire through APT
+        Recruiting when an NP, PA, PT, OT, SLP or audiology seat has stayed open too long. Every
+        candidate is screened for the role&apos;s clinical setting, schedule and patient population.
       </Hero>
 
       <section className="py-20">
@@ -92,8 +93,16 @@ export default function EmployersPage() {
                   </li>
                 ))}
                 <li className="text-body">
-                  Directors of rehab, rehab managers, clinic directors, and for the same organizations,
-                  physicians, nurse practitioners, medical directors and administrators.
+                  <Link href="/nurse-practitioner-recruiters/" className="font-semibold text-navy-600 hover:text-teal-600">
+                    Nurse practitioner recruiters →
+                  </Link>
+                  <span className="ml-2 text-sm">Primary care, urgent care, hospital and specialty roles</span>
+                </li>
+                <li className="text-body">
+                  <Link href="/physician-assistant-recruiters/" className="font-semibold text-navy-600 hover:text-teal-600">
+                    Physician assistant recruiters →
+                  </Link>
+                  <span className="ml-2 text-sm">Medical, surgical, urgent care and specialty roles</span>
                 </li>
               </ul>
             </div>
@@ -153,8 +162,8 @@ export default function EmployersPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Rehab therapy recruiting for employers",
-          serviceType: "Physical therapy, occupational therapy, speech-language pathology and audiology recruiting",
+          name: "Healthcare recruiting for employers",
+          serviceType: "Nurse practitioner, physician assistant, physical therapy, occupational therapy, speech-language pathology and audiology recruiting",
           provider: { "@id": `${SITE.url}/#organization` },
           areaServed: { "@type": "Country", name: "United States" },
           url: `${SITE.url}/employers/`,
