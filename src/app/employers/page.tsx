@@ -8,9 +8,9 @@ import { JsonLd } from "@/components/JsonLd";
 import { SITE, EMPLOYER_TERMS, PROFESSION_LIST, SETTING_LIST } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Healthcare Recruiters for Employers: NPs, PAs & Therapy Staff",
+  title: "Therapy & Audiology Recruiters for Employers | PT, OT, SLP & AuD Staffing",
   description:
-    "Recruit nurse practitioners, physician assistants and therapy professionals for hospitals, practices, outpatient care and more. A clinician-led healthcare recruiting firm for direct-hire searches nationwide.",
+    "Therapy and audiology staffing for hospitals, practices, outpatient clinics, home health, skilled nursing and schools. APT Recruiting also supports Nurse Practitioner and Physician Assistant searches nationwide.",
   alternates: { canonical: "/employers/" },
 };
 
@@ -47,14 +47,16 @@ export default function EmployersPage() {
     <>
       <Hero
         eyebrow="For employers"
-        title="Nurse practitioner, physician assistant and therapy recruiting, on your terms."
+        title="Therapy & Audiology Recruiting for Employers: PT, OT, SLP, AuD, Plus NP & PA Search"
         primary={{ href: "/contact/hire/", label: "Tell us about the role" }}
         secondary={{ href: "/therapy-recruiters/", label: "See your market's therapy workforce" }}
       >
-        Hospitals, medical groups, urgent care centers, specialty practices, skilled nursing
-        facilities, home health agencies, outpatient clinics and school districts hire through APT
-        Recruiting when an NP, PA, PT, OT, SLP or audiology seat has stayed open too long. Every
-        candidate is screened for the role&apos;s clinical setting, schedule and patient population.
+        APT Recruiting specializes in placing Physical Therapists, Occupational Therapists,
+        Speech-Language Pathologists and Audiologists. We also support searches for Nurse
+        Practitioners and Physician Assistants. Hospitals, medical groups, specialty practices,
+        outpatient clinics, home health agencies, skilled nursing facilities, urgent care centers
+        and school districts partner with us to fill hard-to-fill clinical roles with candidates
+        carefully screened for the setting, schedule and patient population.
       </Hero>
 
       <section className="py-20">
@@ -162,8 +164,8 @@ export default function EmployersPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Healthcare recruiting for employers",
-          serviceType: "Nurse practitioner, physician assistant, physical therapy, occupational therapy, speech-language pathology and audiology recruiting",
+          name: "Therapy and audiology recruiting for employers",
+          serviceType: "Physical therapy, occupational therapy, speech-language pathology and audiology recruiting, plus nurse practitioner and physician assistant recruiting",
           provider: { "@id": `${SITE.url}/#organization` },
           areaServed: { "@type": "Country", name: "United States" },
           url: `${SITE.url}/employers/`,
