@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NAV = [
   { href: "/employers/", label: "Employers" },
-  { href: "/nurse-practitioner-recruiters/", label: "NP & PA" },
+  { href: "/advanced-practice-recruiting/", label: "NP & PA" },
   { href: "/therapy-recruiters/", label: "Markets" },
   { href: "/licensure-compacts/", label: "Compacts" },
   { href: "/job-seekers/", label: "Clinicians" },

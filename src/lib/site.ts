@@ -7,7 +7,7 @@
 // exactly: the handoff greps for it.
 
 // Bumped manually when page copy meaningfully changes; feeds sitemap lastModified.
-export const CONTENT_UPDATED = "2026-11-17";
+export const CONTENT_UPDATED = "2026-11-20";
 
 export const SITE = {
   name: "APT Recruiting",
