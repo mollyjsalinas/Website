@@ -27,6 +27,46 @@ export type Job = {
 
 export const JOBS: Job[] = [
   {
+    title: "Virtual Nurse Practitioner",
+    slug: "virtual-nurse-practitioner-remote",
+    professionLabel: "Nurse Practitioner",
+    settingLabel: "Virtual primary and urgent care",
+    city: "Remote",
+    state: "TX",
+    remote: true,
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-11-23",
+    salary: { min: 100000, max: 140000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a leading virtual healthcare organization that is expanding its clinical team with a compassionate, experienced Nurse Practitioner. This full-time, fully remote opportunity is ideal for an NP who wants to provide thoughtful, patient-centered primary and urgent care in a modern environment supported by collaborative leadership, experienced clinical colleagues, and technology designed to streamline care.\n\nYou will independently diagnose, treat, and manage acute and chronic medical conditions; order and interpret laboratory and diagnostic testing; develop individualized treatment plans; and coordinate appropriate follow-up care. You will collaborate with physicians, nursing staff, and the broader clinical team to deliver high-quality virtual care and improve patient workflows and outcomes.\n\nThe practice environment is low volume and primarily virtual: approximately 75% of visits are completed through video, phone, or secure messaging, with the remaining work involving collaboration with onsite nursing clinics. Patient intake is completed before visits through an intelligent chatbot workflow, and documentation is completed in DrChrono, with optional AI-assisted documentation tools available.\n\nCompensation is $100,000–$140,000 annually based on experience and licensure. Benefits include four weeks of PTO plus sick leave and holidays, comprehensive medical and dental coverage, malpractice and tail insurance, a 401(k), a One Medical membership, Talkspace mental-health support, and Kindbody fertility benefits. The schedule is Monday through Friday during standard business hours, with no weekends or overnight call.\n\nCandidates need active APRN licensure in Texas and/or New York, at least one year of primary-care Nurse Practitioner experience, excellent communication and customer-service skills, strong technology proficiency, and a compassionate, patient-centered approach. Additional APRN licenses are a plus.",
+  },
+  {
+    title: "Physical Therapist (DPT) — Outpatient Orthopedics",
+    slug: "physical-therapist-dpt-minneapolis-mn",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Minneapolis",
+    state: "MN",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-11-23",
+    salary: { min: 90000, max: 100000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a well-established, multidisciplinary outpatient rehabilitation practice that has served the Minneapolis community for more than 44 years. The clinic is seeking a motivated Doctor of Physical Therapy to join its friendly, collaborative team of Physical Therapists, PTAs, and chiropractic providers.\n\nThe practice specializes in orthopedic and injury rehabilitation, helping patients recover from motor-vehicle accidents, musculoskeletal conditions, and other injuries. You will perform comprehensive evaluations, develop individualized treatment plans, provide therapeutic exercise, strengthening, mobility training, and functional rehabilitation, and collaborate closely with fellow providers to monitor patient progress.\n\nThis role offers a consistent weekday schedule with no weekends: Monday, Wednesday, and Thursday from 8:00 a.m. to 6:00 p.m.; Tuesday and Friday from 8:00 a.m. to 1:00 p.m. Patient care is primarily one-to-one, with 45-minute evaluations and 30-minute follow-up visits. The clinic includes a fully equipped rehabilitation gym with medical-grade MedX strengthening equipment.\n\nCompensation is $90,000–$100,000 annually, and salary is not reduced for cancellations, missed appointments, or weather-related clinic closures. Benefits include employer coverage of 80% of medical-insurance premiums, a 401(k) with a 3% employer match, approximately two weeks of starting PTO with additional accrual over time, and employer-paid continuing education, professional licensure, and malpractice insurance.\n\nCandidates need a Doctor of Physical Therapy degree, current Minnesota PT licensure or eligibility, strong communication and interpersonal skills, and a collaborative, patient-centered approach. New graduates are welcome.",
+  },
+  {
+    title: "Founding / Lead Physical Therapist (DPT)",
+    slug: "founding-lead-physical-therapist-van-nuys-ca",
+    profession: "pt",
+    setting: "outpatient-rehab",
+    city: "Van Nuys",
+    state: "CA",
+    employmentType: ["FULL_TIME"],
+    datePosted: "2026-11-23",
+    salary: { min: 120000, max: 145000, unit: "YEAR" },
+    description:
+      "APT Recruiting is representing a new multidisciplinary outpatient rehabilitation center in Van Nuys, California that is seeking an experienced Founding / Lead Physical Therapist. This is a rare pre-opening opportunity to help build the clinic's clinical foundation, shape its rehabilitation program, and influence how patient care is delivered as the organization grows.\n\nThe center will focus on neurological, musculoskeletal, and functional rehabilitation for patients recovering from workplace injuries, motor-vehicle accidents, and other personal injuries. You will perform comprehensive evaluations, develop evidence-based treatment plans, and treat conditions including traumatic brain injuries, stroke, spinal injuries, vestibular and balance disorders, and other neurological or orthopedic impairments.\n\nAs a founding clinical leader, you will help establish treatment pathways, clinical protocols, documentation processes, and outcome measures. You will also provide input on clinic layout, rehabilitation equipment, and emerging treatment technology, collaborate with physicians and rehabilitation colleagues, and help develop and expand the physical therapy program.\n\nCompensation is $120,000–$145,000 annually based on experience and qualifications. Benefits include medical, dental, and vision insurance; PTO and major holidays; and financial support for continuing education and potential specialty certifications. The role offers meaningful clinical autonomy, potential growth into a Clinical Director or broader leadership role, and a chance to help shape a facility designed for neurological and functional recovery.\n\nCandidates need active California PT licensure, graduation from an accredited Physical Therapy program (DPT preferred), current CPR/BLS certification, and strong clinical judgment, communication, and independent-practice skills. Several years of experience—particularly in neurological rehabilitation, TBI, stroke, gait and balance, complex injury rehabilitation, leadership, mentoring, or program development—is strongly valued. The clinic anticipates welcoming its first patients in January 2027.",
+  },
+  {
     title: "Physical Therapist — Outpatient Sports Medicine",
     slug: "physical-therapist-outpatient-sports-medicine-medford-or",
     profession: "pt",
