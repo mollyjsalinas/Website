@@ -22,6 +22,8 @@ export type Job = {
   validThrough?: string; // ISO date; once past, the role drops out of the registry
   salary?: { min: number; max: number; unit: "YEAR" | "HOUR" };
   remote?: boolean;
+  remoteLocationLabel?: string;
+  remoteApplicantLocationRequirements?: { "@type": "AdministrativeArea" | "Country"; name: string };
   hold?: string; // why the role is not published yet
 };
 
@@ -34,6 +36,8 @@ export const JOBS: Job[] = [
     city: "Remote",
     state: "TX",
     remote: true,
+    remoteLocationLabel: "Remote — United States",
+    remoteApplicantLocationRequirements: { "@type": "Country", name: "USA" },
     employmentType: ["FULL_TIME"],
     datePosted: "2026-11-23",
     salary: { min: 100000, max: 140000, unit: "YEAR" },
@@ -435,4 +439,8 @@ export function jobProfessionLabel(job: Job): string {
 
 export function jobSettingLabel(job: Job): string {
   return job.setting ? SETTINGS[job.setting].label : job.settingLabel ?? "Healthcare";
+}
+
+export function jobLocationLabel(job: Job): string {
+  return job.remote ? job.remoteLocationLabel ?? `Remote · ${job.state}` : `${job.city}, ${job.state}`;
 }
