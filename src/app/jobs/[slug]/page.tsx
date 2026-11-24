@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading, Breadcrumbs } from "@/components/Sections";
 import { SITE, PROFESSIONS } from "@/lib/site";
-import { liveJobs, jobBySlug, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
+import { liveJobs, jobBySlug, jobLocationLabel, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
 import { marketByAbbr, metrosForState, metroHref, stateHref } from "@/lib/markets";
 import { SALARY_ROLES, salaryHref, roleLabel, stateWage } from "@/lib/salary";
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const j = jobBySlug(slug);
   if (!j) return {};
-  const location = j.remote ? `Remote · ${j.state}` : `${j.city}, ${j.state}`;
+  const location = jobLocationLabel(j);
   const setting = jobSettingLabel(j);
   return {
     title: `${j.title} in ${location}`,
@@ -146,7 +146,8 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           ...(j.remote
             ? {
                 jobLocationType: "TELECOMMUTE",
-                applicantLocationRequirements: { "@type": "AdministrativeArea", name: `${j.state}, US` },
+                applicantLocationRequirements:
+                  j.remoteApplicantLocationRequirements ?? { "@type": "AdministrativeArea", name: `${j.state}, US` },
               }
             : {
                 jobLocation: {
