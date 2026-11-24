@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Hero, SectionHeading, CtaBand, Breadcrumbs } from "@/components/Sections";
 import { SITE } from "@/lib/site";
-import { liveJobs, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
+import { liveJobs, jobLocationLabel, jobProfessionLabel, jobSettingLabel } from "@/lib/jobs";
 import { longDate } from "@/lib/format";
 
 export const metadata: Metadata = {
@@ -62,7 +62,7 @@ export default function JobsIndexPage() {
                     </Link>
                   </h2>
                   <p className="mt-1 text-body">
-                    {j.city}, {j.state}
+                    {jobLocationLabel(j)}
                   </p>
                 </article>
               ))}
